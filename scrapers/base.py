@@ -64,8 +64,15 @@ class BaseScraper:
                     offer = offer[0]
                 price = float(offer.get("price") or 0)
                 currency = offer.get("priceCurrency", "")
+                availability = offer.get("availability", "")
+                in_stock = not availability or availability.endswith("InStock")
                 if price:
-                    return {"name": name, "price": price, "currency": currency}
+                    return {
+                        "name": name,
+                        "price": price,
+                        "currency": currency,
+                        "in_stock": in_stock,
+                    }
             except (json.JSONDecodeError, KeyError, ValueError, TypeError):
                 continue
         return None

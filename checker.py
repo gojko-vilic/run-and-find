@@ -56,9 +56,19 @@ def _process_single(url: str, label: str, scraper, prices: dict, errors: list) -
 
     current = result["price"]
     currency = result["currency"]
-    last_price = prices.get(url, {}).get("price")
+    in_stock = result.get("in_stock", True)
+    stored = prices.get(url, {})
+    last_price = stored.get("price")
+    was_in_stock = stored.get("in_stock", True)
 
-    if last_price is not None and current < last_price:
+    if in_stock and not was_in_stock:
+        send_telegram(
+            f"✅ <b>Back in stock!</b>\n"
+            f"<b>{label}</b>\n"
+            f'<a href="{url}">View product</a>'
+        )
+
+    if in_stock and last_price is not None and current < last_price:
         diff = last_price - current
         send_telegram(
             f"🔔 <b>Price drop!</b>\n"
@@ -72,11 +82,17 @@ def _process_single(url: str, label: str, scraper, prices: dict, errors: list) -
         "price": current,
         "currency": currency,
         "name": result.get("name") or label,
+        "in_stock": in_stock,
     }
 
 
 def _process_multi_offer(
-    url: str, label: str, scraper, prices: dict, errors: list
+    url: str,
+    label: str,
+    scraper,
+    prices: dict,
+    errors: list,
+    gender_filter: list[str] | None = None,
 ) -> None:
     try:
         offers = scraper.scrape_offers(url)
@@ -90,15 +106,27 @@ def _process_multi_offer(
     stored_offers: dict = stored.setdefault("offers", {})
 
     for offer in offers:
+        if gender_filter and offer.get("gender", "unisex") not in gender_filter:
+            continue
         key = f"{offer['store']}|{offer['sku']}"
         current = offer["price"]
         currency = offer["currency"]
-        last_price = stored_offers.get(key, {}).get("price")
+        in_stock = offer.get("in_stock", True)
+        store_url = offer["store_url"]
+        store_name = offer["store"]
+        prev = stored_offers.get(key, {})
+        last_price = prev.get("price")
+        was_in_stock = prev.get("in_stock", True)
 
-        if last_price is not None and current < last_price:
+        if in_stock and not was_in_stock:
+            send_telegram(
+                f"✅ <b>Back in stock!</b>\n"
+                f"<b>{label}</b> @ <b>{store_name}</b>\n"
+                f'<a href="{store_url}">View at {store_name}</a>'
+            )
+
+        if in_stock and last_price is not None and current < last_price:
             diff = last_price - current
-            store_url = offer["store_url"]
-            store_name = offer["store"]
             send_telegram(
                 f"🔔 <b>Price drop!</b>\n"
                 f"<b>{label}</b> @ <b>{store_name}</b>\n"
@@ -110,7 +138,8 @@ def _process_multi_offer(
         stored_offers[key] = {
             "price": current,
             "currency": currency,
-            "store_url": offer["store_url"],
+            "store_url": store_url,
+            "in_stock": in_stock,
         }
 
     stored["name"] = offers[0]["name"] if offers else label
@@ -128,7 +157,13 @@ def main() -> None:
 
         try:
             if hasattr(scraper, "scrape_offers"):
-                _process_multi_offer(url, label, scraper, prices, errors)
+                gender_raw = product.get("gender")
+                gender_filter = (
+                    [gender_raw]
+                    if isinstance(gender_raw, str)
+                    else list(gender_raw) if gender_raw else None
+                )
+                _process_multi_offer(url, label, scraper, prices, errors, gender_filter)
             else:
                 _process_single(url, label, scraper, prices, errors)
         except Exception as exc:
