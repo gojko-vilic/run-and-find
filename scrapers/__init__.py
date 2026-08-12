@@ -7,6 +7,8 @@ from .austrian import DOMAINS as AUSTRIAN_DOMAINS
 from .base import BaseScraper
 from .serbian import SerbianScraper
 from .serbian import DOMAINS as SERBIAN_DOMAINS
+from .trebapatike import TrebaPatikeScraper
+from .trebapatike import DOMAINS as TREBAPATIKE_DOMAINS
 
 
 def get_scraper(url: str) -> BaseScraper:
@@ -17,6 +19,8 @@ def get_scraper(url: str) -> BaseScraper:
     def matches(domains: list[str]) -> bool:
         return any(clean == d or clean.endswith("." + d) for d in domains)
 
+    if matches(TREBAPATIKE_DOMAINS):
+        return TrebaPatikeScraper()
     if matches(AMAZON_DOMAINS):
         return AmazonScraper()
     if matches(AUSTRIAN_DOMAINS):

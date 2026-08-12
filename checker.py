@@ -45,6 +45,77 @@ def save_prices(prices: dict) -> None:
     )
 
 
+def _process_single(url: str, label: str, scraper, prices: dict, errors: list) -> None:
+    try:
+        result = scraper.scrape(url)
+    except (ScrapingError, Exception) as exc:
+        msg = f"⚠️ {label}: {exc}"
+        errors.append(msg)
+        print(msg, file=sys.stderr)
+        return
+
+    current = result["price"]
+    currency = result["currency"]
+    last_price = prices.get(url, {}).get("price")
+
+    if last_price is not None and current < last_price:
+        diff = last_price - current
+        send_telegram(
+            f"🔔 <b>Price drop!</b>\n"
+            f"<b>{label}</b>\n"
+            f"{last_price:.2f} → <b>{current:.2f} {currency}</b> "
+            f"(−{diff:.2f} {currency})\n"
+            f'<a href="{url}">View product</a>'
+        )
+
+    prices[url] = {
+        "price": current,
+        "currency": currency,
+        "name": result.get("name") or label,
+    }
+
+
+def _process_multi_offer(
+    url: str, label: str, scraper, prices: dict, errors: list
+) -> None:
+    try:
+        offers = scraper.scrape_offers(url)
+    except (ScrapingError, Exception) as exc:
+        msg = f"⚠️ {label}: {exc}"
+        errors.append(msg)
+        print(msg, file=sys.stderr)
+        return
+
+    stored = prices.setdefault(url, {"name": label, "offers": {}})
+    stored_offers: dict = stored.setdefault("offers", {})
+
+    for offer in offers:
+        key = f"{offer['store']}|{offer['sku']}"
+        current = offer["price"]
+        currency = offer["currency"]
+        last_price = stored_offers.get(key, {}).get("price")
+
+        if last_price is not None and current < last_price:
+            diff = last_price - current
+            store_url = offer["store_url"]
+            store_name = offer["store"]
+            send_telegram(
+                f"🔔 <b>Price drop!</b>\n"
+                f"<b>{label}</b> @ <b>{store_name}</b>\n"
+                f"{last_price:.0f} → <b>{current:.0f} {currency}</b> "
+                f"(−{diff:.0f} {currency})\n"
+                f'<a href="{store_url}">View at {store_name}</a>'
+            )
+
+        stored_offers[key] = {
+            "price": current,
+            "currency": currency,
+            "store_url": offer["store_url"],
+        }
+
+    stored["name"] = offers[0]["name"] if offers else label
+
+
 def main() -> None:
     products = load_products()
     prices = load_prices()
@@ -53,35 +124,17 @@ def main() -> None:
     for product in products:
         url = product["url"]
         label = product.get("name") or url
+        scraper = get_scraper(url)
 
         try:
-            result = get_scraper(url).scrape(url)
-        except (ScrapingError, Exception) as exc:
+            if hasattr(scraper, "scrape_offers"):
+                _process_multi_offer(url, label, scraper, prices, errors)
+            else:
+                _process_single(url, label, scraper, prices, errors)
+        except Exception as exc:
             msg = f"⚠️ {label}: {exc}"
             errors.append(msg)
             print(msg, file=sys.stderr)
-            continue
-
-        current = result["price"]
-        currency = result["currency"]
-        last = prices.get(url, {})
-        last_price = last.get("price")
-
-        if last_price is not None and current < last_price:
-            diff = last_price - current
-            send_telegram(
-                f"🔔 <b>Price drop!</b>\n"
-                f"<b>{label}</b>\n"
-                f"{last_price:.2f} → <b>{current:.2f} {currency}</b> "
-                f"(−{diff:.2f} {currency})\n"
-                f'<a href="{url}">View product</a>'
-            )
-
-        prices[url] = {
-            "price": current,
-            "currency": currency,
-            "name": result.get("name") or label,
-        }
 
     save_prices(prices)
 

@@ -1,7 +1,5 @@
 products:
   - url: https://www.runnmore.com/patike/69807049-adidas-patike-adizero-adios-pro-4
-    name: "Adidas Adizero Adios Pro 4"
-  # - url: https://www.amazon.de/dp/B09GMN9SL5
-  #   name: "Kindle Paperwhite"
-  # - url: https://www.mediamarkt.at/de/product/some-product.html
-  #   name: "Some Product"
+    name: 'Adidas Adizero Adios Pro 4'
+  - url: https://trebapatike.rs/sr/hoka-mach-7
+    name: 'HOKA Mach 7'
