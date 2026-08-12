@@ -1,7 +1,42 @@
 {
   "https://www.runnmore.com/patike/69807049-adidas-patike-adizero-adios-pro-4": {
-    "price": 23499.0,
+    "price": 29499.0,
     "currency": "RSD",
     "name": "adidas Patike Adizero Adios Pro 4"
+  },
+  "https://trebapatike.rs/sr/hoka-mach-7": {
+    "name": "HOKA MACH 7",
+    "offers": {
+      "Run'n'more|1171938-LYC": {
+        "price": 13999.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69788360-hoka-patike-mach-7"
+      },
+      "Run'n'more|1171904-BLLP": {
+        "price": 14999.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69788330-hoka-patike-mach-7"
+      },
+      "Intersport|1171938-LRMT": {
+        "price": 15999.0,
+        "currency": "RSD",
+        "store_url": "https://www.intersport.rs/patike-za-trcanje/zenske-patike-za-trcanje-hoka-mach-7.html"
+      },
+      "Intersport|1171904-FYZ": {
+        "price": 15999.0,
+        "currency": "RSD",
+        "store_url": "https://www.intersport.rs/patike-za-trcanje/muske-patike-za-trcanje-hoka-mach-7.html"
+      },
+      "Sportvision|1171938-LYC": {
+        "price": 13999.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70078270-hoka-mach-7"
+      },
+      "Sportvision|1171904-BLLP": {
+        "price": 11999.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70081502-hoka-mach-7"
+      }
+    }
   }
 }
