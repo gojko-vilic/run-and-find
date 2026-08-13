@@ -3,28 +3,35 @@ from urllib.parse import urlparse
 from .base import BaseScraper, ScrapingError
 
 DOMAINS = [
-    "amazon.com", "amazon.de", "amazon.co.uk", "amazon.at",
-    "amazon.fr", "amazon.es", "amazon.it", "amazon.nl",
+    "amazon.com",
+    "amazon.de",
+    "amazon.co.uk",
+    "amazon.at",
+    "amazon.fr",
+    "amazon.es",
+    "amazon.it",
+    "amazon.nl",
 ]
 
 _TLD_CURRENCY = {
-    "amazon.com":   "USD",
-    "amazon.de":    "EUR",
-    "amazon.at":    "EUR",
-    "amazon.fr":    "EUR",
-    "amazon.es":    "EUR",
-    "amazon.it":    "EUR",
-    "amazon.nl":    "EUR",
+    "amazon.com": "USD",
+    "amazon.de": "EUR",
+    "amazon.at": "EUR",
+    "amazon.fr": "EUR",
+    "amazon.es": "EUR",
+    "amazon.it": "EUR",
+    "amazon.nl": "EUR",
     "amazon.co.uk": "GBP",
 }
 
 # Tried in order; first match wins
 _PRICE_SELECTORS = [
+    ".priceToPay",  # primary — JS-free current price
     "#corePriceDisplay_desktop_feature_div .a-price .a-offscreen",
     "#apex_desktop .a-price .a-offscreen",
     "#priceblock_ourprice",
     "#priceblock_dealprice",
-    ".a-price .a-offscreen",
+    "#item_price",  # marketplace seller template
 ]
 
 
@@ -43,7 +50,11 @@ class AmazonScraper(BaseScraper):
             tag = soup.select_one(selector)
             if tag:
                 try:
-                    return {"name": name, "price": self.parse_price(tag.get_text()), "currency": currency}
+                    return {
+                        "name": name,
+                        "price": self.parse_price(tag.get_text()),
+                        "currency": currency,
+                    }
                 except ValueError:
                     continue
 
