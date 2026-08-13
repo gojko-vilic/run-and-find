@@ -101,8 +101,10 @@ products:
   - url: https://trebapatike.rs/sr/hoka-rocket-x-3
     name: 'HOKA Rocket X 3'
     gender: [men, unisex]
-  - url: https://www.amazon.de/dp/B0DN5GSNVD
+  - url: https://www.amazon.de/dp/B0DN66CRJN
     name: 'HOKA Rocket X 3 (Amazon.de)'
+  - url: https://www.amazon.com/dp/B0DN5MR4QZ
+    name: 'HOKA Rocket X 3 (Amazon.com)'
 
   - url: https://trebapatike.rs/sr/hoka-mach-x-3
     name: 'HOKA Mach X 3'
