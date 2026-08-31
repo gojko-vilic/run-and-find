@@ -77,6 +77,7 @@ def _process_single(
     current = result["price"]
     currency = result["currency"]
     in_stock = result.get("in_stock", True)
+    is_new = url not in prices
     stored = prices.get(url, {})
     last_price = stored.get("price")
     was_in_stock = stored.get("in_stock", True)
@@ -88,7 +89,18 @@ def _process_single(
         in_stock = False
         currency = currency or stored.get("currency", "")
 
-    if in_stock and not was_in_stock:
+    # First time we can put a number on this shoe — either it was just added to
+    # products.yaml, or it was tracked with no price. Report it so a new entry
+    # confirms itself instead of staying silent until it happens to drop. It
+    # already says the shoe is available, so the restock notice would be noise.
+    if in_stock and current is not None and (is_new or last_price is None):
+        send_telegram(
+            f"💰 <b>Current price</b>\n"
+            f"<b>{label}</b>\n"
+            f"<b>{current:.2f} {currency}</b>\n"
+            f'<a href="{url}">View product</a>'
+        )
+    elif in_stock and not was_in_stock:
         send_telegram(
             f"✅ <b>Back in stock!</b>\n"
             f"<b>{label}</b>\n"
@@ -134,8 +146,16 @@ def _process_multi_offer(
         print(msg, file=sys.stderr)
         return
 
+    is_new = url not in prices
     stored = prices.setdefault(url, {"name": label, "offers": {}})
     stored_offers: dict = stored.setdefault("offers", {})
+    # Whether we already knew a price for this shoe at any store, and the best
+    # of those — the bar a newly appearing store has to beat.
+    known_prices = [
+        o["price"] for o in stored_offers.values() if o.get("price") is not None
+    ]
+    had_price = bool(known_prices)
+    best_known = min(known_prices, default=None)
 
     if not offers:
         # Listing exists but no store carries it — retire what we knew so the
@@ -143,6 +163,9 @@ def _process_multi_offer(
         for prev in stored_offers.values():
             prev["in_stock"] = False
         return
+
+    tracked: list[dict] = []
+    newcomers: list[dict] = []
 
     for offer in offers:
         if gender_filter and offer.get("gender", "unisex") not in gender_filter:
@@ -157,7 +180,16 @@ def _process_multi_offer(
         last_price = prev.get("price")
         was_in_stock = prev.get("in_stock", True)
 
-        if in_stock and not was_in_stock:
+        if in_stock:
+            tracked.append(offer)
+            # A store never seen for this shoe has no price history of its own,
+            # so the drop check below can never flag it however cheap it is.
+            if key not in stored_offers:
+                newcomers.append(offer)
+
+        # Suppressed on a shoe's first priced run: the "current price" notice
+        # below already reports it, per shoe rather than once per store.
+        if in_stock and not was_in_stock and had_price:
             send_telegram(
                 f"✅ <b>Back in stock!</b>\n"
                 f"<b>{label}</b> @ <b>{store_name}</b>\n"
@@ -180,6 +212,32 @@ def _process_multi_offer(
             "store_url": store_url,
             "in_stock": in_stock,
         }
+
+    # First time we can put a number on this shoe. One message for the whole
+    # shoe quoting its cheapest store, not one per store.
+    if (is_new or not had_price) and tracked:
+        best = min(tracked, key=lambda o: o["price"])
+        send_telegram(
+            f"💰 <b>Current price</b>\n"
+            f"<b>{label}</b> @ <b>{best['store']}</b>\n"
+            f"<b>{best['price']:.0f} {best['currency']}</b>\n"
+            f'<a href="{best["store_url"]}">View at {best["store"]}</a>'
+        )
+
+    # A store arriving below everything we knew is the actionable newcomer: its
+    # own history is empty, so the per-offer drop check cannot catch it.
+    undercuts = [
+        o for o in newcomers if best_known is not None and o["price"] < best_known
+    ]
+    if had_price and undercuts:
+        best = min(undercuts, key=lambda o: o["price"])
+        send_telegram(
+            f"🆕 <b>New cheapest store</b>\n"
+            f"<b>{label}</b> @ <b>{best['store']}</b>\n"
+            f"<b>{best['price']:.0f} {best['currency']}</b> "
+            f"(best was {best_known:.0f} {best['currency']})\n"
+            f'<a href="{best["store_url"]}">View at {best["store"]}</a>'
+        )
 
     stored["name"] = offers[0]["name"] if offers else label
 

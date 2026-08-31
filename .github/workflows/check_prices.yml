@@ -8,6 +8,11 @@ on:
 permissions:
   contents: write # needed to commit last_prices.json back to repo
 
+# A second run racing the first can only fight over last_prices.json
+concurrency:
+  group: check-prices
+  cancel-in-progress: false
+
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -33,7 +38,19 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase
+          BRANCH="${GITHUB_REF_NAME:-$(git rev-parse --abbrev-ref HEAD)}"
+          # The checker regenerates last_prices.json in full, so the copy we
+          # just produced always wins. Rebasing it against the remote can only
+          # manufacture conflicts and strand the runner mid-rebase, so sync to
+          # the remote tip and re-apply our copy on top instead.
+          cp data/last_prices.json "${RUNNER_TEMP:-/tmp}/last_prices.json"
+          git fetch --quiet origin "$BRANCH"
+          git reset --quiet --hard "origin/$BRANCH"
+          cp "${RUNNER_TEMP:-/tmp}/last_prices.json" data/last_prices.json
           git add data/last_prices.json
-          git diff --staged --quiet || git commit -m "chore: update last prices [skip ci]"
+          if git diff --staged --quiet; then
+            echo "No price changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: update last prices [skip ci]"
           git push
