@@ -45,13 +45,33 @@ def save_prices(prices: dict) -> None:
     )
 
 
-def _process_single(url: str, label: str, scraper, prices: dict, errors: list) -> None:
+def _process_single(
+    url: str,
+    label: str,
+    scraper,
+    prices: dict,
+    errors: list,
+    gender_filter: list[str] | None = None,
+) -> None:
     try:
         result = scraper.scrape(url)
     except (ScrapingError, Exception) as exc:
         msg = f"⚠️ {label}: {exc}"
         errors.append(msg)
         print(msg, file=sys.stderr)
+        return
+
+    # A single-product url has one gender, so a mismatch means the url itself
+    # points at the wrong model — report it rather than tracking it silently.
+    gender = result.get("gender", "unisex")
+    if gender_filter and gender not in gender_filter:
+        msg = (
+            f"⚠️ {label}: url is the {gender}'s model, "
+            f"wanted {'/'.join(gender_filter)} — not tracked"
+        )
+        errors.append(msg)
+        print(msg, file=sys.stderr)
+        prices.pop(url, None)
         return
 
     current = result["price"]
@@ -61,6 +81,13 @@ def _process_single(url: str, label: str, scraper, prices: dict, errors: list) -
     last_price = stored.get("price")
     was_in_stock = stored.get("in_stock", True)
 
+    # An unavailable product has no price to read. Keep the last known one so a
+    # later drop is still measured against a real number rather than nothing.
+    if current is None:
+        current = last_price
+        in_stock = False
+        currency = currency or stored.get("currency", "")
+
     if in_stock and not was_in_stock:
         send_telegram(
             f"✅ <b>Back in stock!</b>\n"
@@ -68,7 +95,12 @@ def _process_single(url: str, label: str, scraper, prices: dict, errors: list) -
             f'<a href="{url}">View product</a>'
         )
 
-    if in_stock and last_price is not None and current < last_price:
+    if (
+        in_stock
+        and current is not None
+        and last_price is not None
+        and current < last_price
+    ):
         diff = last_price - current
         send_telegram(
             f"🔔 <b>Price drop!</b>\n"
@@ -104,6 +136,13 @@ def _process_multi_offer(
 
     stored = prices.setdefault(url, {"name": label, "offers": {}})
     stored_offers: dict = stored.setdefault("offers", {})
+
+    if not offers:
+        # Listing exists but no store carries it — retire what we knew so the
+        # restock notification still fires when it comes back.
+        for prev in stored_offers.values():
+            prev["in_stock"] = False
+        return
 
     for offer in offers:
         if gender_filter and offer.get("gender", "unisex") not in gender_filter:
@@ -155,17 +194,18 @@ def main() -> None:
         label = product.get("name") or url
         scraper = get_scraper(url)
 
+        gender_raw = product.get("gender")
+        gender_filter = (
+            [gender_raw]
+            if isinstance(gender_raw, str)
+            else list(gender_raw) if gender_raw else None
+        )
+
         try:
             if hasattr(scraper, "scrape_offers"):
-                gender_raw = product.get("gender")
-                gender_filter = (
-                    [gender_raw]
-                    if isinstance(gender_raw, str)
-                    else list(gender_raw) if gender_raw else None
-                )
                 _process_multi_offer(url, label, scraper, prices, errors, gender_filter)
             else:
-                _process_single(url, label, scraper, prices, errors)
+                _process_single(url, label, scraper, prices, errors, gender_filter)
         except Exception as exc:
             msg = f"⚠️ {label}: {exc}"
             errors.append(msg)

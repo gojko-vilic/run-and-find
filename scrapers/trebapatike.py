@@ -59,6 +59,7 @@ class TrebaPatikeScraper(BaseScraper):
     def scrape_offers(self, url: str) -> list[dict]:
         soup = self.fetch(url)
         gender_map = self._gender_map(soup)
+        found_product = False
         for tag in soup.find_all("script", type="application/ld+json"):
             try:
                 data = json.loads(tag.string)
@@ -68,6 +69,7 @@ class TrebaPatikeScraper(BaseScraper):
             for node in graph:
                 if node.get("@type") != "Product":
                     continue
+                found_product = True
                 agg = node.get("offers", {})
                 name = node.get("name", "")
                 default_currency = agg.get("priceCurrency", "RSD")
@@ -100,4 +102,9 @@ class TrebaPatikeScraper(BaseScraper):
                     )
                 if offers:
                     return offers
+        # A product page carrying no store offers ("Nema ponuda") is a listing
+        # nobody stocks right now, not a parse failure — only a page without any
+        # Product node at all means the scraper is broken.
+        if found_product:
+            return []
         raise ScrapingError(f"No JSON-LD offers found at {url}")
