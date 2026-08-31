@@ -20,7 +20,8 @@
       "Intersport|1171904-FYZ": {
         "price": 15999.0,
         "currency": "RSD",
-        "store_url": "https://www.intersport.rs/patike-za-trcanje/muske-patike-za-trcanje-hoka-mach-7.html"
+        "store_url": "https://www.intersport.rs/patike-za-trcanje/muske-patike-za-trcanje-hoka-mach-7.html",
+        "in_stock": true
       },
       "Sportvision|1171938-LYC": {
         "price": 13999.0,
@@ -31,6 +32,811 @@
         "price": 11999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70081502-hoka-mach-7"
+      },
+      "Intersport|1171904-NZH": {
+        "price": 19999.0,
+        "currency": "RSD",
+        "store_url": "https://www.intersport.rs/patike-za-trcanje/muske-patike-za-trcanje-hoka-mach-7-1.html",
+        "in_stock": true
+      }
+    }
+  },
+  "https://www.runnmore.com/patike/69788780-adidas-patike-adizero-adios-pro-4": {
+    "price": 26459.1,
+    "currency": "RSD",
+    "name": "adidas Patike Adizero Adios Pro 4",
+    "in_stock": true
+  },
+  "https://trebapatike.rs/sr/asics-metaspeed-sky-tokyo": {
+    "name": "ASICS METASPEED SKY TOKYO",
+    "offers": {
+      "Run'n'more|1013A162-101": {
+        "price": 19999.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69788300-asics-patike-metaspeed-sky-tokyo",
+        "in_stock": true
+      },
+      "Run'n'more|1013A162-300": {
+        "price": 19999.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69784346-asics-patike-metaspeed-sky-tokyo",
+        "in_stock": true
+      },
+      "Run'n'more|1013A162-400": {
+        "price": 28799.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69809398-asics-patike-metaspeed-sky-tokyo",
+        "in_stock": true
+      },
+      "Sportvision|1013A162-101": {
+        "price": 19999.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70078248-asics-metaspeed-sky-tokyo",
+        "in_stock": true
+      },
+      "Sportvision|1013A162-300": {
+        "price": 19999.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70069440-asics-metaspeed-sky-tokyo",
+        "in_stock": true
+      },
+      "Sportvision|1013A162-400": {
+        "price": 28799.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70088219-asics-metaspeed-sky-tokyo",
+        "in_stock": true
+      }
+    }
+  },
+  "https://www.amazon.de/dp/B0DPLTGMN3": {
+    "price": 313.68,
+    "currency": "EUR",
+    "name": "ASICS Damen Metaspeed Sky TokyoRunning Shoes",
+    "in_stock": true
+  },
+  "https://trebapatike.rs/sr/asics-megablast": {
+    "name": "ASICS MEGABLAST",
+    "offers": {
+      "Run'n'more|1013A170-400": {
+        "price": 26099.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69807698-asics-patike-megablast",
+        "in_stock": true
+      },
+      "Sportvision|1013A170-400": {
+        "price": 26099.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70084840-asics-megablast",
+        "in_stock": true
+      }
+    }
+  },
+  "https://www.amazon.de/dp/B0FGXSSR37": {
+    "price": 281.59,
+    "currency": "EUR",
+    "name": "ASICS Unisex MEGABLAST Laufschuhe",
+    "in_stock": true
+  },
+  "https://trebapatike.rs/sr/asics-superblast-3": {
+    "name": "ASICS SUPERBLAST 3",
+    "offers": {
+      "Intersport|1013A177-750": {
+        "price": 26999.0,
+        "currency": "RSD",
+        "store_url": "https://www.intersport.rs/patike-za-trcanje/muske-patike-za-trcanje-asics-superblast-3.html",
+        "in_stock": true
+      },
+      "Sportvision|1013A177-750": {
+        "price": 26999.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70084855-asics-superblast-3",
+        "in_stock": true
+      },
+      "Sportvision|1013A177-001": {
+        "price": 26999.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70084732-asics-superblast-3",
+        "in_stock": true
+      },
+      "Run'n'more|1013A177-750": {
+        "price": 26999.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69807723-asics-patike-superblast-3",
+        "in_stock": true
+      },
+      "Run'n'more|1013A177-001": {
+        "price": 26999.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69807631-asics-patike-superblast-3",
+        "in_stock": true
+      }
+    }
+  },
+  "https://www.amazon.de/dp/B0GP32DD8D": {
+    "price": 256.52,
+    "currency": "EUR",
+    "name": "ASICS Unisex Superblast 3 Laufschuhe, Weiß, Schwarz, 12.5 Women/11 Men",
+    "in_stock": true
+  },
+  "https://trebapatike.rs/sr/adidas-adizero-evo-sl": {
+    "name": "Adidas ADIZERO EVO SL",
+    "offers": {
+      "Sportvision|KJ2521": {
+        "price": 17599.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70092400-adidas-adizero-evo-sl-woven-m",
+        "in_stock": true
+      },
+      "Intersport|JH6206": {
+        "price": 14079.0,
+        "currency": "RSD",
+        "store_url": "https://www.intersport.rs/patike-za-trcanje/muske-patike-za-trcanje-adidas-adizero-evo-sl-w.html",
+        "in_stock": true
+      },
+      "Intersport|KI9874": {
+        "price": 17599.0,
+        "currency": "RSD",
+        "store_url": "https://www.intersport.rs/patike-za-trcanje/muske-patike-adidas-adizero-evo-sl-m.html",
+        "in_stock": true
+      },
+      "Intersport|KK3719": {
+        "price": 14159.0,
+        "currency": "RSD",
+        "store_url": "https://www.intersport.rs/patike-za-trcanje/muske-patike-za-trcanje-adidas-adizero-evo-sl-woven-m.html",
+        "in_stock": true
+      },
+      "Trendmaker|KI9874": {
+        "price": 14079.0,
+        "currency": "RSD",
+        "store_url": "https://www.trendmaker.rs/patike-za-trcanje/muske-patike-za-trcanje-adidas-adizero-evo-sl-m-3.html",
+        "in_stock": true
+      },
+      "Run'n'more|KJ2521": {
+        "price": 17599.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69813799-adidas-patike-adizero-evo-sl",
+        "in_stock": true
+      },
+      "Sportvision|KI4542": {
+        "price": 17599.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70096872-adidas-adizero-evo-sl-woven-m",
+        "in_stock": true
+      },
+      "Sportvision|KI8342": {
+        "price": 15839.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70099430-adidas-adizero-evo-sl-woven-m",
+        "in_stock": true
+      },
+      "Run'n'more|KI8342": {
+        "price": 15839.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69818840-adidas-patike-adizero-evo-sl-woven-m",
+        "in_stock": true
+      },
+      "ET Sport|KI6901": {
+        "price": 14152.0,
+        "currency": "RSD",
+        "store_url": "https://www.etsport.rs/patike-za-trcanje/33985-patike-adidas-adizero-evo-sl-woven-m",
+        "in_stock": true
+      },
+      "ET Sport|KI6927": {
+        "price": 13267.0,
+        "currency": "RSD",
+        "store_url": "https://www.etsport.rs/patike-za-trcanje/33630-patike-adidas-adizero-evo-sl-woven-m",
+        "in_stock": true
+      },
+      "Trendmaker|KJ0430": {
+        "price": 14079.0,
+        "currency": "RSD",
+        "store_url": "https://www.trendmaker.rs/patike-za-trcanje/muske-patike-za-trcanje-adidas-adizero-evo-sl-exo-m.html",
+        "in_stock": true
+      },
+      "N Sport|KJ3670": {
+        "price": 15039.0,
+        "currency": "RSD",
+        "store_url": "https://www.n-sport.net/patike-za-trcanje/muske-patike-adidas-adizero-evo-sl-wove.html",
+        "in_stock": true
+      },
+      "N Sport|JP7149": {
+        "price": 12389.0,
+        "currency": "RSD",
+        "store_url": "https://www.n-sport.net/patike-za-trcanje/muske-patike-za-trcanje-adidas-adizero-evo-sl-m.html",
+        "in_stock": true
+      },
+      "Trendmaker|JP7149": {
+        "price": 14079.0,
+        "currency": "RSD",
+        "store_url": "https://www.trendmaker.rs/patike-za-trcanje/muske-patike-za-trcanje-adidas-adizero-evo-sl-m-1.html",
+        "in_stock": true
+      },
+      "Trendmaker|JH6206": {
+        "price": 14079.0,
+        "currency": "RSD",
+        "store_url": "https://www.trendmaker.rs/patike-za-trcanje/muske-patike-za-trcanje-adidas-adizero-evo-sl-m.html",
+        "in_stock": true
+      },
+      "Trendmaker|KI3381": {
+        "price": 12389.0,
+        "currency": "RSD",
+        "store_url": "https://www.trendmaker.rs/patike-za-trcanje/muske-patike-za-trcanje-adidas-adizero-evo-sl-m-2.html",
+        "in_stock": true
+      }
+    }
+  },
+  "https://www.amazon.de/dp/B0DNNVKBR8": {
+    "price": null,
+    "currency": "EUR",
+    "name": "adidas Performance Adizero Evo SL Laufschuh Weiss, 42 Herren",
+    "in_stock": false
+  },
+  "https://trebapatike.rs/sr/puma-deviate-nitro-4": {
+    "name": "Puma DEVIATE NITRO 4",
+    "offers": {
+      "Intersport|312123-08": {
+        "price": 16799.0,
+        "currency": "RSD",
+        "store_url": "https://www.intersport.rs/patike-za-trcanje/muske-patike-puma-deviate-nitro-4.html",
+        "in_stock": true
+      },
+      "Intersport|312123-04": {
+        "price": 14399.0,
+        "currency": "RSD",
+        "store_url": "https://www.intersport.rs/patike-za-trcanje/muske-patike-za-trcanje-puma-deviate-nitro-4.html",
+        "in_stock": true
+      },
+      "N Sport|312123-08": {
+        "price": 16799.0,
+        "currency": "RSD",
+        "store_url": "https://www.n-sport.net/patike-za-trcanje/muske-patike-puma-deviate-nitro-4.html",
+        "in_stock": true
+      },
+      "N Sport|312123-04": {
+        "price": 14399.0,
+        "currency": "RSD",
+        "store_url": "https://www.n-sport.net/patike-za-trcanje/muske-patike-za-trcanje-puma-deviate-nitro-4.html",
+        "in_stock": true
+      }
+    }
+  },
+  "https://www.amazon.de/dp/B0GD2RW91J": {
+    "price": 247.26,
+    "currency": "EUR",
+    "name": "PUMA Deviate Nitro 4 Herren-Laufschuhe",
+    "in_stock": true
+  },
+  "https://trebapatike.rs/sr/nike-vomero-plus": {
+    "name": "Nike VOMERO PLUS",
+    "offers": {
+      "Run'n'more|HV8150-111": {
+        "price": 21149.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69811291-nike-patike-vomero-plus",
+        "in_stock": true
+      },
+      "Sportvision|HV8150-111": {
+        "price": 21149.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70090525-nike-vomero-plus",
+        "in_stock": true
+      },
+      "Extra Sports|HV8150-801": {
+        "price": 13999.0,
+        "currency": "RSD",
+        "store_url": "https://www.extrasports.com/SRB_rs/patike/335811-nike-patike-nike-vomero-plus",
+        "in_stock": true
+      },
+      "Sportvision|IR7550-030": {
+        "price": 19599.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70083510-nike-vomero-plus",
+        "in_stock": true
+      },
+      "Sportvision|HV8150-801": {
+        "price": 13999.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70054835-nike-vomero-plus",
+        "in_stock": true
+      },
+      "Extra Sports|HV8150-301": {
+        "price": 15039.0,
+        "currency": "RSD",
+        "store_url": "https://www.extrasports.com/SRB_rs/patike/341047-nike-patike-vomero-plus",
+        "in_stock": true
+      },
+      "Intersport|HV8150-109": {
+        "price": 23499.0,
+        "currency": "RSD",
+        "store_url": "https://www.intersport.rs/patike-za-trcanje/muske-patike-nike-vomero-plus-1.html",
+        "in_stock": true
+      },
+      "Sportvision|HV8150-301": {
+        "price": 15039.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70080797-nike-vomero-plus",
+        "in_stock": true
+      },
+      "Intersport|HV8150-301": {
+        "price": 18799.0,
+        "currency": "RSD",
+        "store_url": "https://www.intersport.rs/patike-za-trcanje/muske-patike-za-trcanje-nike-vomero-plus-2.html",
+        "in_stock": true
+      },
+      "Run'n'more|IR7550-030": {
+        "price": 22049.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69788765-nike-patike-vomero-plus",
+        "in_stock": true
+      },
+      "Buzz|IR7550-030": {
+        "price": 18999.0,
+        "currency": "RSD",
+        "store_url": "https://www.buzzsneakers.rs/patike/363265-nike-patike-vomero-plus",
+        "in_stock": true
+      },
+      "Buzz|HV8150-003": {
+        "price": 17499.0,
+        "currency": "RSD",
+        "store_url": "https://www.buzzsneakers.rs/patike/317217-nike-patike-vomero-plus",
+        "in_stock": true
+      },
+      "Run'n'more|HV8150-009": {
+        "price": 19799.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69782002-nike-patike-vomero-plus",
+        "in_stock": true
+      },
+      "Run'n'more|HV8150-003": {
+        "price": 21149.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69772326-nike-patike-vomero-plus",
+        "in_stock": true
+      },
+      "Sportvision|HV8150-009": {
+        "price": 17599.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70066112-nike-vomero-plus",
+        "in_stock": true
+      }
+    }
+  },
+  "https://www.amazon.de/dp/B0GJ8CHW49": {
+    "price": null,
+    "currency": "EUR",
+    "name": "Nike Vomero Plus Straßenlaufschuh für Herren, HV8150",
+    "in_stock": false
+  },
+  "https://trebapatike.rs/sr/nike-alphafly-3": {
+    "name": "Nike ALPHAFLY 3",
+    "offers": {
+      "Sportvision|IR1996-001": {
+        "price": 32799.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70086176-nike-alphafly-3-glam",
+        "in_stock": true
+      },
+      "Run'n'more|FD8311-300": {
+        "price": 35549.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69788470-nike-patike-air-zoom-alphafly-next-3",
+        "in_stock": true
+      },
+      "Sportvision|FD8311-402": {
+        "price": 35549.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70097205-nike-air-zoom-alphafly-3",
+        "in_stock": true
+      },
+      "Run'n'more|FD8311-402": {
+        "price": 35549.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69817727-nike-patike-air-zoom-alphafly-next-3",
+        "in_stock": true
+      },
+      "Intersport|FD8311-003": {
+        "price": 39499.0,
+        "currency": "RSD",
+        "store_url": "https://www.intersport.rs/patike-za-trcanje/muske-patike-za-trcanje-nike-air-zoom-alphafly-next-3-3.html",
+        "in_stock": true
+      },
+      "Sportvision|FD8311-300": {
+        "price": 31599.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70086186-nike-air-zoom-alphafly-next-3",
+        "in_stock": true
+      },
+      "Sportvision|FD8311-002": {
+        "price": 23999.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70075997-nike-air-zoom-alphafly-next-3",
+        "in_stock": true
+      },
+      "Run'n'more|FD8311-002": {
+        "price": 23999.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69787377-nike-patike-air-zoom-alphafly-next-3",
+        "in_stock": true
+      },
+      "Sportvision|FD8311-800": {
+        "price": 23999.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70078305-nike-air-zoom-alphafly-next-3",
+        "in_stock": true
+      },
+      "Run'n'more|FD8311-800": {
+        "price": 23999.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69788475-nike-patike-air-zoom-alphafly-next-3",
+        "in_stock": true
+      },
+      "Intersport|FD8311-800": {
+        "price": 27649.0,
+        "currency": "RSD",
+        "store_url": "https://www.intersport.rs/patike-za-trcanje/muske-patike-za-trcanje-nike-air-zoom-alphafly-next-3-2.html",
+        "in_stock": true
+      }
+    }
+  },
+  "https://www.amazon.de/dp/B0F4M87W8F": {
+    "price": null,
+    "currency": "EUR",
+    "name": "Nike Alphafly 3 Herren-Straßenlaufschuh für Wettkämpfe, FD8311",
+    "in_stock": false
+  },
+  "https://trebapatike.rs/sr/nike-vaporfly-4": {
+    "name": "Nike VAPORFLY 4",
+    "offers": {
+      "Run'n'more|IM8068-999": {
+        "price": 19199.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69786021-nike-patike-vaporfly-4",
+        "in_stock": true
+      },
+      "Intersport|IM8203-001": {
+        "price": 32999.0,
+        "currency": "RSD",
+        "store_url": "https://www.intersport.rs/patike-za-trcanje/muske-patike-za-trcanje-nike-zoomx-vaporfly-next-4-fk.html",
+        "in_stock": true
+      },
+      "Run'n'more|HF6414-300": {
+        "price": 18399.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69788515-nike-patike-zoomx-vaporfly-next-4",
+        "in_stock": true
+      },
+      "Sportvision|HF6414-300": {
+        "price": 18399.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70083330-nike-zoomx-vaporfly-next-4",
+        "in_stock": true
+      },
+      "Sportvision|IM8203-400": {
+        "price": 29699.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70100372-nike-zoomx-vaporfly-next-4-fk",
+        "in_stock": true
+      },
+      "Sportvision|IM8068-999": {
+        "price": 19199.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70067460-nike-vaporfly-4",
+        "in_stock": true
+      },
+      "Run'n'more|HF6414-800": {
+        "price": 19199.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69787996-nike-patike-zoomx-vaporfly-4",
+        "in_stock": true
+      },
+      "Sportvision|HF6414-800": {
+        "price": 19199.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70077310-nike-zoomx-vaporfly-4",
+        "in_stock": true
+      },
+      "Intersport|HF6414-800": {
+        "price": 19799.0,
+        "currency": "RSD",
+        "store_url": "https://www.intersport.rs/patike-za-trcanje/muske-patike-za-trcanje-nike-zoomx-vaporfly-next-4.html",
+        "in_stock": true
+      }
+    }
+  },
+  "https://www.amazon.de/dp/B0GWZKH9R8": {
+    "price": null,
+    "currency": "EUR",
+    "name": "Nike Vaporfly 4 Herren Straßenrennschuhe (Barely Green/Volt Tint/Sapphire/Black Spruce)",
+    "in_stock": false
+  },
+  "https://trebapatike.rs/sr/nike-pegasus-42": {
+    "name": "Nike PEGASUS 42",
+    "offers": {
+      "Intersport|IB1873-702": {
+        "price": 17999.0,
+        "currency": "RSD",
+        "store_url": "https://www.intersport.rs/patike-za-trcanje/muske-patike-nike-air-zoom-pegasus-42.html",
+        "in_stock": true
+      },
+      "Sportvision|IQ3928-001": {
+        "price": 14799.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70094675-nike-pegasus-42",
+        "in_stock": true
+      },
+      "Sportvision|IW2349-001": {
+        "price": 17549.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70098923-nike-air-zoom-pegasus-42",
+        "in_stock": true
+      },
+      "Run'n'more|IW2349-001": {
+        "price": 17549.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69818728-nike-patike-air-zoom-pegasus-42",
+        "in_stock": true
+      },
+      "Run'n'more|II7210-100": {
+        "price": 16199.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69786016-nike-patike-air-zoom-pegasus-42-rr",
+        "in_stock": true
+      },
+      "Sportvision|IV6292-451": {
+        "price": 17549.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70091722-nike-air-zoom-pegasus-42",
+        "in_stock": true
+      },
+      "Run'n'more|IV6292-451": {
+        "price": 17549.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69812630-nike-patike-air-zoom-pegasus-42",
+        "in_stock": true
+      },
+      "Sportvision|IB1873-102": {
+        "price": 14399.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70079545-nike-pegasus-42",
+        "in_stock": true
+      },
+      "Run'n'more|IB1873-008": {
+        "price": 16199.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69814205-nike-patike-air-zoom-pegasus-42",
+        "in_stock": true
+      },
+      "Sportvision|IB1873-008": {
+        "price": 16199.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70094405-nike-air-zoom-pegasus-42",
+        "in_stock": true
+      },
+      "Intersport|IB1873-008": {
+        "price": 17999.0,
+        "currency": "RSD",
+        "store_url": "https://www.intersport.rs/patike-za-trcanje/muske-patike-nike-air-zoom-pegasus-42-1.html",
+        "in_stock": true
+      },
+      "Run'n'more|IB1873-006": {
+        "price": 16199.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69817579-nike-patike-air-zoom-pegasus-42",
+        "in_stock": true
+      },
+      "Sportvision|IB1873-006": {
+        "price": 16199.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70097055-nike-air-zoom-pegasus-42",
+        "in_stock": true
+      },
+      "Sportvision|IB1873-702": {
+        "price": 14399.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70086201-nike-air-zoom-pegasus-42",
+        "in_stock": true
+      }
+    }
+  },
+  "https://www.amazon.de/dp/B0FRNBQ156": {
+    "price": 84.63,
+    "currency": "EUR",
+    "name": "Nike Herren Air Zoom Pegasus 42Straßen-Laufschuh",
+    "in_stock": true
+  },
+  "https://trebapatike.rs/sr/nike-zoom-fly-6": {
+    "name": "Nike ZOOM FLY 6",
+    "offers": {
+      "Sportvision|FN8454-100": {
+        "price": 19799.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70051262-nike-zoom-fly-6",
+        "in_stock": true
+      },
+      "Sportvision|IW1246-099": {
+        "price": 21149.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70087102-nike-zoom-fly-6-prm",
+        "in_stock": true
+      },
+      "Run'n'more|IW1246-099": {
+        "price": 21149.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69808723-nike-patike-zoom-fly-6-prm",
+        "in_stock": true
+      },
+      "Sportvision|FN8454-404": {
+        "price": 19799.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70092917-nike-zoom-fly-6",
+        "in_stock": true
+      },
+      "Run'n'more|FN8454-003": {
+        "price": 19799.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69788490-nike-patike-zoom-fly-6",
+        "in_stock": true
+      },
+      "Sportvision|FN8454-003": {
+        "price": 17599.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70083455-nike-zoom-fly-6",
+        "in_stock": true
+      },
+      "Sportvision|IU5066-068": {
+        "price": 21149.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70100551-nike-nike-zoom-fly-6",
+        "in_stock": true
+      }
+    }
+  },
+  "https://www.amazon.de/dp/B0F2GLFQDD": {
+    "price": 175.09,
+    "currency": "EUR",
+    "name": "Nike Zoom Fly 6 Straßenlaufschuh für Damen, FN8455",
+    "in_stock": true
+  },
+  "https://trebapatike.rs/sr/new-balance-fuelcell-supercomp-elite-v5": {
+    "name": "New Balance FUELCELL SUPERCOMP ELITE V5",
+    "offers": {
+      "Run'n'more|MRCELLR5": {
+        "price": 23399.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69775030-new-balance-patike-fuelcell",
+        "in_stock": true
+      },
+      "Sportvision|MRCELLR5": {
+        "price": 20799.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70057968-new-balance-fuelcell",
+        "in_stock": true
+      }
+    }
+  },
+  "https://www.amazon.de/dp/B0DJV3GVWB": {
+    "price": 262.47,
+    "currency": "EUR",
+    "name": "New Balance Herren FuelCell Supercomp Elite V5Laufschuh",
+    "in_stock": true
+  },
+  "https://trebapatike.rs/sr/hoka-clifton-10": {
+    "name": "HOKA CLIFTON 10",
+    "offers": {
+      "Sportvision|1162030-BWHT": {
+        "price": 15599.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70035912-hoka-clifton-10",
+        "in_stock": true
+      },
+      "Sportvision|1162030-BBLC": {
+        "price": 15599.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70069632-hoka-clifton-10",
+        "in_stock": true
+      },
+      "Sportvision|1162030-PTYG": {
+        "price": 15599.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70069667-hoka-clifton-10",
+        "in_stock": true
+      }
+    }
+  },
+  "https://www.amazon.de/dp/B0D5FWZXR1": {
+    "price": 134.45,
+    "currency": "EUR",
+    "name": "Hoka Herren Clifton 10 Laufschuhe, Hafermilch, 44.5 EU",
+    "in_stock": true
+  },
+  "https://trebapatike.rs/sr/hoka-clifton-9": {
+    "name": "HOKA Clifton 9",
+    "offers": {}
+  },
+  "https://www.amazon.de/dp/B0CN32STFS": {
+    "price": 304.15,
+    "currency": "EUR",
+    "name": "Hoka Herren Clifton 9Sneaker",
+    "in_stock": true
+  },
+  "https://trebapatike.rs/sr/hoka-rocket-x-3": {
+    "name": "HOKA ROCKET X 3",
+    "offers": {
+      "Intersport|1168724-NZS": {
+        "price": 20999.0,
+        "currency": "RSD",
+        "store_url": "https://www.intersport.rs/patike-za-trcanje/muske-patike-za-trcanje-hoka-rocket-x-3-1.html",
+        "in_stock": true
+      },
+      "Sportvision|1168724-NZS": {
+        "price": 17599.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70074159-hoka-rocket-x-3",
+        "in_stock": true
+      },
+      "Run'n'more|1168724-NZS": {
+        "price": 17599.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69786892-hoka-patike-rocket-x-3",
+        "in_stock": true
+      }
+    }
+  },
+  "https://www.amazon.de/dp/B0DN66CRJN": {
+    "price": 231.0,
+    "currency": "EUR",
+    "name": "HOKA Unisex Erwachsene Laufschuhe Rocket X 3",
+    "in_stock": true
+  },
+  "https://www.amazon.com/dp/B0DN5MR4QZ": {
+    "price": 246.5,
+    "currency": "USD",
+    "name": "Hoka Unisex-Adult Rocket X 3",
+    "in_stock": true
+  },
+  "https://trebapatike.rs/sr/hoka-mach-x-3": {
+    "name": "HOKA MACH X 3",
+    "offers": {
+      "Run'n'more|1168720-NZS": {
+        "price": 14399.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69786897-hoka-patike-mach-x-3",
+        "in_stock": true
+      },
+      "Sportvision|1168720-NZS": {
+        "price": 14399.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70074139-hoka-mach-x-3",
+        "in_stock": true
+      }
+    }
+  },
+  "https://www.amazon.de/dp/B0F9QLP7FJ": {
+    "price": null,
+    "currency": "EUR",
+    "name": "Hoka Herren M Mach X 3Sneaker",
+    "in_stock": false
+  },
+  "https://trebapatike.rs/sr/hoka-cielo-x1-30": {
+    "name": "HOKA CIELO X1 3.0",
+    "offers": {
+      "Run'n'more|1171927-NYZ": {
+        "price": 19599.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69786877-hoka-patike-cielo-x1-3-0",
+        "in_stock": true
+      },
+      "Intersport|1171927-NYZ": {
+        "price": 23449.0,
+        "currency": "RSD",
+        "store_url": "https://www.intersport.rs/patike-za-trcanje/muske-patike-za-trcanje-hoka-cielo-x1-3-0.html",
+        "in_stock": true
+      },
+      "Sportvision|1171927-NYZ": {
+        "price": 19599.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70074164-hoka-cielo-x1-3-0",
+        "in_stock": true
       }
     }
   }
