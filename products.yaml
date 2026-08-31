@@ -1,8 +1,9 @@
 products:
   # ── Existing tracked shoes ────────────────────────────────────────────────
 
-  - url: https://www.runnmore.com/patike/69807049-adidas-patike-adizero-adios-pro-4
+  - url: https://www.runnmore.com/patike/69788780-adidas-patike-adizero-adios-pro-4
     name: 'Adidas Adizero Adios Pro 4'
+    gender: [men, unisex]
 
   - url: https://trebapatike.rs/sr/hoka-mach-7
     name: 'HOKA Mach 7'
@@ -116,94 +117,3 @@ products:
   - url: https://trebapatike.rs/sr/hoka-cielo-x1-30
     name: 'HOKA Cielo X1 3.0'
     gender: [men, unisex]
-
-  # ── ASICS ─────────────────────────────────────────────────────────────────
-
-  - url: https://trebapatike.rs/sr/asics-metaspeed-sky-tokyo
-    name: 'ASICS Metaspeed Sky Tokyo'
-  - url: https://www.amazon.de/dp/B0DPLTGMN3
-    name: 'ASICS Metaspeed Sky Tokyo (Amazon.de)'
-
-  - url: https://trebapatike.rs/sr/asics-megablast
-    name: 'ASICS Metaspeed Sky+ (Megablast)'
-  - url: https://www.amazon.de/dp/B0FGXSSR37
-    name: 'ASICS Metaspeed Sky+ (Megablast) (Amazon.de)'
-
-  - url: https://trebapatike.rs/sr/asics-superblast-3
-    name: 'ASICS Superblast 3'
-  - url: https://www.amazon.de/dp/B0GP32DD8D
-    name: 'ASICS Superblast 3 (Amazon.de)'
-
-  # ── Adidas ────────────────────────────────────────────────────────────────
-
-  - url: https://trebapatike.rs/sr/adidas-adizero-evo-sl
-    name: 'Adidas Adizero Evo SL'
-  - url: https://www.amazon.de/dp/B0DNNVKBR8
-    name: 'Adidas Adizero Evo SL (Amazon.de)'
-
-  # ── PUMA ──────────────────────────────────────────────────────────────────
-
-  - url: https://trebapatike.rs/sr/puma-deviate-nitro-4
-    name: 'PUMA Deviate Nitro 4'
-  - url: https://www.amazon.de/dp/B0GD2RW91J
-    name: 'PUMA Deviate Nitro 4 (Amazon.de)'
-
-  # ── Nike ──────────────────────────────────────────────────────────────────
-
-  - url: https://trebapatike.rs/sr/nike-vomero-plus
-    name: 'Nike Vomero Plus'
-  - url: https://www.amazon.de/dp/B0GJ8CHW49
-    name: 'Nike Vomero Plus (Amazon.de)'
-
-  - url: https://trebapatike.rs/sr/nike-alphafly-3
-    name: 'Nike Alphafly 3'
-  - url: https://www.amazon.de/dp/B0F4M87W8F
-    name: 'Nike Alphafly 3 (Amazon.de)'
-
-  - url: https://trebapatike.rs/sr/nike-vaporfly-4
-    name: 'Nike Vaporfly 4'
-  - url: https://www.amazon.de/dp/B0GWZKH9R8
-    name: 'Nike Vaporfly 4 (Amazon.de)'
-
-  - url: https://trebapatike.rs/sr/nike-pegasus-42
-    name: 'Nike Pegasus 42'
-  - url: https://www.amazon.de/dp/B0FRNBQ156
-    name: 'Nike Pegasus 42 (Amazon.de)'
-
-  - url: https://trebapatike.rs/sr/nike-zoom-fly-6
-    name: 'Nike Zoom Fly 6'
-  - url: https://www.amazon.de/dp/B0F2GLFQDD
-    name: 'Nike Zoom Fly 6 (Amazon.de)'
-
-  # ── New Balance ───────────────────────────────────────────────────────────
-
-  - url: https://trebapatike.rs/sr/new-balance-fuelcell-supercomp-elite-v5
-    name: 'New Balance FuelCell SuperComp Elite v5'
-  - url: https://www.amazon.de/dp/B0DJV3GVWB
-    name: 'New Balance FuelCell SuperComp Elite v5 (Amazon.de)'
-
-  # ── HOKA ──────────────────────────────────────────────────────────────────
-
-  - url: https://trebapatike.rs/sr/hoka-clifton-10
-    name: 'HOKA Clifton 10'
-  - url: https://www.amazon.de/dp/B0D5FWZXR1
-    name: 'HOKA Clifton 10 (Amazon.de)'
-
-  - url: https://trebapatike.rs/sr/hoka-clifton-9
-    name: 'HOKA Clifton 9'
-  - url: https://www.amazon.de/dp/B0CN32STFS
-    name: 'HOKA Clifton 9 (Amazon.de)'
-
-  - url: https://trebapatike.rs/sr/hoka-rocket-x-3
-    name: 'HOKA Rocket X 3'
-  - url: https://www.amazon.de/dp/B0DN5GSNVD
-    name: 'HOKA Rocket X 3 (Amazon.de)'
-
-  - url: https://trebapatike.rs/sr/hoka-mach-x-3
-    name: 'HOKA Mach X 3'
-  - url: https://www.amazon.de/dp/B0F9QLP7FJ
-    name: 'HOKA Mach X 3 (Amazon.de)'
-
-  # HOKA Cielo X1 3.0 is not listed on Amazon.de
-  - url: https://trebapatike.rs/sr/hoka-cielo-x1-30
-    name: 'HOKA Cielo X1 3.0'

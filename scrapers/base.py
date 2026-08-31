@@ -22,6 +22,16 @@ class ScrapingError(Exception):
     pass
 
 
+# Retailer gender labels → canonical value. Checked in order, first hit wins:
+# "women" before "men" so a Serbian/English page mentioning both is not read as
+# men's. The English forms need word boundaries ("improvement" contains "men").
+_GENDER_PATTERNS = (
+    ("unisex", r"unisex"),
+    ("women", r"za žene|žensk\w*|damsk\w*|\bwomen'?s?\b"),
+    ("men", r"za muškarce|mušk\w*|\bmen'?s?\b"),
+)
+
+
 class BaseScraper:
     def fetch(self, url: str) -> BeautifulSoup:
         resp = requests.get(url, headers=HEADERS, timeout=15)
@@ -35,6 +45,21 @@ class BaseScraper:
         if not result:
             raise ScrapingError(f"Could not extract price from {url}")
         return result
+
+    @staticmethod
+    def detect_gender(*texts: str) -> str:
+        """Canonical men/women/unisex from retailer labels, in order of trust.
+
+        Falls back to "unisex" when nothing matches, so an unlabelled product is
+        never dropped by a gender filter on a guess.
+        """
+        for text in texts:
+            if not text:
+                continue
+            for gender, pattern in _GENDER_PATTERNS:
+                if re.search(pattern, text, re.IGNORECASE):
+                    return gender
+        return "unisex"
 
     @staticmethod
     def parse_price(text: str) -> float:

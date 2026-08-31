@@ -220,4 +220,17 @@ class AmazonScraper(BaseScraper):
             result.setdefault("currency", currency)
             return result
 
+        # A rendered product page with no buy-box price means the item is
+        # unavailable — sold out, or not deliverable to this region. That is a
+        # fact about the product, not a scraping failure, so report it as
+        # out of stock and let a later restock notify. A title is the proof the
+        # page really rendered: a bot wall or broken selector has none.
+        if name:
+            return {
+                "name": name,
+                "price": None,
+                "currency": currency,
+                "in_stock": False,
+            }
+
         raise ScrapingError(f"Could not extract Amazon price from {url}")
