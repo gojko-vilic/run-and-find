@@ -42,7 +42,7 @@
     }
   },
   "https://www.runnmore.com/patike/69788780-adidas-patike-adizero-adios-pro-4": {
-    "price": 26459.1,
+    "price": 29399.0,
     "currency": "RSD",
     "name": "adidas Patike Adizero Adios Pro 4",
     "in_stock": true
@@ -51,19 +51,19 @@
     "name": "ASICS METASPEED SKY TOKYO",
     "offers": {
       "Run'n'more|1013A162-101": {
-        "price": 19999.0,
+        "price": 24999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69788300-asics-patike-metaspeed-sky-tokyo",
         "in_stock": true
       },
       "Run'n'more|1013A162-300": {
-        "price": 19999.0,
+        "price": 24999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69784346-asics-patike-metaspeed-sky-tokyo",
         "in_stock": true
       },
       "Run'n'more|1013A162-400": {
-        "price": 28799.0,
+        "price": 31999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69809398-asics-patike-metaspeed-sky-tokyo",
         "in_stock": true
@@ -89,7 +89,7 @@
     }
   },
   "https://www.amazon.de/dp/B0DPLTGMN3": {
-    "price": 313.68,
+    "price": 313.8,
     "currency": "EUR",
     "name": "ASICS Damen Metaspeed Sky TokyoRunning Shoes",
     "in_stock": true
@@ -98,13 +98,13 @@
     "name": "ASICS MEGABLAST",
     "offers": {
       "Run'n'more|1013A170-400": {
-        "price": 26099.0,
+        "price": 28999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69807698-asics-patike-megablast",
         "in_stock": true
       },
       "Sportvision|1013A170-400": {
-        "price": 26099.0,
+        "price": 28999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70084840-asics-megablast",
         "in_stock": true
@@ -210,7 +210,7 @@
         "in_stock": true
       },
       "Run'n'more|KI8342": {
-        "price": 15839.0,
+        "price": 17599.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69818840-adidas-patike-adizero-evo-sl-woven-m",
         "in_stock": true
@@ -316,7 +316,7 @@
         "in_stock": true
       },
       "Sportvision|HV8150-111": {
-        "price": 21149.0,
+        "price": 23499.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70090525-nike-vomero-plus",
         "in_stock": true
@@ -423,7 +423,7 @@
         "in_stock": true
       },
       "Sportvision|FD8311-402": {
-        "price": 35549.0,
+        "price": 39499.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70097205-nike-air-zoom-alphafly-3",
         "in_stock": true
@@ -512,7 +512,7 @@
         "in_stock": true
       },
       "Sportvision|IM8203-400": {
-        "price": 29699.0,
+        "price": 32999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70100372-nike-zoomx-vaporfly-next-4-fk",
         "in_stock": true
@@ -565,7 +565,7 @@
         "in_stock": true
       },
       "Sportvision|IW2349-001": {
-        "price": 17549.0,
+        "price": 19499.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70098923-nike-air-zoom-pegasus-42",
         "in_stock": true
@@ -583,7 +583,7 @@
         "in_stock": true
       },
       "Sportvision|IV6292-451": {
-        "price": 17549.0,
+        "price": 19499.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70091722-nike-air-zoom-pegasus-42",
         "in_stock": true
@@ -607,7 +607,7 @@
         "in_stock": true
       },
       "Sportvision|IB1873-008": {
-        "price": 16199.0,
+        "price": 17999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70094405-nike-air-zoom-pegasus-42",
         "in_stock": true
@@ -625,7 +625,7 @@
         "in_stock": true
       },
       "Sportvision|IB1873-006": {
-        "price": 16199.0,
+        "price": 17999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70097055-nike-air-zoom-pegasus-42",
         "in_stock": true
@@ -684,7 +684,7 @@
         "in_stock": true
       },
       "Sportvision|IU5066-068": {
-        "price": 21149.0,
+        "price": 23499.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70100551-nike-nike-zoom-fly-6",
         "in_stock": true
@@ -695,7 +695,7 @@
     "price": 175.09,
     "currency": "EUR",
     "name": "Nike Zoom Fly 6 Straßenlaufschuh für Damen, FN8455",
-    "in_stock": true
+    "in_stock": false
   },
   "https://trebapatike.rs/sr/new-balance-fuelcell-supercomp-elite-v5": {
     "name": "New Balance FUELCELL SUPERCOMP ELITE V5",
@@ -754,7 +754,7 @@
     "offers": {}
   },
   "https://www.amazon.de/dp/B0CN32STFS": {
-    "price": 304.15,
+    "price": 329.78,
     "currency": "EUR",
     "name": "Hoka Herren Clifton 9Sneaker",
     "in_stock": true
@@ -775,7 +775,7 @@
         "in_stock": true
       },
       "Run'n'more|1168724-NZS": {
-        "price": 17599.0,
+        "price": 21999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69786892-hoka-patike-rocket-x-3",
         "in_stock": true
@@ -786,7 +786,7 @@
     "price": 231.0,
     "currency": "EUR",
     "name": "HOKA Unisex Erwachsene Laufschuhe Rocket X 3",
-    "in_stock": true
+    "in_stock": false
   },
   "https://www.amazon.com/dp/B0DN5MR4QZ": {
     "price": 246.5,
@@ -798,7 +798,7 @@
     "name": "HOKA MACH X 3",
     "offers": {
       "Run'n'more|1168720-NZS": {
-        "price": 14399.0,
+        "price": 17999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69786897-hoka-patike-mach-x-3",
         "in_stock": true
@@ -812,16 +812,16 @@
     }
   },
   "https://www.amazon.de/dp/B0F9QLP7FJ": {
-    "price": null,
+    "price": 159.66,
     "currency": "EUR",
     "name": "Hoka Herren M Mach X 3Sneaker",
-    "in_stock": false
+    "in_stock": true
   },
   "https://trebapatike.rs/sr/hoka-cielo-x1-30": {
     "name": "HOKA CIELO X1 3.0",
     "offers": {
       "Run'n'more|1171927-NYZ": {
-        "price": 19599.0,
+        "price": 24499.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69786877-hoka-patike-cielo-x1-3-0",
         "in_stock": true
