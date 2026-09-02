@@ -81,7 +81,7 @@
         "in_stock": true
       },
       "Sportvision|1013A162-400": {
-        "price": 28799.0,
+        "price": 31999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70088219-asics-metaspeed-sky-tokyo",
         "in_stock": true
@@ -153,7 +153,7 @@
     }
   },
   "https://www.amazon.de/dp/B0GP32DD8D": {
-    "price": 256.52,
+    "price": 260.34,
     "currency": "EUR",
     "name": "ASICS Unisex Superblast 3 Laufschuhe, Weiß, Schwarz, 12.5 Women/11 Men",
     "in_stock": true
@@ -204,7 +204,7 @@
         "in_stock": true
       },
       "Sportvision|KI8342": {
-        "price": 15839.0,
+        "price": 17599.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70099430-adidas-adizero-evo-sl-woven-m",
         "in_stock": true
@@ -261,6 +261,12 @@
         "price": 12389.0,
         "currency": "RSD",
         "store_url": "https://www.trendmaker.rs/patike-za-trcanje/muske-patike-za-trcanje-adidas-adizero-evo-sl-m-2.html",
+        "in_stock": true
+      },
+      "Intersport|JP7149": {
+        "price": 12389.0,
+        "currency": "RSD",
+        "store_url": "https://www.intersport.rs/patike-za-trcanje/muske-patike-za-trcanje-adidas-adizero-evo-sl-m.html",
         "in_stock": true
       }
     }
@@ -648,13 +654,13 @@
     "name": "Nike ZOOM FLY 6",
     "offers": {
       "Sportvision|FN8454-100": {
-        "price": 19799.0,
+        "price": 21999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70051262-nike-zoom-fly-6",
         "in_stock": true
       },
       "Sportvision|IW1246-099": {
-        "price": 21149.0,
+        "price": 23499.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70087102-nike-zoom-fly-6-prm",
         "in_stock": true
@@ -666,7 +672,7 @@
         "in_stock": true
       },
       "Sportvision|FN8454-404": {
-        "price": 19799.0,
+        "price": 21999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70092917-nike-zoom-fly-6",
         "in_stock": true
@@ -701,7 +707,7 @@
     "name": "New Balance FUELCELL SUPERCOMP ELITE V5",
     "offers": {
       "Run'n'more|MRCELLR5": {
-        "price": 23399.0,
+        "price": 25999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69775030-new-balance-patike-fuelcell",
         "in_stock": true
@@ -754,7 +760,7 @@
     "offers": {}
   },
   "https://www.amazon.de/dp/B0CN32STFS": {
-    "price": 329.78,
+    "price": 343.55,
     "currency": "EUR",
     "name": "Hoka Herren Clifton 9Sneaker",
     "in_stock": true
