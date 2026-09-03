@@ -455,7 +455,7 @@
       "Sportvision|FD8311-002": {
         "price": 23999.0,
         "currency": "RSD",
-        "store_url": "https://www.sportvision.rs/patike/70075997-nike-air-zoom-alphafly-next-3",
+        "store_url": "https://www.sportvision.rs/patike/70075997-nike-air-zoom-alphafly-3",
         "in_stock": true
       },
       "Run'n'more|FD8311-002": {
@@ -512,7 +512,7 @@
         "in_stock": true
       },
       "Sportvision|HF6414-300": {
-        "price": 18399.0,
+        "price": 20699.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70083330-nike-zoomx-vaporfly-next-4",
         "in_stock": true
@@ -524,7 +524,7 @@
         "in_stock": true
       },
       "Sportvision|IM8068-999": {
-        "price": 19199.0,
+        "price": 21599.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70067460-nike-vaporfly-4",
         "in_stock": true
@@ -536,7 +536,7 @@
         "in_stock": true
       },
       "Sportvision|HF6414-800": {
-        "price": 19199.0,
+        "price": 21599.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70077310-nike-zoomx-vaporfly-4",
         "in_stock": true
@@ -721,7 +721,7 @@
     }
   },
   "https://www.amazon.de/dp/B0DJV3GVWB": {
-    "price": 262.47,
+    "price": 262.15,
     "currency": "EUR",
     "name": "New Balance Herren FuelCell Supercomp Elite V5Laufschuh",
     "in_stock": true
@@ -760,7 +760,7 @@
     "offers": {}
   },
   "https://www.amazon.de/dp/B0CN32STFS": {
-    "price": 343.55,
+    "price": 363.03,
     "currency": "EUR",
     "name": "Hoka Herren Clifton 9Sneaker",
     "in_stock": true
@@ -839,7 +839,7 @@
         "in_stock": true
       },
       "Sportvision|1171927-NYZ": {
-        "price": 19599.0,
+        "price": 22049.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70074164-hoka-cielo-x1-3-0",
         "in_stock": true
