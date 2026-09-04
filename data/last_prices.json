@@ -69,13 +69,13 @@
         "in_stock": true
       },
       "Sportvision|1013A162-101": {
-        "price": 19999.0,
+        "price": 22499.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70078248-asics-metaspeed-sky-tokyo",
         "in_stock": true
       },
       "Sportvision|1013A162-300": {
-        "price": 19999.0,
+        "price": 22499.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70069440-asics-metaspeed-sky-tokyo",
         "in_stock": true
@@ -89,7 +89,7 @@
     }
   },
   "https://www.amazon.de/dp/B0DPLTGMN3": {
-    "price": 313.8,
+    "price": 329.37,
     "currency": "EUR",
     "name": "ASICS Damen Metaspeed Sky TokyoRunning Shoes",
     "in_stock": true
@@ -153,7 +153,7 @@
     }
   },
   "https://www.amazon.de/dp/B0GP32DD8D": {
-    "price": 260.34,
+    "price": 263.28,
     "currency": "EUR",
     "name": "ASICS Unisex Superblast 3 Laufschuhe, Weiß, Schwarz, 12.5 Women/11 Men",
     "in_stock": true
@@ -453,7 +453,7 @@
         "in_stock": true
       },
       "Sportvision|FD8311-002": {
-        "price": 23999.0,
+        "price": 26999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70075997-nike-air-zoom-alphafly-3",
         "in_stock": true
@@ -465,7 +465,7 @@
         "in_stock": true
       },
       "Sportvision|FD8311-800": {
-        "price": 23999.0,
+        "price": 26999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70078305-nike-air-zoom-alphafly-next-3",
         "in_stock": true
@@ -645,7 +645,7 @@
     }
   },
   "https://www.amazon.de/dp/B0FRNBQ156": {
-    "price": 84.63,
+    "price": 94.03,
     "currency": "EUR",
     "name": "Nike Herren Air Zoom Pegasus 42Straßen-Laufschuh",
     "in_stock": true
@@ -713,7 +713,7 @@
         "in_stock": true
       },
       "Sportvision|MRCELLR5": {
-        "price": 20799.0,
+        "price": 25999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70057968-new-balance-fuelcell",
         "in_stock": true
@@ -724,7 +724,7 @@
     "price": 262.15,
     "currency": "EUR",
     "name": "New Balance Herren FuelCell Supercomp Elite V5Laufschuh",
-    "in_stock": true
+    "in_stock": false
   },
   "https://trebapatike.rs/sr/hoka-clifton-10": {
     "name": "HOKA CLIFTON 10",
@@ -760,7 +760,7 @@
     "offers": {}
   },
   "https://www.amazon.de/dp/B0CN32STFS": {
-    "price": 363.03,
+    "price": 363.02,
     "currency": "EUR",
     "name": "Hoka Herren Clifton 9Sneaker",
     "in_stock": true
@@ -775,7 +775,7 @@
         "in_stock": true
       },
       "Sportvision|1168724-NZS": {
-        "price": 17599.0,
+        "price": 19799.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70074159-hoka-rocket-x-3",
         "in_stock": true
@@ -810,7 +810,7 @@
         "in_stock": true
       },
       "Sportvision|1168720-NZS": {
-        "price": 14399.0,
+        "price": 16199.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70074139-hoka-mach-x-3",
         "in_stock": true
