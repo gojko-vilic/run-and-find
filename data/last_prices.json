@@ -89,7 +89,7 @@
     }
   },
   "https://www.amazon.de/dp/B0DPLTGMN3": {
-    "price": 329.37,
+    "price": 329.14,
     "currency": "EUR",
     "name": "ASICS Damen Metaspeed Sky TokyoRunning Shoes",
     "in_stock": true
@@ -112,7 +112,7 @@
     }
   },
   "https://www.amazon.de/dp/B0FGXSSR37": {
-    "price": 281.59,
+    "price": 281.6,
     "currency": "EUR",
     "name": "ASICS Unisex MEGABLAST Laufschuhe",
     "in_stock": true
@@ -153,7 +153,7 @@
     }
   },
   "https://www.amazon.de/dp/B0GP32DD8D": {
-    "price": 263.28,
+    "price": 256.68,
     "currency": "EUR",
     "name": "ASICS Unisex Superblast 3 Laufschuhe, Weiß, Schwarz, 12.5 Women/11 Men",
     "in_stock": true
@@ -240,7 +240,7 @@
         "in_stock": true
       },
       "N Sport|JP7149": {
-        "price": 12389.0,
+        "price": 17699.0,
         "currency": "RSD",
         "store_url": "https://www.n-sport.net/patike-za-trcanje/muske-patike-za-trcanje-adidas-adizero-evo-sl-m.html",
         "in_stock": true
@@ -264,7 +264,7 @@
         "in_stock": true
       },
       "Intersport|JP7149": {
-        "price": 12389.0,
+        "price": 17699.0,
         "currency": "RSD",
         "store_url": "https://www.intersport.rs/patike-za-trcanje/muske-patike-za-trcanje-adidas-adizero-evo-sl-m.html",
         "in_stock": true
@@ -336,7 +336,7 @@
       "Sportvision|IR7550-030": {
         "price": 19599.0,
         "currency": "RSD",
-        "store_url": "https://www.sportvision.rs/patike/70083510-nike-vomero-plus",
+        "store_url": "https://www.sportvision.rs/patike/70083510-nike-nike-vomero-plus-cn",
         "in_stock": true
       },
       "Sportvision|HV8150-801": {
@@ -467,7 +467,7 @@
       "Sportvision|FD8311-800": {
         "price": 26999.0,
         "currency": "RSD",
-        "store_url": "https://www.sportvision.rs/patike/70078305-nike-air-zoom-alphafly-next-3",
+        "store_url": "https://www.sportvision.rs/patike/70078305-nike-air-zoom-alphafly-3",
         "in_stock": true
       },
       "Run'n'more|FD8311-800": {
@@ -724,7 +724,7 @@
     "price": 262.15,
     "currency": "EUR",
     "name": "New Balance Herren FuelCell Supercomp Elite V5Laufschuh",
-    "in_stock": false
+    "in_stock": true
   },
   "https://trebapatike.rs/sr/hoka-clifton-10": {
     "name": "HOKA CLIFTON 10",
@@ -760,7 +760,7 @@
     "offers": {}
   },
   "https://www.amazon.de/dp/B0CN32STFS": {
-    "price": 363.02,
+    "price": 318.17,
     "currency": "EUR",
     "name": "Hoka Herren Clifton 9Sneaker",
     "in_stock": true
@@ -789,10 +789,10 @@
     }
   },
   "https://www.amazon.de/dp/B0DN66CRJN": {
-    "price": 231.0,
+    "price": 242.34,
     "currency": "EUR",
     "name": "HOKA Unisex Erwachsene Laufschuhe Rocket X 3",
-    "in_stock": false
+    "in_stock": true
   },
   "https://www.amazon.com/dp/B0DN5MR4QZ": {
     "price": 246.5,
@@ -818,7 +818,7 @@
     }
   },
   "https://www.amazon.de/dp/B0F9QLP7FJ": {
-    "price": 159.66,
+    "price": 157.3,
     "currency": "EUR",
     "name": "Hoka Herren M Mach X 3Sneaker",
     "in_stock": true
