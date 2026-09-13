@@ -153,7 +153,7 @@
     }
   },
   "https://www.amazon.de/dp/B0GP32DD8D": {
-    "price": 254.17,
+    "price": 252.51,
     "currency": "EUR",
     "name": "ASICS Unisex Superblast 3 Laufschuhe, Weiß, Schwarz, 12.5 Women/11 Men",
     "in_stock": true
@@ -787,10 +787,10 @@
     }
   },
   "https://www.amazon.de/dp/B0DJV3GVWB": {
-    "price": 262.15,
+    "price": 292.35,
     "currency": "EUR",
     "name": "New Balance Herren FuelCell Supercomp Elite V5Laufschuh",
-    "in_stock": false
+    "in_stock": true
   },
   "https://trebapatike.rs/sr/hoka-clifton-10": {
     "name": "HOKA CLIFTON 10",
@@ -816,7 +816,7 @@
     }
   },
   "https://www.amazon.de/dp/B0D5FWZXR1": {
-    "price": 134.45,
+    "price": 160.0,
     "currency": "EUR",
     "name": "Hoka Herren Clifton 10 Laufschuhe, Hafermilch, 44.5 EU",
     "in_stock": true
@@ -861,7 +861,7 @@
     "in_stock": true
   },
   "https://www.amazon.com/dp/B0DN5MR4QZ": {
-    "price": 246.5,
+    "price": 4183.89,
     "currency": "USD",
     "name": "Hoka Unisex-Adult Rocket X 3",
     "in_stock": true
@@ -884,7 +884,7 @@
     }
   },
   "https://www.amazon.de/dp/B0F9QLP7FJ": {
-    "price": 157.28,
+    "price": 187.16,
     "currency": "EUR",
     "name": "Hoka Herren M Mach X 3Sneaker",
     "in_stock": true
