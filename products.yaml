@@ -1,3 +1,25 @@
+# Amazon entries: orders ship to Austria, so every Amazon URL must be a listing
+# Amazon delivers there. The scraper prices pages with the delivery location set
+# to Austria and reports undeliverable listings as out of stock — check a new
+# ASIN returns a price before adding it (a parent ASIN with no buy box, or one
+# with a price but "kann nicht an den ausgewählten Lieferort versendet werden",
+# is the wrong link; pick a size/colour child ASIN that ships).
+# Shoes are tracked only in the wearer's sizes: a store carrying every size
+# but these is out of stock for us, and no drop there is reported. A store's
+# own label is matched, so each system is listed separately — cm where a
+# store prints it (Sportvision), US on Amazon.com, EU everywhere else. Brands
+# print different EU numbers for the same foot, hence the per-brand rows
+# (from each brand's own chart; Sportvision's cm column confirms them).
+sizes:
+  cm: ['28.5', '29']
+  us: ['10.5', '11']
+  eu:
+    default: ['44.5', '45']
+    adidas: ['44 2/3', '45 1/3']
+    hoka: ['44 2/3', '45 1/3']
+    puma: ['44', '44.5']
+    mizuno: ['44', '44.5']
+
 products:
   # ── Existing tracked shoes ────────────────────────────────────────────────
 
@@ -11,109 +33,168 @@ products:
 
   # ── ASICS ─────────────────────────────────────────────────────────────────
 
+  # No Amazon listing ships to Austria (amazon.de B0DPLTGMN3 and all colours,
+  # amazon.com, amazon.it all refuse delivery) — Serbian stores only.
   - url: https://trebapatike.rs/sr/asics-metaspeed-sky-tokyo
     name: 'ASICS Metaspeed Sky Tokyo'
     gender: [men, unisex]
-  - url: https://www.amazon.de/dp/B0DPLTGMN3
-    name: 'ASICS Metaspeed Sky Tokyo (Amazon.de)'
 
+  # No Amazon listing ships to Austria (amazon.de B0FGXSSR37 and all colours,
+  # amazon.com, amazon.it all refuse delivery) — Serbian stores only.
   - url: https://trebapatike.rs/sr/asics-megablast
     name: 'ASICS Metaspeed Sky+ (Megablast)'
     gender: [men, unisex]
-  - url: https://www.amazon.de/dp/B0FGXSSR37
-    name: 'ASICS Metaspeed Sky+ (Megablast) (Amazon.de)'
 
+  # No Amazon listing ships to Austria (amazon.de B0GP32DD8D and all colours,
+  # amazon.com, amazon.it all refuse delivery) — Serbian stores only.
   - url: https://trebapatike.rs/sr/asics-superblast-3
     name: 'ASICS Superblast 3'
     gender: [men, unisex]
-  - url: https://www.amazon.de/dp/B0GP32DD8D
-    name: 'ASICS Superblast 3 (Amazon.de)'
 
   # ── Adidas ────────────────────────────────────────────────────────────────
 
   - url: https://trebapatike.rs/sr/adidas-adizero-evo-sl
     name: 'Adidas Adizero Evo SL'
     gender: [men, unisex]
-  - url: https://www.amazon.de/dp/B0DNNVKBR8
-    name: 'Adidas Adizero Evo SL (Amazon.de)'
+  # Amazon.de sells the Evo SL as one listing per size. No 44 2/3 listing was
+  # found; the 45 1/3 ones have no offer right now and are tracked for restock.
+  - url: https://www.amazon.de/dp/B0DNNTQSLR
+    name: 'Adidas Adizero Evo SL (Amazon.de, white 45 1/3)'
+  - url: https://www.amazon.de/dp/B0F82S1DNL
+    name: 'Adidas Adizero Evo SL (Amazon.de, black 45 1/3)'
 
   # ── PUMA ──────────────────────────────────────────────────────────────────
 
   - url: https://trebapatike.rs/sr/puma-deviate-nitro-4
     name: 'PUMA Deviate Nitro 4'
     gender: [men, unisex]
-  - url: https://www.amazon.de/dp/B0GD2RW91J
-    name: 'PUMA Deviate Nitro 4 (Amazon.de)'
+  # Black/white colourway; parent B0GD2RW91J does not ship to Austria.
+  - url: https://www.amazon.de/dp/B0GD2VF4YN
+    name: 'PUMA Deviate Nitro 4 (Amazon.de, 44)'
+  - url: https://www.amazon.de/dp/B0GD2KPSM6
+    name: 'PUMA Deviate Nitro 4 (Amazon.de, 44.5)'
 
   # ── Nike ──────────────────────────────────────────────────────────────────
 
   - url: https://trebapatike.rs/sr/nike-vomero-plus
     name: 'Nike Vomero Plus'
     gender: [men, unisex]
-  - url: https://www.amazon.de/dp/B0GJ8CHW49
-    name: 'Nike Vomero Plus (Amazon.de)'
+  - url: https://www.amazon.de/dp/B0GJ7MF13F
+    name: 'Nike Vomero Plus (Amazon.de, 44.5)'
+  - url: https://www.amazon.de/dp/B0GJ7QKFWH
+    name: 'Nike Vomero Plus (Amazon.de, 45)'
 
   - url: https://trebapatike.rs/sr/nike-alphafly-3
     name: 'Nike Alphafly 3'
     gender: [men, unisex]
-  - url: https://www.amazon.de/dp/B0F4M87W8F
-    name: 'Nike Alphafly 3 (Amazon.de)'
+  # Red/green colourway; parent B0F4M87W8F has no buy box.
+  - url: https://www.amazon.de/dp/B0DYKSFTTX
+    name: 'Nike Alphafly 3 (Amazon.de, 44.5)'
+  - url: https://www.amazon.de/dp/B0DYL97H4C
+    name: 'Nike Alphafly 3 (Amazon.de, 45)'
 
   - url: https://trebapatike.rs/sr/nike-vaporfly-4
     name: 'Nike Vaporfly 4'
     gender: [men, unisex]
-  - url: https://www.amazon.de/dp/B0GWZKH9R8
-    name: 'Nike Vaporfly 4 (Amazon.de)'
+  - url: https://www.amazon.de/dp/B0GWZNDHLG
+    name: 'Nike Vaporfly 4 (Amazon.de, 44.5)'
+  - url: https://www.amazon.de/dp/B0GWZLWDF9
+    name: 'Nike Vaporfly 4 (Amazon.de, 45)'
 
   - url: https://trebapatike.rs/sr/nike-pegasus-42
     name: 'Nike Pegasus 42'
     gender: [men, unisex]
-  - url: https://www.amazon.de/dp/B0FRNBQ156
-    name: 'Nike Pegasus 42 (Amazon.de)'
+  # Black/white colourway; parent B0FRNBQ156 has no buy box.
+  - url: https://www.amazon.de/dp/B0FRNJL1K5
+    name: 'Nike Pegasus 42 (Amazon.de, 44.5)'
+  - url: https://www.amazon.de/dp/B0FRNCC9TK
+    name: 'Nike Pegasus 42 (Amazon.de, 45)'
 
   - url: https://trebapatike.rs/sr/nike-zoom-fly-6
     name: 'Nike Zoom Fly 6'
     gender: [men, unisex]
-  - url: https://www.amazon.de/dp/B0F2GLFQDD
-    name: 'Nike Zoom Fly 6 (Amazon.de)'
+  # Men's FN8454 listing (B0F2GLFQDD was the women's FN8455).
+  - url: https://www.amazon.de/dp/B0FMFGSV61
+    name: 'Nike Zoom Fly 6 (Amazon.de, 44.5)'
+  - url: https://www.amazon.de/dp/B0FMFJNG95
+    name: 'Nike Zoom Fly 6 (Amazon.de, 45)'
 
   # ── New Balance ───────────────────────────────────────────────────────────
 
   - url: https://trebapatike.rs/sr/new-balance-fuelcell-supercomp-elite-v5
     name: 'New Balance FuelCell SuperComp Elite v5'
     gender: [men, unisex]
-  - url: https://www.amazon.de/dp/B0DJV3GVWB
-    name: 'New Balance FuelCell SuperComp Elite v5 (Amazon.de)'
+  # Boysenberry colourway; parent B0DJV3GVWB does not ship to Austria.
+  - url: https://www.amazon.de/dp/B0F4LZPZH2
+    name: 'New Balance FuelCell SuperComp Elite v5 (Amazon.de, 44.5)'
+  - url: https://www.amazon.de/dp/B0F4LNT5PY
+    name: 'New Balance FuelCell SuperComp Elite v5 (Amazon.de, 45)'
 
   # ── HOKA ──────────────────────────────────────────────────────────────────
 
   - url: https://trebapatike.rs/sr/hoka-clifton-10
     name: 'HOKA Clifton 10'
     gender: [men, unisex]
-  - url: https://www.amazon.de/dp/B0D5FWZXR1
-    name: 'HOKA Clifton 10 (Amazon.de)'
+  # B0D5FWZXR1 was a standalone 44.5 listing; these are the sized children
+  # of the men's listing B0DMTKRN13.
+  - url: https://www.amazon.de/dp/B0DN3Q5B49
+    name: 'HOKA Clifton 10 (Amazon.de, 44 2/3)'
+  - url: https://www.amazon.de/dp/B0DN3TBCGX
+    name: 'HOKA Clifton 10 (Amazon.de, 45 1/3)'
 
   - url: https://trebapatike.rs/sr/hoka-clifton-9
     name: 'HOKA Clifton 9'
     gender: [men, unisex]
-  - url: https://www.amazon.de/dp/B0CN32STFS
-    name: 'HOKA Clifton 9 (Amazon.de)'
+  # No Amazon listing in 44 2/3 / 45 1/3 (US 10.5 / 11) ships to Austria:
+  # amazon.de refuses delivery for every colour, amazon.com B0BQ6X438M only
+  # had 8.5/9.5 wide and 10 left — Serbian stores only.
 
   - url: https://trebapatike.rs/sr/hoka-rocket-x-3
     name: 'HOKA Rocket X 3'
     gender: [men, unisex]
-  - url: https://www.amazon.de/dp/B0DN66CRJN
-    name: 'HOKA Rocket X 3 (Amazon.de)'
-  - url: https://www.amazon.com/dp/B0DN5MR4QZ
-    name: 'HOKA Rocket X 3 (Amazon.com)'
+  - url: https://www.amazon.de/dp/B0DN59MLGZ
+    name: 'HOKA Rocket X 3 (Amazon.de, 44 2/3)'
+  - url: https://www.amazon.de/dp/B0DN5VJNFC
+    name: 'HOKA Rocket X 3 (Amazon.de, 45 1/3)'
+  # amazon.com B0DN5MR4QZ: no colour has men's 10.5 / 11 with an offer.
 
   - url: https://trebapatike.rs/sr/hoka-mach-x-3
     name: 'HOKA Mach X 3'
     gender: [men, unisex]
-  - url: https://www.amazon.de/dp/B0F9QLP7FJ
-    name: 'HOKA Mach X 3 (Amazon.de)'
+  - url: https://www.amazon.de/dp/B0F9QTJ6HN
+    name: 'HOKA Mach X 3 (Amazon.de, 44 2/3)'
+  - url: https://www.amazon.de/dp/B0F9QY49NM
+    name: 'HOKA Mach X 3 (Amazon.de, 45 1/3)'
 
   # HOKA Cielo X1 3.0 is not listed on Amazon.de
   - url: https://trebapatike.rs/sr/hoka-cielo-x1-30
     name: 'HOKA Cielo X1 3.0'
     gender: [men, unisex]
+
+  # ── Mizuno ────────────────────────────────────────────────────────────────
+
+  # Covers Sportvision and Run'n'more (men's J1GC262602 / J1GC262651,
+  # women's J1GD262671 filtered out by gender).
+  - url: https://trebapatike.rs/sr/mizuno-wave-horizon-9
+    name: 'Mizuno Wave Horizon 9'
+    gender: [men, unisex]
+  # Men's J1GC2626 listing, black; Mizuno 44 = 28.5 cm, 44.5 = 29 cm.
+  - url: https://www.amazon.de/dp/B0GJNG4SRL
+    name: 'Mizuno Wave Horizon 9 (Amazon.de, 44)'
+  - url: https://www.amazon.de/dp/B0GJNX2J7J
+    name: 'Mizuno Wave Horizon 9 (Amazon.de, 44.5)'
+  # Men's 10.5 / 11 regular width, sold out at the moment — tracked for restock.
+  - url: https://www.amazon.com/dp/B0F9Z1DQXH
+    name: 'Mizuno Wave Horizon 9 (Amazon.com, US 10.5)'
+  - url: https://www.amazon.com/dp/B0F9Z49CQ2
+    name: 'Mizuno Wave Horizon 9 (Amazon.com, US 11)'
+
+  # ── Suunto ────────────────────────────────────────────────────────────────
+
+  # Beosport is Suunto's Serbian distributor; no other .rs store lists it.
+  - url: https://rs.beosport.com/suunto-race-2-all-black-mf-uredjaj-ss051200000
+    name: 'Suunto Race 2 All Black'
+  # All Black colour ASIN of the Race 2 listing; amazon.com B0FJYB53ZB does not
+  # ship to Austria.
+  - url: https://www.amazon.de/dp/B0FFC35CSC
+    name: 'Suunto Race 2 All Black (Amazon.de)'

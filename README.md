@@ -20,6 +20,11 @@ Runs entirely on **GitHub Actions** — no server, no domain, no cost.
 | Austria | MediaMarkt.at, Geizhals.at                     |
 | Amazon  | amazon.com, amazon.de, amazon.co.uk, amazon.at |
 
+Amazon pages are priced with the delivery location set to Austria (override with
+`AMAZON_SHIP_TO=<country code>`). A listing Amazon will not deliver there is
+reported as out of stock, so only add ASINs that ship to Austria — usually a
+specific size/colour child ASIN rather than the parent listing.
+
 ## Setup
 
 ### 1. Add GitHub Secrets
@@ -43,7 +48,17 @@ products:
     name: Kindle Paperwhite
 ```
 
-### 3. Run manually to test
+### 3. Sizes
+
+Shoes are tracked only in the wearer's sizes, set in the `sizes` block of
+`products.yaml` (cm, US and per-brand EU labels). A store offering every size
+but those counts as out of stock, so no price drop there is reported, and the
+wanted size reappearing is what triggers "back in stock". Store pages are read
+for their size lists (Sportvision, Run'n'more, Intersport); an Amazon shoe url
+must itself be the child ASIN of a wanted size — the checker names the right
+ASINs when it is not. Products without a `gender` (a watch) are not filtered.
+
+### 4. Run manually to test
 
 Go to **Actions → Check Prices → Run workflow**.
 
@@ -55,7 +70,9 @@ Go to **Actions → Check Prices → Run workflow**.
 │   ├── base.py        # abstract scraper interface
 │   ├── serbian.py     # .rs sites
 │   ├── austrian.py    # .at sites
-│   └── amazon.py      # amazon.*
+│   ├── amazon.py      # amazon.*
+│   ├── trebapatike.py # trebapatike.rs price aggregator (all Serbian shoe stores)
+│   └── sizes.py       # wanted sizes + per-store size lists
 ├── data/
 │   └── last_prices.json   # auto-managed, committed by workflow
 ├── products.yaml          # edit this to add/remove tracked products

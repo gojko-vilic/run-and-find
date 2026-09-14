@@ -8,6 +8,7 @@ import yaml
 
 from scrapers import get_scraper
 from scrapers.base import ScrapingError
+from scrapers.sizes import SizeFilter, available_sizes
 
 PRODUCTS_FILE = Path("products.yaml")
 PRICES_FILE = Path("data/last_prices.json")
@@ -28,8 +29,29 @@ def send_telegram(message: str) -> None:
     )
 
 
+def load_config() -> dict:
+    return yaml.safe_load(PRODUCTS_FILE.read_text(encoding="utf-8"))
+
+
 def load_products() -> list[dict]:
-    return yaml.safe_load(PRODUCTS_FILE.read_text(encoding="utf-8"))["products"]
+    return load_config()["products"]
+
+
+# Store pages fetched for their size lists this run, keyed by url. Several
+# offers of one shoe often point at the same store page.
+_size_cache: dict[str, list[dict] | None] = {}
+
+
+def store_sizes(url: str) -> list[dict] | None:
+    if url not in _size_cache:
+        try:
+            _size_cache[url] = available_sizes(url)
+        except Exception as exc:
+            # A store page we cannot read says nothing about sizes; do not
+            # drop the offer for it.
+            print(f"⚠️ sizes at {url}: {exc}", file=sys.stderr)
+            _size_cache[url] = None
+    return _size_cache[url]
 
 
 def load_prices() -> dict:
@@ -52,6 +74,7 @@ def _process_single(
     prices: dict,
     errors: list,
     gender_filter: list[str] | None = None,
+    size_filter: SizeFilter | None = None,
 ) -> None:
     try:
         result = scraper.scrape(url)
@@ -60,6 +83,33 @@ def _process_single(
         errors.append(msg)
         print(msg, file=sys.stderr)
         return
+
+    # An Amazon shoe url is one size. Tracking the wrong one would report
+    # drops we cannot use, so it is a configuration error, not a quiet skip.
+    # The sizes we do want are named so the url can be fixed.
+    if size_filter and result.get("size") and not size_filter.fits(result["size"], label):
+        wanted = [
+            s["asin"]
+            for s in result.get("sizes", [])
+            if size_filter.fits(s, label) and s.get("asin")
+        ]
+        hint = f" — try /dp/{' or /dp/'.join(wanted)}" if wanted else ""
+        msg = (
+            f"⚠️ {label}: url is size {result['size'].get('eu') or result['size'].get('us')}, "
+            f"wanted {size_filter.describe(label)} — not tracked{hint}"
+        )
+        errors.append(msg)
+        print(msg, file=sys.stderr)
+        prices.pop(url, None)
+        return
+
+    # A store page listing the shoe in every size but ours is, for us, sold
+    # out: no drop is worth hearing about, and the wanted size coming back is
+    # what "back in stock" should mean.
+    if size_filter and not result.get("size"):
+        sizes = store_sizes(url)
+        if sizes is not None and not size_filter.any_fits(sizes, label):
+            result["in_stock"] = False
 
     # A single-product url has one gender, so a mismatch means the url itself
     # points at the wrong model — report it rather than tracking it silently.
@@ -137,6 +187,7 @@ def _process_multi_offer(
     prices: dict,
     errors: list,
     gender_filter: list[str] | None = None,
+    size_filter: SizeFilter | None = None,
 ) -> None:
     try:
         offers = scraper.scrape_offers(url)
@@ -176,6 +227,14 @@ def _process_multi_offer(
         in_stock = offer.get("in_stock", True)
         store_url = offer["store_url"]
         store_name = offer["store"]
+
+        # The aggregator only counts sizes; whether ours is among them is on
+        # the store's own page. Without it the offer is one we cannot buy, so
+        # it is treated as out of stock at that store.
+        if size_filter and in_stock:
+            sizes = store_sizes(store_url)
+            if sizes is not None and not size_filter.any_fits(sizes, label):
+                in_stock = False
         prev = stored_offers.get(key, {})
         last_price = prev.get("price")
         was_in_stock = prev.get("in_stock", True)
@@ -243,7 +302,9 @@ def _process_multi_offer(
 
 
 def main() -> None:
-    products = load_products()
+    config = load_config()
+    products = config["products"]
+    size_filter = SizeFilter(config["sizes"]) if config.get("sizes") else None
     prices = load_prices()
     errors: list[str] = []
 
@@ -260,10 +321,16 @@ def main() -> None:
         )
 
         try:
+            # The size filter applies to everything; pages without a size
+            # list (a watch, a store we cannot read) simply pass through it.
             if hasattr(scraper, "scrape_offers"):
-                _process_multi_offer(url, label, scraper, prices, errors, gender_filter)
+                _process_multi_offer(
+                    url, label, scraper, prices, errors, gender_filter, size_filter
+                )
             else:
-                _process_single(url, label, scraper, prices, errors, gender_filter)
+                _process_single(
+                    url, label, scraper, prices, errors, gender_filter, size_filter
+                )
         except Exception as exc:
             msg = f"⚠️ {label}: {exc}"
             errors.append(msg)
