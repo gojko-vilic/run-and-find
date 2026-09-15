@@ -45,7 +45,7 @@
     "price": 21999.0,
     "currency": "RSD",
     "name": "adidas Patike Adizero Adios Pro 4",
-    "in_stock": true
+    "in_stock": false
   },
   "https://trebapatike.rs/sr/asics-metaspeed-sky-tokyo": {
     "name": "ASICS METASPEED SKY TOKYO",
@@ -60,7 +60,7 @@
         "price": 24999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69784346-asics-patike-metaspeed-sky-tokyo",
-        "in_stock": true
+        "in_stock": false
       },
       "Run'n'more|1013A162-400": {
         "price": 31999.0,
@@ -75,10 +75,10 @@
         "in_stock": true
       },
       "Sportvision|1013A162-300": {
-        "price": 19999.0,
+        "price": 24999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70069440-asics-metaspeed-sky-tokyo",
-        "in_stock": true
+        "in_stock": false
       },
       "Sportvision|1013A162-400": {
         "price": 31999.0,
@@ -101,13 +101,13 @@
         "price": 28999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69807698-asics-patike-megablast",
-        "in_stock": true
+        "in_stock": false
       },
       "Sportvision|1013A170-400": {
         "price": 28999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70084840-asics-megablast",
-        "in_stock": true
+        "in_stock": false
       }
     }
   },
@@ -130,7 +130,7 @@
         "price": 26999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70084855-asics-superblast-3",
-        "in_stock": true
+        "in_stock": false
       },
       "Sportvision|1013A177-001": {
         "price": 26999.0,
@@ -142,7 +142,7 @@
         "price": 26999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69807723-asics-patike-superblast-3",
-        "in_stock": true
+        "in_stock": false
       },
       "Run'n'more|1013A177-001": {
         "price": 26999.0,
@@ -186,7 +186,7 @@
         "in_stock": true
       },
       "Trendmaker|KI9874": {
-        "price": 14079.0,
+        "price": 17599.0,
         "currency": "RSD",
         "store_url": "https://www.trendmaker.rs/patike-za-trcanje/muske-patike-za-trcanje-adidas-adizero-evo-sl-m-3.html",
         "in_stock": true
@@ -200,7 +200,7 @@
       "Sportvision|KI4542": {
         "price": 17599.0,
         "currency": "RSD",
-        "store_url": "https://www.sportvision.rs/patike/70096872-adidas-adizero-evo-sl",
+        "store_url": "https://www.sportvision.rs/patike/70096872-adidas-adizero-evo-sl-woven-m",
         "in_stock": true
       },
       "Sportvision|KI8342": {
@@ -228,7 +228,7 @@
         "in_stock": true
       },
       "Trendmaker|KJ0430": {
-        "price": 14079.0,
+        "price": 17599.0,
         "currency": "RSD",
         "store_url": "https://www.trendmaker.rs/patike-za-trcanje/muske-patike-za-trcanje-adidas-adizero-evo-sl-exo-m.html",
         "in_stock": true
@@ -246,13 +246,13 @@
         "in_stock": true
       },
       "Trendmaker|JP7149": {
-        "price": 14079.0,
+        "price": 17599.0,
         "currency": "RSD",
         "store_url": "https://www.trendmaker.rs/patike-za-trcanje/muske-patike-za-trcanje-adidas-adizero-evo-sl-m-1.html",
         "in_stock": true
       },
       "Trendmaker|JH6206": {
-        "price": 14079.0,
+        "price": 17599.0,
         "currency": "RSD",
         "store_url": "https://www.trendmaker.rs/patike-za-trcanje/muske-patike-za-trcanje-adidas-adizero-evo-sl-m.html",
         "in_stock": true
@@ -282,7 +282,7 @@
         "in_stock": true
       },
       "Buzz|KI3381": {
-        "price": 13999.0,
+        "price": 12599.0,
         "currency": "RSD",
         "store_url": "https://www.buzzsneakers.rs/patike/338819-adidas-patike-adizero-evo-sl",
         "in_stock": true
@@ -355,7 +355,7 @@
         "price": 18999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70083510-nike-nike-vomero-plus-cn",
-        "in_stock": true
+        "in_stock": false
       },
       "Sportvision|HV8150-801": {
         "price": 13999.0,
@@ -385,7 +385,7 @@
         "price": 18799.0,
         "currency": "RSD",
         "store_url": "https://www.intersport.rs/patike-za-trcanje/muske-patike-za-trcanje-nike-vomero-plus-2.html",
-        "in_stock": true
+        "in_stock": false
       },
       "Run'n'more|IR7550-030": {
         "price": 18999.0,
@@ -421,7 +421,7 @@
         "price": 16999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70066112-nike-vomero-plus",
-        "in_stock": true
+        "in_stock": false
       }
     }
   },
@@ -474,7 +474,7 @@
         "price": 29999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70075997-nike-air-zoom-alphafly-3",
-        "in_stock": true
+        "in_stock": false
       },
       "Run'n'more|FD8311-002": {
         "price": 29999.0,
@@ -486,13 +486,13 @@
         "price": 29999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70078305-nike-air-zoom-alphafly-3",
-        "in_stock": true
+        "in_stock": false
       },
       "Run'n'more|FD8311-800": {
         "price": 29999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69788475-nike-patike-air-zoom-alphafly-next-3",
-        "in_stock": true
+        "in_stock": false
       },
       "Intersport|FD8311-800": {
         "price": 27649.0,
@@ -548,7 +548,7 @@
         "in_stock": true
       },
       "Sportvision|IM8068-999": {
-        "price": 21599.0,
+        "price": 23999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70067460-nike-vaporfly-4",
         "in_stock": true
@@ -640,7 +640,7 @@
         "price": 13999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70079545-nike-air-zoom-pegasus-42",
-        "in_stock": true
+        "in_stock": false
       },
       "Run'n'more|IB1873-008": {
         "price": 17999.0,
@@ -776,13 +776,13 @@
         "price": 25999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69775030-new-balance-patike-fuelcell",
-        "in_stock": true
+        "in_stock": false
       },
       "Sportvision|MRCELLR5": {
         "price": 25999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70057968-new-balance-fuelcell",
-        "in_stock": true
+        "in_stock": false
       }
     }
   },
@@ -796,7 +796,7 @@
     "name": "HOKA CLIFTON 10",
     "offers": {
       "Sportvision|1162030-BWHT": {
-        "price": 11999.0,
+        "price": 14999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70035912-hoka-clifton-10",
         "in_stock": true
@@ -808,10 +808,10 @@
         "in_stock": true
       },
       "Sportvision|1162030-PTYG": {
-        "price": 11999.0,
+        "price": 14999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70069667-hoka-clifton-10",
-        "in_stock": true
+        "in_stock": false
       }
     }
   },
@@ -873,13 +873,13 @@
         "price": 17999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69786897-hoka-patike-mach-x-3",
-        "in_stock": true
+        "in_stock": false
       },
       "Sportvision|1168720-NZS": {
         "price": 17999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70074139-hoka-mach-x-3",
-        "in_stock": true
+        "in_stock": false
       }
     }
   },
@@ -911,5 +911,190 @@
         "in_stock": true
       }
     }
+  },
+  "https://www.amazon.de/dp/B0DNNTQSLR": {
+    "price": null,
+    "currency": "EUR",
+    "name": "adidas Performance Adizero Evo SL Laufschuh Weiss, 45 1/3 Herren",
+    "in_stock": false
+  },
+  "https://www.amazon.de/dp/B0F82S1DNL": {
+    "price": null,
+    "currency": "EUR",
+    "name": "adidas Performance Adizero Evo SL Laufschuh schwarz, 45 1/3 Herren",
+    "in_stock": false
+  },
+  "https://www.amazon.de/dp/B0GD2VF4YN": {
+    "price": 322.81,
+    "currency": "EUR",
+    "name": "PUMA Deviate Nitro 4 Herren-Laufschuhe",
+    "in_stock": true
+  },
+  "https://www.amazon.de/dp/B0GD2KPSM6": {
+    "price": 322.81,
+    "currency": "EUR",
+    "name": "PUMA Deviate Nitro 4 Herren-Laufschuhe",
+    "in_stock": true
+  },
+  "https://www.amazon.de/dp/B0GJ7MF13F": {
+    "price": 380.76,
+    "currency": "EUR",
+    "name": "Nike Vomero Plus Straßenlaufschuh für Herren, HV8150",
+    "in_stock": true
+  },
+  "https://www.amazon.de/dp/B0GJ7QKFWH": {
+    "price": null,
+    "currency": "EUR",
+    "name": "Nike Vomero Plus Straßenlaufschuh für Herren, HV8150",
+    "in_stock": false
+  },
+  "https://www.amazon.de/dp/B0DYKSFTTX": {
+    "price": null,
+    "currency": "EUR",
+    "name": "Nike Alphafly 3 Herren-Straßenlaufschuh für Wettkämpfe, FD8311",
+    "in_stock": false
+  },
+  "https://www.amazon.de/dp/B0DYL97H4C": {
+    "price": null,
+    "currency": "EUR",
+    "name": "Nike Alphafly 3 Herren-Straßenlaufschuh für Wettkämpfe, FD8311",
+    "in_stock": false
+  },
+  "https://www.amazon.de/dp/B0GWZNDHLG": {
+    "price": null,
+    "currency": "EUR",
+    "name": "Nike Vaporfly 4 Herren Straßenrennschuhe (Barely Green/Volt Tint/Sapphire/Black Spruce)",
+    "in_stock": false
+  },
+  "https://www.amazon.de/dp/B0GWZLWDF9": {
+    "price": 282.66,
+    "currency": "EUR",
+    "name": "Nike Vaporfly 4 Herren Straßenrennschuhe (Barely Green/Volt Tint/Sapphire/Black Spruce)",
+    "in_stock": true
+  },
+  "https://www.amazon.de/dp/B0FRNJL1K5": {
+    "price": 155.1,
+    "currency": "EUR",
+    "name": "Nike Herren Air Zoom Pegasus 42Straßen-Laufschuh",
+    "in_stock": true
+  },
+  "https://www.amazon.de/dp/B0FRNCC9TK": {
+    "price": null,
+    "currency": "EUR",
+    "name": "Nike Herren Air Zoom Pegasus 42Straßen-Laufschuh",
+    "in_stock": false
+  },
+  "https://www.amazon.de/dp/B0FMFGSV61": {
+    "price": null,
+    "currency": "EUR",
+    "name": "Nike Zoom Fly 6 Straßenlaufschuh für Herren, FN8454",
+    "in_stock": false
+  },
+  "https://www.amazon.de/dp/B0FMFJNG95": {
+    "price": null,
+    "currency": "EUR",
+    "name": "Nike Zoom Fly 6 Straßenlaufschuh für Herren, FN8454",
+    "in_stock": false
+  },
+  "https://www.amazon.de/dp/B0F4LZPZH2": {
+    "price": null,
+    "currency": "EUR",
+    "name": "New Balance Herren FuelCell Supercomp Elite V5Laufschuh",
+    "in_stock": false
+  },
+  "https://www.amazon.de/dp/B0F4LNT5PY": {
+    "price": null,
+    "currency": "EUR",
+    "name": "New Balance Herren FuelCell Supercomp Elite V5Laufschuh",
+    "in_stock": false
+  },
+  "https://www.amazon.de/dp/B0DN3Q5B49": {
+    "price": 158.56,
+    "currency": "EUR",
+    "name": "HOKA Herren Laufschuhe",
+    "in_stock": true
+  },
+  "https://www.amazon.de/dp/B0DN3TBCGX": {
+    "price": null,
+    "currency": "EUR",
+    "name": "HOKA Herren Laufschuhe",
+    "in_stock": false
+  },
+  "https://www.amazon.de/dp/B0DN59MLGZ": {
+    "price": null,
+    "currency": "EUR",
+    "name": "HOKA Unisex Erwachsene Laufschuhe Rocket X 3",
+    "in_stock": false
+  },
+  "https://www.amazon.de/dp/B0DN5VJNFC": {
+    "price": 426.89,
+    "currency": "EUR",
+    "name": "HOKA Unisex Erwachsene Laufschuhe Rocket X 3",
+    "in_stock": true
+  },
+  "https://www.amazon.de/dp/B0F9QTJ6HN": {
+    "price": 197.3,
+    "currency": "EUR",
+    "name": "Hoka Herren M Mach X 3Sneaker",
+    "in_stock": true
+  },
+  "https://www.amazon.de/dp/B0F9QY49NM": {
+    "price": null,
+    "currency": "EUR",
+    "name": "Hoka Herren M Mach X 3Sneaker",
+    "in_stock": false
+  },
+  "https://trebapatike.rs/sr/mizuno-wave-horizon-9": {
+    "name": "Mizuno WAVE HORIZON 9",
+    "offers": {
+      "Sportvision|J1GC262651": {
+        "price": 21999.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70144884-mizuno-wave-horizon-9",
+        "in_stock": true
+      },
+      "Run'n'more|J1GC262651": {
+        "price": 21999.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69865045-mizuno-patike-wave-horizon-9",
+        "in_stock": true
+      },
+      "Sportvision|J1GC262602": {
+        "price": 16999.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70077403-mizuno-wave-horizon-9",
+        "in_stock": false
+      }
+    }
+  },
+  "https://www.amazon.de/dp/B0GJNG4SRL": {
+    "price": 162.68,
+    "currency": "EUR",
+    "name": "Mizuno Herren Laufschuh Wave Horizon 9 - J1GC2626",
+    "in_stock": true
+  },
+  "https://www.amazon.de/dp/B0GJNX2J7J": {
+    "price": 207.58,
+    "currency": "EUR",
+    "name": "Mizuno Herren Laufschuh Wave Horizon 9 - J1GC2626",
+    "in_stock": true
+  },
+  "https://www.amazon.com/dp/B0F9Z1DQXH": {
+    "price": null,
+    "currency": "USD",
+    "name": "Mizuno Mens Wave Horizon 9",
+    "in_stock": false
+  },
+  "https://www.amazon.com/dp/B0F9Z49CQ2": {
+    "price": null,
+    "currency": "USD",
+    "name": "Mizuno Mens Wave Horizon 9",
+    "in_stock": false
+  },
+  "https://www.amazon.de/dp/B0FFC35CSC": {
+    "price": 580.61,
+    "currency": "EUR",
+    "name": "SUUNTO Race 2 GPS-Sportuhr, 1,5-Zoll-AMOLED-Display, 115+ Sportmodi",
+    "in_stock": true
   }
 }
