@@ -627,7 +627,7 @@
       "Sportvision|IV6292-451": {
         "price": 19499.0,
         "currency": "RSD",
-        "store_url": "https://www.sportvision.rs/patike/70091722-nike-air-zoom-pegasus-42",
+        "store_url": "https://www.sportvision.rs/patike/70091722-nike-pegasus-42",
         "in_stock": true
       },
       "Run'n'more|IV6292-451": {
@@ -651,7 +651,7 @@
       "Sportvision|IB1873-008": {
         "price": 17999.0,
         "currency": "RSD",
-        "store_url": "https://www.sportvision.rs/patike/70094405-nike-air-zoom-pegasus-42",
+        "store_url": "https://www.sportvision.rs/patike/70094405-nike-pegasus-42",
         "in_stock": true
       },
       "Intersport|IB1873-008": {
@@ -716,7 +716,7 @@
       "Sportvision|IW1246-099": {
         "price": 23499.0,
         "currency": "RSD",
-        "store_url": "https://www.sportvision.rs/patike/70087102-nike-zoom-fly-6-prm",
+        "store_url": "https://www.sportvision.rs/patike/70087102-nike-zoom-fly-6",
         "in_stock": true
       },
       "Run'n'more|IW1246-099": {
@@ -758,7 +758,7 @@
       "Run'n'more|IU5066-068": {
         "price": 23499.0,
         "currency": "RSD",
-        "store_url": "https://www.runnmore.com/patike/69819262-nike-patike-nike-zoom-fly-6",
+        "store_url": "https://www.runnmore.com/patike/69819262-nike-patike-zoom-fly-6",
         "in_stock": true
       }
     }
@@ -925,19 +925,19 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0GD2VF4YN": {
-    "price": 322.81,
+    "price": 279.77,
     "currency": "EUR",
     "name": "PUMA Deviate Nitro 4 Herren-Laufschuhe",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0GD2KPSM6": {
-    "price": 322.81,
+    "price": 279.77,
     "currency": "EUR",
     "name": "PUMA Deviate Nitro 4 Herren-Laufschuhe",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0GJ7MF13F": {
-    "price": 380.76,
+    "price": 329.99,
     "currency": "EUR",
     "name": "Nike Vomero Plus Straßenlaufschuh für Herren, HV8150",
     "in_stock": true
@@ -967,13 +967,13 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0GWZLWDF9": {
-    "price": 282.66,
+    "price": 244.97,
     "currency": "EUR",
     "name": "Nike Vaporfly 4 Herren Straßenrennschuhe (Barely Green/Volt Tint/Sapphire/Black Spruce)",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0FRNJL1K5": {
-    "price": 155.1,
+    "price": 134.42,
     "currency": "EUR",
     "name": "Nike Herren Air Zoom Pegasus 42Straßen-Laufschuh",
     "in_stock": true
@@ -1003,13 +1003,13 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0F4LNT5PY": {
-    "price": null,
+    "price": 259.97,
     "currency": "EUR",
     "name": "New Balance Herren FuelCell Supercomp Elite V5Laufschuh",
-    "in_stock": false
+    "in_stock": true
   },
   "https://www.amazon.de/dp/B0DN3Q5B49": {
-    "price": 158.56,
+    "price": 137.42,
     "currency": "EUR",
     "name": "HOKA Herren Laufschuhe",
     "in_stock": true
@@ -1027,13 +1027,13 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0DN5VJNFC": {
-    "price": 426.89,
+    "price": 369.97,
     "currency": "EUR",
     "name": "HOKA Unisex Erwachsene Laufschuhe Rocket X 3",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0F9QTJ6HN": {
-    "price": 197.3,
+    "price": 173.8,
     "currency": "EUR",
     "name": "Hoka Herren M Mach X 3Sneaker",
     "in_stock": true
@@ -1068,13 +1068,13 @@
     }
   },
   "https://www.amazon.de/dp/B0GJNG4SRL": {
-    "price": 162.68,
+    "price": 140.99,
     "currency": "EUR",
     "name": "Mizuno Herren Laufschuh Wave Horizon 9 - J1GC2626",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0GJNX2J7J": {
-    "price": 207.58,
+    "price": 179.9,
     "currency": "EUR",
     "name": "Mizuno Herren Laufschuh Wave Horizon 9 - J1GC2626",
     "in_stock": true
@@ -1092,7 +1092,7 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0FFC35CSC": {
-    "price": 580.61,
+    "price": 503.2,
     "currency": "EUR",
     "name": "SUUNTO Race 2 GPS-Sportuhr, 1,5-Zoll-AMOLED-Display, 115+ Sportmodi",
     "in_stock": true
