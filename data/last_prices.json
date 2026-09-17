@@ -973,16 +973,16 @@
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0FRNJL1K5": {
-    "price": 134.42,
+    "price": 120.18,
     "currency": "EUR",
     "name": "Nike Herren Air Zoom Pegasus 42Straßen-Laufschuh",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0FRNCC9TK": {
-    "price": null,
+    "price": 120.18,
     "currency": "EUR",
     "name": "Nike Herren Air Zoom Pegasus 42Straßen-Laufschuh",
-    "in_stock": false
+    "in_stock": true
   },
   "https://www.amazon.de/dp/B0FMFGSV61": {
     "price": null,
@@ -1092,7 +1092,7 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0FFC35CSC": {
-    "price": 503.2,
+    "price": 504.19,
     "currency": "EUR",
     "name": "SUUNTO Race 2 GPS-Sportuhr, 1,5-Zoll-AMOLED-Display, 115+ Sportmodi",
     "in_stock": true
