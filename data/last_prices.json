@@ -394,7 +394,7 @@
         "in_stock": true
       },
       "Buzz|IR7550-030": {
-        "price": 18999.0,
+        "price": 15199.0,
         "currency": "RSD",
         "store_url": "https://www.buzzsneakers.rs/patike/363265-nike-patike-nike-vomero-plus-cn",
         "in_stock": true
@@ -919,10 +919,10 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0F82S1DNL": {
-    "price": null,
+    "price": 126.46,
     "currency": "EUR",
     "name": "adidas Performance Adizero Evo SL Laufschuh schwarz, 45 1/3 Herren",
-    "in_stock": false
+    "in_stock": true
   },
   "https://www.amazon.de/dp/B0GD2VF4YN": {
     "price": 279.77,
@@ -973,7 +973,7 @@
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0FRNJL1K5": {
-    "price": 120.18,
+    "price": 134.42,
     "currency": "EUR",
     "name": "Nike Herren Air Zoom Pegasus 42Straßen-Laufschuh",
     "in_stock": true
@@ -982,7 +982,7 @@
     "price": 120.18,
     "currency": "EUR",
     "name": "Nike Herren Air Zoom Pegasus 42Straßen-Laufschuh",
-    "in_stock": true
+    "in_stock": false
   },
   "https://www.amazon.de/dp/B0FMFGSV61": {
     "price": null,
