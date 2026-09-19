@@ -676,7 +676,7 @@
         "price": 13999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70086201-nike-air-zoom-pegasus-42",
-        "in_stock": true
+        "in_stock": false
       },
       "Run'n'more|IB1873-102": {
         "price": 13999.0,
@@ -919,7 +919,7 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0F82S1DNL": {
-    "price": 126.46,
+    "price": 118.91,
     "currency": "EUR",
     "name": "adidas Performance Adizero Evo SL Laufschuh schwarz, 45 1/3 Herren",
     "in_stock": true
@@ -973,7 +973,7 @@
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0FRNJL1K5": {
-    "price": 134.42,
+    "price": 120.18,
     "currency": "EUR",
     "name": "Nike Herren Air Zoom Pegasus 42Straßen-Laufschuh",
     "in_stock": true
@@ -982,7 +982,7 @@
     "price": 120.18,
     "currency": "EUR",
     "name": "Nike Herren Air Zoom Pegasus 42Straßen-Laufschuh",
-    "in_stock": false
+    "in_stock": true
   },
   "https://www.amazon.de/dp/B0FMFGSV61": {
     "price": null,
@@ -1015,10 +1015,10 @@
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0DN3TBCGX": {
-    "price": null,
+    "price": 138.27,
     "currency": "EUR",
     "name": "HOKA Herren Laufschuhe",
-    "in_stock": false
+    "in_stock": true
   },
   "https://www.amazon.de/dp/B0DN59MLGZ": {
     "price": null,
@@ -1033,7 +1033,7 @@
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0F9QTJ6HN": {
-    "price": 173.8,
+    "price": 180.83,
     "currency": "EUR",
     "name": "Hoka Herren M Mach X 3Sneaker",
     "in_stock": true
@@ -1086,10 +1086,10 @@
     "in_stock": false
   },
   "https://www.amazon.com/dp/B0F9Z49CQ2": {
-    "price": null,
+    "price": 180.0,
     "currency": "USD",
     "name": "Mizuno Mens Wave Horizon 9",
-    "in_stock": false
+    "in_stock": true
   },
   "https://www.amazon.de/dp/B0FFC35CSC": {
     "price": 504.19,
