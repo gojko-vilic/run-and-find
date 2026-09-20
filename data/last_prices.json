@@ -1018,7 +1018,7 @@
     "price": 138.27,
     "currency": "EUR",
     "name": "HOKA Herren Laufschuhe",
-    "in_stock": true
+    "in_stock": false
   },
   "https://www.amazon.de/dp/B0DN59MLGZ": {
     "price": null,
@@ -1092,7 +1092,7 @@
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0FFC35CSC": {
-    "price": 504.19,
+    "price": 503.2,
     "currency": "EUR",
     "name": "SUUNTO Race 2 GPS-Sportuhr, 1,5-Zoll-AMOLED-Display, 115+ Sportmodi",
     "in_stock": true
