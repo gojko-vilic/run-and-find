@@ -282,7 +282,7 @@
         "in_stock": true
       },
       "Buzz|KI3381": {
-        "price": 12599.0,
+        "price": 13999.0,
         "currency": "RSD",
         "store_url": "https://www.buzzsneakers.rs/patike/338819-adidas-patike-adizero-evo-sl",
         "in_stock": true
@@ -394,7 +394,7 @@
         "in_stock": true
       },
       "Buzz|IR7550-030": {
-        "price": 15199.0,
+        "price": 18999.0,
         "currency": "RSD",
         "store_url": "https://www.buzzsneakers.rs/patike/363265-nike-patike-nike-vomero-plus-cn",
         "in_stock": true
@@ -438,7 +438,7 @@
         "price": 26999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70086176-nike-alphafly-3-glam",
-        "in_stock": true
+        "in_stock": false
       },
       "Run'n'more|FD8311-300": {
         "price": 29999.0,
@@ -773,7 +773,7 @@
     "name": "New Balance FUELCELL SUPERCOMP ELITE V5",
     "offers": {
       "Run'n'more|MRCELLR5": {
-        "price": 25999.0,
+        "price": 20799.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69775030-new-balance-patike-fuelcell",
         "in_stock": false
@@ -896,7 +896,7 @@
         "price": 24499.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69786877-hoka-patike-cielo-x1-3-0",
-        "in_stock": true
+        "in_stock": false
       },
       "Intersport|1171927-NYZ": {
         "price": 23449.0,
@@ -908,7 +908,7 @@
         "price": 24499.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70074164-hoka-cielo-x1-3-0",
-        "in_stock": true
+        "in_stock": false
       }
     }
   },
@@ -1006,7 +1006,7 @@
     "price": 259.97,
     "currency": "EUR",
     "name": "New Balance Herren FuelCell Supercomp Elite V5Laufschuh",
-    "in_stock": true
+    "in_stock": false
   },
   "https://www.amazon.de/dp/B0DN3Q5B49": {
     "price": 137.42,
@@ -1054,7 +1054,7 @@
         "in_stock": true
       },
       "Run'n'more|J1GC262651": {
-        "price": 21999.0,
+        "price": 17599.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69865045-mizuno-patike-wave-horizon-9",
         "in_stock": true
