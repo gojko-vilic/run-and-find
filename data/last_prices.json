@@ -42,7 +42,7 @@
     }
   },
   "https://www.runnmore.com/patike/69788780-adidas-patike-adizero-adios-pro-4": {
-    "price": 21999.0,
+    "price": 17599.2,
     "currency": "RSD",
     "name": "adidas Patike Adizero Adios Pro 4",
     "in_stock": false
@@ -63,7 +63,7 @@
         "in_stock": false
       },
       "Run'n'more|1013A162-400": {
-        "price": 31999.0,
+        "price": 25599.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69809398-asics-patike-metaspeed-sky-tokyo",
         "in_stock": true
@@ -165,7 +165,7 @@
         "price": 17599.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70092400-adidas-adizero-evo-sl-woven-m",
-        "in_stock": true
+        "in_stock": false
       },
       "Intersport|JH6206": {
         "price": 14079.0,
@@ -195,7 +195,7 @@
         "price": 17599.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69813799-adidas-patike-adizero-evo-sl",
-        "in_stock": true
+        "in_stock": false
       },
       "Sportvision|KI4542": {
         "price": 17599.0,
@@ -455,7 +455,7 @@
       "Run'n'more|FD8311-402": {
         "price": 39499.0,
         "currency": "RSD",
-        "store_url": "https://www.runnmore.com/patike/69817727-nike-patike-air-zoom-alphafly-3",
+        "store_url": "https://www.runnmore.com/patike/69817727-nike-patike-air-zoom-alphafly-next-3",
         "in_stock": true
       },
       "Intersport|FD8311-003": {
@@ -805,7 +805,7 @@
         "price": 14999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70069632-hoka-clifton-10",
-        "in_stock": true
+        "in_stock": false
       },
       "Sportvision|1162030-PTYG": {
         "price": 14999.0,
@@ -925,13 +925,13 @@
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0GD2VF4YN": {
-    "price": 279.77,
+    "price": 286.55,
     "currency": "EUR",
     "name": "PUMA Deviate Nitro 4 Herren-Laufschuhe",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0GD2KPSM6": {
-    "price": 279.77,
+    "price": 286.55,
     "currency": "EUR",
     "name": "PUMA Deviate Nitro 4 Herren-Laufschuhe",
     "in_stock": true
@@ -970,7 +970,7 @@
     "price": 244.97,
     "currency": "EUR",
     "name": "Nike Vaporfly 4 Herren Straßenrennschuhe (Barely Green/Volt Tint/Sapphire/Black Spruce)",
-    "in_stock": true
+    "in_stock": false
   },
   "https://www.amazon.de/dp/B0FRNJL1K5": {
     "price": 120.18,
@@ -1006,7 +1006,7 @@
     "price": 259.97,
     "currency": "EUR",
     "name": "New Balance Herren FuelCell Supercomp Elite V5Laufschuh",
-    "in_stock": false
+    "in_stock": true
   },
   "https://www.amazon.de/dp/B0DN3Q5B49": {
     "price": 137.42,
@@ -1018,7 +1018,7 @@
     "price": 138.27,
     "currency": "EUR",
     "name": "HOKA Herren Laufschuhe",
-    "in_stock": false
+    "in_stock": true
   },
   "https://www.amazon.de/dp/B0DN59MLGZ": {
     "price": null,
@@ -1033,7 +1033,7 @@
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0F9QTJ6HN": {
-    "price": 180.83,
+    "price": 191.9,
     "currency": "EUR",
     "name": "Hoka Herren M Mach X 3Sneaker",
     "in_stock": true
