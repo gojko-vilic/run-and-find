@@ -402,7 +402,7 @@
       "Buzz|IR7550-030": {
         "price": 15199.0,
         "currency": "RSD",
-        "store_url": "https://www.buzzsneakers.rs/patike/363265-nike-patike-nike-vomero-plus-cn",
+        "store_url": "https://www.buzzsneakers.rs/patike/363265-nike-patike-vomero-plus",
         "in_stock": true
       },
       "Buzz|HV8150-003": {
@@ -1107,7 +1107,7 @@
     "price": 160.65,
     "currency": "EUR",
     "name": "Mizuno Herren Laufschuh Wave Horizon 9 - J1GC2626",
-    "in_stock": true
+    "in_stock": false
   },
   "https://www.amazon.de/dp/B0GJNX2J7J": {
     "price": 204.99,
@@ -1128,7 +1128,7 @@
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0FFC35CSC": {
-    "price": 573.37,
+    "price": 563.45,
     "currency": "EUR",
     "name": "SUUNTO Race 2 GPS-Sportuhr, 1,5-Zoll-AMOLED-Display, 115+ Sportmodi",
     "in_stock": true
