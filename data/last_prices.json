@@ -98,7 +98,7 @@
     "name": "ASICS MEGABLAST",
     "offers": {
       "Run'n'more|1013A170-400": {
-        "price": 23199.0,
+        "price": 28999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69807698-asics-patike-megablast",
         "in_stock": false
@@ -139,7 +139,7 @@
         "in_stock": true
       },
       "Run'n'more|1013A177-750": {
-        "price": 21599.0,
+        "price": 26999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69807723-asics-patike-superblast-3",
         "in_stock": false
@@ -192,7 +192,7 @@
         "in_stock": true
       },
       "Run'n'more|KJ2521": {
-        "price": 14079.0,
+        "price": 17599.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69813799-adidas-patike-adizero-evo-sl-woven-m",
         "in_stock": false
@@ -210,7 +210,7 @@
         "in_stock": true
       },
       "Run'n'more|KI8342": {
-        "price": 14079.0,
+        "price": 17599.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69818840-adidas-patike-adizero-evo-sl",
         "in_stock": true
@@ -270,7 +270,7 @@
         "in_stock": true
       },
       "Run'n'more|KI4542": {
-        "price": 14079.0,
+        "price": 17599.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69817342-adidas-patike-adizero-evo-sl",
         "in_stock": true
@@ -340,7 +340,7 @@
     "name": "Nike VOMERO PLUS",
     "offers": {
       "Run'n'more|HV8150-111": {
-        "price": 18799.0,
+        "price": 23499.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69811291-nike-patike-vomero-plus",
         "in_stock": true
@@ -418,7 +418,7 @@
         "in_stock": true
       },
       "Run'n'more|HV8150-003": {
-        "price": 18799.0,
+        "price": 23499.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69772326-nike-patike-vomero-plus",
         "in_stock": true
@@ -513,7 +513,7 @@
         "in_stock": false
       },
       "Run'n'more|FD8311-800": {
-        "price": 23999.0,
+        "price": 29999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69788475-nike-patike-air-zoom-alphafly-next-3",
         "in_stock": false
@@ -596,7 +596,7 @@
         "in_stock": true
       },
       "Run'n'more|IQ7313-200": {
-        "price": 27599.0,
+        "price": 34499.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69788710-nike-patike-vaporfly-4-x-renegade",
         "in_stock": true
@@ -637,7 +637,7 @@
         "in_stock": true
       },
       "Run'n'more|IW2349-001": {
-        "price": 15599.0,
+        "price": 19499.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69818728-nike-patike-air-zoom-pegasus-42",
         "in_stock": true
@@ -667,7 +667,7 @@
         "in_stock": false
       },
       "Run'n'more|IB1873-008": {
-        "price": 14399.0,
+        "price": 17999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69814205-nike-patike-air-zoom-pegasus-42",
         "in_stock": true
@@ -750,7 +750,7 @@
         "in_stock": true
       },
       "Run'n'more|IW1246-099": {
-        "price": 18799.0,
+        "price": 23499.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69808723-nike-patike-zoom-fly-6-prm",
         "in_stock": true
@@ -786,7 +786,7 @@
         "in_stock": true
       },
       "Run'n'more|IU5066-068": {
-        "price": 18799.0,
+        "price": 23499.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69819262-nike-patike-zoom-fly-6",
         "in_stock": true
@@ -809,7 +809,7 @@
     "name": "New Balance FUELCELL SUPERCOMP ELITE V5",
     "offers": {
       "Run'n'more|MRCELLR5": {
-        "price": 20799.0,
+        "price": 25999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69775030-new-balance-patike-fuelcell",
         "in_stock": false
@@ -847,7 +847,7 @@
         "price": 11999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70069667-hoka-clifton-10",
-        "in_stock": true
+        "in_stock": false
       }
     }
   },
@@ -883,7 +883,7 @@
         "in_stock": false
       },
       "Run'n'more|1168724-NZS": {
-        "price": 17599.0,
+        "price": 21999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69786892-hoka-patike-rocket-x-3",
         "in_stock": false
@@ -906,7 +906,7 @@
     "name": "HOKA MACH X 3",
     "offers": {
       "Run'n'more|1168720-NZS": {
-        "price": 14399.0,
+        "price": 17999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69786897-hoka-patike-mach-x-3",
         "in_stock": false
@@ -929,7 +929,7 @@
     "name": "HOKA CIELO X1 3.0",
     "offers": {
       "Run'n'more|1171927-NYZ": {
-        "price": 19599.0,
+        "price": 24499.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69786877-hoka-patike-cielo-x1-3-0",
         "in_stock": false
@@ -955,25 +955,25 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0F82S1DNL": {
-    "price": 134.81,
+    "price": 134.72,
     "currency": "EUR",
     "name": "adidas Performance Adizero Evo SL Laufschuh schwarz, 45 1/3 Herren",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0GD2VF4YN": {
-    "price": 326.51,
+    "price": 326.29,
     "currency": "EUR",
     "name": "PUMA Deviate Nitro 4 Herren-Laufschuhe",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0GD2KPSM6": {
-    "price": 326.51,
+    "price": 326.29,
     "currency": "EUR",
     "name": "PUMA Deviate Nitro 4 Herren-Laufschuhe",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0GJ7MF13F": {
-    "price": 376.01,
+    "price": 375.75,
     "currency": "EUR",
     "name": "Nike Vomero Plus Straßenlaufschuh für Herren, HV8150",
     "in_stock": true
@@ -1009,13 +1009,13 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0FRNJL1K5": {
-    "price": 136.94,
+    "price": 136.85,
     "currency": "EUR",
     "name": "Nike Herren Air Zoom Pegasus 42Straßen-Laufschuh",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0FRNCC9TK": {
-    "price": 136.94,
+    "price": 136.85,
     "currency": "EUR",
     "name": "Nike Herren Air Zoom Pegasus 42Straßen-Laufschuh",
     "in_stock": true
@@ -1045,13 +1045,13 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0DN3Q5B49": {
-    "price": 156.58,
+    "price": 156.48,
     "currency": "EUR",
     "name": "HOKA Herren Laufschuhe",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0DN3TBCGX": {
-    "price": 157.55,
+    "price": 157.45,
     "currency": "EUR",
     "name": "HOKA Herren Laufschuhe",
     "in_stock": true
@@ -1063,22 +1063,22 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0DN5VJNFC": {
-    "price": 421.56,
+    "price": 421.28,
     "currency": "EUR",
     "name": "HOKA Unisex Erwachsene Laufschuhe Rocket X 3",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0F9QTJ6HN": {
-    "price": 223.87,
+    "price": 218.71,
     "currency": "EUR",
     "name": "Hoka Herren M Mach X 3Sneaker",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0F9QY49NM": {
-    "price": null,
+    "price": 218.16,
     "currency": "EUR",
     "name": "Hoka Herren M Mach X 3Sneaker",
-    "in_stock": false
+    "in_stock": true
   },
   "https://trebapatike.rs/sr/mizuno-wave-horizon-9": {
     "name": "Mizuno WAVE HORIZON 9",
@@ -1110,7 +1110,7 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0GJNX2J7J": {
-    "price": 204.99,
+    "price": 204.85,
     "currency": "EUR",
     "name": "Mizuno Herren Laufschuh Wave Horizon 9 - J1GC2626",
     "in_stock": true
@@ -1125,10 +1125,10 @@
     "price": 180.0,
     "currency": "USD",
     "name": "Mizuno Mens Wave Horizon 9",
-    "in_stock": true
+    "in_stock": false
   },
   "https://www.amazon.de/dp/B0FFC35CSC": {
-    "price": 563.45,
+    "price": 574.11,
     "currency": "EUR",
     "name": "SUUNTO Race 2 GPS-Sportuhr, 1,5-Zoll-AMOLED-Display, 115+ Sportmodi",
     "in_stock": true
