@@ -802,6 +802,18 @@
         "currency": "RSD",
         "store_url": "https://www.extrasports.com/SRB_rs/patike/379903-nike-patike-zoom-fly-6",
         "in_stock": true
+      },
+      "Run'n'more|IQ0666-500": {
+        "price": 21999.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69867585-nike-patike-zoom-fly-6-rsg",
+        "in_stock": true
+      },
+      "Sportvision|IQ0666-500": {
+        "price": 21999.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70149590-nike-zoom-fly-6-rsg",
+        "in_stock": true
       }
     }
   },
@@ -841,7 +853,7 @@
         "price": 11999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70035912-hoka-clifton-10",
-        "in_stock": true
+        "in_stock": false
       },
       "Sportvision|1162030-BBLC": {
         "price": 11999.0,
@@ -964,7 +976,7 @@
     "price": 136.62,
     "currency": "EUR",
     "name": "adidas Performance Adizero Evo SL Laufschuh schwarz, 45 1/3 Herren",
-    "in_stock": true
+    "in_stock": false
   },
   "https://www.amazon.de/dp/B0GD2VF4YN": {
     "price": 322.47,
@@ -1045,13 +1057,13 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0F4LNT5PY": {
-    "price": 259.97,
+    "price": 292.56,
     "currency": "EUR",
     "name": "New Balance Herren FuelCell Supercomp Elite V5Laufschuh",
-    "in_stock": false
+    "in_stock": true
   },
   "https://www.amazon.de/dp/B0DN3Q5B49": {
-    "price": 154.29,
+    "price": 150.77,
     "currency": "EUR",
     "name": "HOKA Herren Laufschuhe",
     "in_stock": true
@@ -1072,7 +1084,7 @@
     "price": 416.35,
     "currency": "EUR",
     "name": "HOKA Unisex Erwachsene Laufschuhe Rocket X 3",
-    "in_stock": true
+    "in_stock": false
   },
   "https://www.amazon.de/dp/B0F9QTJ6HN": {
     "price": 218.22,
