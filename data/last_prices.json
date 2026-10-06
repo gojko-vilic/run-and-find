@@ -216,7 +216,7 @@
         "in_stock": true
       },
       "ET Sport|KI6901": {
-        "price": 12736.0,
+        "price": 14152.0,
         "currency": "RSD",
         "store_url": "https://www.etsport.rs/patike-za-trcanje/33985-patike-adidas-adizero-evo-sl-woven-m",
         "in_stock": true
@@ -703,7 +703,7 @@
         "in_stock": true
       },
       "Sportvision|IB1873-702": {
-        "price": 11199.0,
+        "price": 13999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70086201-nike-air-zoom-pegasus-42",
         "in_stock": false
@@ -758,7 +758,7 @@
       "Run'n'more|IW1246-099": {
         "price": 23499.0,
         "currency": "RSD",
-        "store_url": "https://www.runnmore.com/patike/69808723-nike-patike-zoom-fly-6-prm",
+        "store_url": "https://www.runnmore.com/patike/69808723-nike-patike-zoom-fly-6",
         "in_stock": true
       },
       "Sportvision|FN8454-404": {
@@ -979,19 +979,19 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0GD2VF4YN": {
-    "price": 319.97,
+    "price": 321.6,
     "currency": "EUR",
     "name": "PUMA Deviate Nitro 4 Herren-Laufschuhe",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0GD2KPSM6": {
-    "price": 319.97,
+    "price": 321.6,
     "currency": "EUR",
     "name": "PUMA Deviate Nitro 4 Herren-Laufschuhe",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0GJ7MF13F": {
-    "price": 368.48,
+    "price": 370.35,
     "currency": "EUR",
     "name": "Nike Vomero Plus Straßenlaufschuh für Herren, HV8150",
     "in_stock": true
@@ -1027,13 +1027,13 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0FRNJL1K5": {
-    "price": 134.2,
+    "price": 134.88,
     "currency": "EUR",
     "name": "Nike Herren Air Zoom Pegasus 42Straßen-Laufschuh",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0FRNCC9TK": {
-    "price": 134.2,
+    "price": 134.88,
     "currency": "EUR",
     "name": "Nike Herren Air Zoom Pegasus 42Straßen-Laufschuh",
     "in_stock": true
@@ -1063,13 +1063,13 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0DN3Q5B49": {
-    "price": 149.59,
+    "price": 150.36,
     "currency": "EUR",
     "name": "HOKA Herren Laufschuhe",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0DN3TBCGX": {
-    "price": 139.22,
+    "price": 150.36,
     "currency": "EUR",
     "name": "HOKA Herren Laufschuhe",
     "in_stock": true
@@ -1096,7 +1096,7 @@
     "price": 213.94,
     "currency": "EUR",
     "name": "Hoka Herren M Mach X 3Sneaker",
-    "in_stock": true
+    "in_stock": false
   },
   "https://trebapatike.rs/sr/mizuno-wave-horizon-9": {
     "name": "Mizuno WAVE HORIZON 9",
@@ -1125,10 +1125,10 @@
     "price": 161.01,
     "currency": "EUR",
     "name": "Mizuno Herren Laufschuh Wave Horizon 9 - J1GC2626",
-    "in_stock": true
+    "in_stock": false
   },
   "https://www.amazon.de/dp/B0GJNX2J7J": {
-    "price": 200.88,
+    "price": 201.91,
     "currency": "EUR",
     "name": "Mizuno Herren Laufschuh Wave Horizon 9 - J1GC2626",
     "in_stock": true
@@ -1146,7 +1146,7 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0FFC35CSC": {
-    "price": 562.99,
+    "price": 565.86,
     "currency": "EUR",
     "name": "SUUNTO Race 2 GPS-Sportuhr, 1,5-Zoll-AMOLED-Display, 115+ Sportmodi",
     "in_stock": true
