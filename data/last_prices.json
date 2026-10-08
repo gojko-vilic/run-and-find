@@ -108,6 +108,18 @@
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70084840-asics-megablast",
         "in_stock": false
+      },
+      "Run'n'more|1013A170-101": {
+        "price": 28999.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69867804-asics-patike-megablast",
+        "in_stock": true
+      },
+      "Sportvision|1013A170-101": {
+        "price": 28999.0,
+        "currency": "RSD",
+        "store_url": "https://www.sportvision.rs/patike/70149994-asics-megablast",
+        "in_stock": true
       }
     }
   },
@@ -216,13 +228,13 @@
         "in_stock": true
       },
       "ET Sport|KI6901": {
-        "price": 14152.0,
+        "price": 12736.0,
         "currency": "RSD",
         "store_url": "https://www.etsport.rs/patike-za-trcanje/33985-patike-adidas-adizero-evo-sl-woven-m",
         "in_stock": true
       },
       "ET Sport|KI6927": {
-        "price": 13267.0,
+        "price": 11940.0,
         "currency": "RSD",
         "store_url": "https://www.etsport.rs/patike-za-trcanje/33630-patike-adidas-adizero-evo-sl-woven-m",
         "in_stock": true
@@ -421,7 +433,7 @@
         "price": 16999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69782002-nike-patike-vomero-plus",
-        "in_stock": true
+        "in_stock": false
       },
       "Run'n'more|HV8150-003": {
         "price": 23499.0,
@@ -510,7 +522,7 @@
         "price": 29999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69787377-nike-patike-air-zoom-alphafly-next-3",
-        "in_stock": true
+        "in_stock": false
       },
       "Sportvision|FD8311-800": {
         "price": 29999.0,
@@ -605,7 +617,7 @@
         "price": 16500.0,
         "currency": "RSD",
         "store_url": "https://www.intersport.rs/patike-za-trcanje/muske-patike-za-trcanje-nike-zoomx-vaporfly-next-4.html",
-        "in_stock": true
+        "in_stock": false
       },
       "Run'n'more|IQ7313-200": {
         "price": 34499.0,
@@ -673,10 +685,10 @@
         "in_stock": true
       },
       "Sportvision|IB1873-102": {
-        "price": 11199.0,
+        "price": 13999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70079545-nike-pegasus-42",
-        "in_stock": false
+        "in_stock": true
       },
       "Run'n'more|IB1873-008": {
         "price": 17999.0,
@@ -862,7 +874,7 @@
         "in_stock": false
       },
       "Sportvision|1162030-BBLC": {
-        "price": 11999.0,
+        "price": 14999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70069632-hoka-clifton-10",
         "in_stock": false
@@ -981,26 +993,26 @@
   "https://www.amazon.de/dp/B0F82S1DNL": {
     "price": 136.62,
     "currency": "EUR",
-    "name": "adidas Performance Adizero Evo SL Laufschuh schwarz, 45 1/3 Herren",
+    "name": "adidas Adizero Evo SL M Laufschuh Herren White/Black - JH6206",
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0GD2VF4YN": {
-    "price": 321.6,
+    "price": 321.1,
     "currency": "EUR",
     "name": "PUMA Deviate Nitro 4 Herren-Laufschuhe",
-    "in_stock": false
+    "in_stock": true
   },
   "https://www.amazon.de/dp/B0GD2KPSM6": {
-    "price": 321.6,
+    "price": 321.1,
     "currency": "EUR",
     "name": "PUMA Deviate Nitro 4 Herren-Laufschuhe",
-    "in_stock": false
+    "in_stock": true
   },
   "https://www.amazon.de/dp/B0GJ7MF13F": {
-    "price": 370.35,
+    "price": 369.77,
     "currency": "EUR",
     "name": "Nike Vomero Plus Straßenlaufschuh für Herren, HV8150",
-    "in_stock": false
+    "in_stock": true
   },
   "https://www.amazon.de/dp/B0GJ7QKFWH": {
     "price": null,
@@ -1033,16 +1045,16 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0FRNJL1K5": {
-    "price": 134.88,
+    "price": 134.67,
     "currency": "EUR",
     "name": "Nike Herren Air Zoom Pegasus 42Straßen-Laufschuh",
-    "in_stock": false
+    "in_stock": true
   },
   "https://www.amazon.de/dp/B0FRNCC9TK": {
-    "price": 134.88,
+    "price": 134.67,
     "currency": "EUR",
     "name": "Nike Herren Air Zoom Pegasus 42Straßen-Laufschuh",
-    "in_stock": false
+    "in_stock": true
   },
   "https://www.amazon.de/dp/B0FMFGSV61": {
     "price": 215.83,
@@ -1060,25 +1072,25 @@
     "price": 223.67,
     "currency": "EUR",
     "name": "New Balance Herren FuelCell Supercomp Elite V5Laufschuh",
-    "in_stock": true
+    "in_stock": false
   },
   "https://www.amazon.de/dp/B0F4LNT5PY": {
     "price": 215.94,
     "currency": "EUR",
     "name": "New Balance Herren FuelCell Supercomp Elite V5Laufschuh",
-    "in_stock": true
+    "in_stock": false
   },
   "https://www.amazon.de/dp/B0DN3Q5B49": {
-    "price": 150.36,
+    "price": 150.13,
     "currency": "EUR",
     "name": "HOKA Herren Laufschuhe",
-    "in_stock": false
+    "in_stock": true
   },
   "https://www.amazon.de/dp/B0DN3TBCGX": {
-    "price": 150.36,
+    "price": 150.12,
     "currency": "EUR",
     "name": "HOKA Herren Laufschuhe",
-    "in_stock": false
+    "in_stock": true
   },
   "https://www.amazon.de/dp/B0DN59MLGZ": {
     "price": null,
@@ -1099,10 +1111,10 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0F9QY49NM": {
-    "price": 213.94,
+    "price": 249.97,
     "currency": "EUR",
     "name": "Hoka Herren M Mach X 3Sneaker",
-    "in_stock": false
+    "in_stock": true
   },
   "https://trebapatike.rs/sr/mizuno-wave-horizon-9": {
     "name": "Mizuno WAVE HORIZON 9",
@@ -1134,10 +1146,10 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0GJNX2J7J": {
-    "price": 201.91,
+    "price": 201.59,
     "currency": "EUR",
     "name": "Mizuno Herren Laufschuh Wave Horizon 9 - J1GC2626",
-    "in_stock": false
+    "in_stock": true
   },
   "https://www.amazon.com/dp/B0F9Z1DQXH": {
     "price": null,
@@ -1152,7 +1164,7 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0FFC35CSC": {
-    "price": 419.33,
+    "price": 563.87,
     "currency": "EUR",
     "name": "SUUNTO Race 2 GPS-Sportuhr, 1,5-Zoll-AMOLED-Display, 115+ Sportmodi",
     "in_stock": true
