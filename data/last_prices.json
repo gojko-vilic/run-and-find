@@ -711,7 +711,7 @@
       "Run'n'more|IV6292-451": {
         "price": 17549.0,
         "currency": "RSD",
-        "store_url": "https://www.runnmore.com/patike/69812630-nike-patike-air-zoom-pegasus-42",
+        "store_url": "https://www.runnmore.com/patike/69812630-nike-patike-pegasus-42",
         "in_stock": true
       },
       "Sportvision|IB1873-102": {
@@ -723,7 +723,7 @@
       "Run'n'more|IB1873-008": {
         "price": 16199.0,
         "currency": "RSD",
-        "store_url": "https://www.runnmore.com/patike/69814205-nike-patike-air-zoom-pegasus-42",
+        "store_url": "https://www.runnmore.com/patike/69814205-nike-patike-pegasus-42",
         "in_stock": true
       },
       "Sportvision|IB1873-008": {
@@ -861,6 +861,12 @@
         "price": 17599.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70149590-nike-zoom-fly-6-rsg",
+        "in_stock": true
+      },
+      "Run'n'more|FN8454-404": {
+        "price": 19799.0,
+        "currency": "RSD",
+        "store_url": "https://www.runnmore.com/patike/69813452-nike-patike-zoom-fly-6",
         "in_stock": true
       }
     }
@@ -1069,7 +1075,7 @@
     }
   },
   "https://www.amazon.de/dp/B0F82S1DNL": {
-    "price": 133.58,
+    "price": 136.3,
     "currency": "EUR",
     "name": "adidas Performance Adizero Evo SL Laufschuh Herren",
     "in_stock": true
@@ -1159,7 +1165,7 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0DN3Q5B49": {
-    "price": 149.95,
+    "price": 149.97,
     "currency": "EUR",
     "name": "HOKA Herren Laufschuhe",
     "in_stock": true
@@ -1242,7 +1248,7 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0FFC35CSC": {
-    "price": 563.24,
+    "price": 564.34,
     "currency": "EUR",
     "name": "SUUNTO Race 2 GPS-Sportuhr, 1,5-Zoll-AMOLED-Display, 115+ Sportmodi, All Black",
     "in_stock": true
