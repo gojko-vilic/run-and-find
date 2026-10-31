@@ -98,7 +98,7 @@
     "name": "ASICS MEGABLAST",
     "offers": {
       "Run'n'more|1013A170-400": {
-        "price": 28999.0,
+        "price": 23199.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69807698-asics-patike-megablast",
         "in_stock": false
@@ -148,10 +148,10 @@
         "price": 21599.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70084732-asics-superblast-3",
-        "in_stock": true
+        "in_stock": false
       },
       "Run'n'more|1013A177-750": {
-        "price": 26999.0,
+        "price": 21599.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69807723-asics-patike-superblast-3",
         "in_stock": false
@@ -160,10 +160,10 @@
         "price": 21599.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69807631-asics-patike-superblast-3",
-        "in_stock": true
+        "in_stock": false
       },
       "Run'n'more|1013A177-101": {
-        "price": 26999.0,
+        "price": 21599.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69868350-asics-patike-superblast-3",
         "in_stock": false
@@ -216,7 +216,7 @@
         "in_stock": true
       },
       "Run'n'more|KJ2521": {
-        "price": 17599.0,
+        "price": 14079.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69813799-adidas-patike-adizero-evo-sl",
         "in_stock": false
@@ -608,7 +608,7 @@
         "in_stock": true
       },
       "Run'n'more|HF6414-300": {
-        "price": 22999.0,
+        "price": 18399.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69788515-nike-patike-zoomx-vaporfly-next-4",
         "in_stock": true
@@ -632,7 +632,7 @@
         "in_stock": true
       },
       "Run'n'more|HF6414-800": {
-        "price": 23999.0,
+        "price": 19199.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69787996-nike-patike-zoomx-vaporfly-4",
         "in_stock": true
@@ -840,7 +840,7 @@
         "in_stock": true
       },
       "Run'n'more|IU5066-068": {
-        "price": 23499.0,
+        "price": 18799.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69819262-nike-patike-zoom-fly-6",
         "in_stock": true
@@ -852,7 +852,7 @@
         "in_stock": true
       },
       "Run'n'more|IQ0666-500": {
-        "price": 21999.0,
+        "price": 17599.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69867585-nike-patike-zoom-fly-6-rsg",
         "in_stock": true
@@ -864,7 +864,7 @@
         "in_stock": true
       },
       "Run'n'more|FN8454-404": {
-        "price": 21999.0,
+        "price": 17599.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69813452-nike-patike-zoom-fly-6",
         "in_stock": true
@@ -961,7 +961,7 @@
         "in_stock": true
       },
       "Run'n'more|1168724-NZS": {
-        "price": 18999.0,
+        "price": 17099.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69786892-hoka-patike-rocket-x-3",
         "in_stock": true
@@ -973,7 +973,7 @@
         "in_stock": true
       },
       "Run'n'more|1168724-BNNN": {
-        "price": 29999.0,
+        "price": 26999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69867742-hoka-patike-rocket-x-3",
         "in_stock": true
@@ -1075,9 +1075,9 @@
     }
   },
   "https://www.amazon.de/dp/B0F82S1DNL": {
-    "price": 136.85,
+    "price": 135.45,
     "currency": "EUR",
-    "name": "adidas Performance Adizero Evo SL Laufschuh Herren",
+    "name": "adidas Performance Adizero Evo Sl Laufschuh Herren",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0GD2VF4YN": {
@@ -1171,7 +1171,7 @@
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0DN3TBCGX": {
-    "price": 138.88,
+    "price": 149.02,
     "currency": "EUR",
     "name": "HOKA Herren Laufschuhe",
     "in_stock": true
@@ -1210,7 +1210,7 @@
         "in_stock": true
       },
       "Run'n'more|J1GC262651": {
-        "price": 21999.0,
+        "price": 17599.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69865045-mizuno-patike-wave-skyrise-7",
         "in_stock": true
