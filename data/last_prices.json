@@ -133,7 +133,7 @@
     "name": "ASICS SUPERBLAST 3",
     "offers": {
       "Intersport|1013A177-750": {
-        "price": 24299.0,
+        "price": 26999.0,
         "currency": "RSD",
         "store_url": "https://www.intersport.rs/patike-za-trcanje/muske-patike-za-trcanje-asics-superblast-3.html",
         "in_stock": false
@@ -252,7 +252,7 @@
         "in_stock": true
       },
       "Trendmaker|KJ0430": {
-        "price": 14079.0,
+        "price": 17599.0,
         "currency": "RSD",
         "store_url": "https://www.trendmaker.rs/patike-za-trcanje/muske-patike-za-trcanje-adidas-adizero-evo-sl-exo-m.html",
         "in_stock": true
@@ -264,7 +264,7 @@
         "in_stock": true
       },
       "N Sport|JP7149": {
-        "price": 14159.0,
+        "price": 17699.0,
         "currency": "RSD",
         "store_url": "https://www.n-sport.net/patike-za-trcanje/muske-patike-za-trcanje-adidas-adizero-evo-sl-m.html",
         "in_stock": true
@@ -276,7 +276,7 @@
         "in_stock": true
       },
       "Trendmaker|JH6206": {
-        "price": 14079.0,
+        "price": 17599.0,
         "currency": "RSD",
         "store_url": "https://www.trendmaker.rs/patike-za-trcanje/muske-patike-za-trcanje-adidas-adizero-evo-sl-m.html",
         "in_stock": true
@@ -324,7 +324,7 @@
         "in_stock": true
       },
       "Trendmaker|KH9575": {
-        "price": 14079.0,
+        "price": 17599.0,
         "currency": "RSD",
         "store_url": "https://www.trendmaker.rs/patike-za-trcanje/muske-patike-adidas-adizero-evo-sl-lightstrikepro-running-shoes.html",
         "in_stock": true
@@ -979,7 +979,7 @@
         "in_stock": true
       },
       "Intersport|1168724-BNNN": {
-        "price": 23999.0,
+        "price": 29999.0,
         "currency": "RSD",
         "store_url": "https://www.intersport.rs/patike-za-trcanje/muske-patike-za-tracanje-hoka-u-rocket-x-3.html",
         "in_stock": true
@@ -1067,7 +1067,7 @@
         "in_stock": true
       },
       "Intersport|1171927-CRBN": {
-        "price": 26799.0,
+        "price": 33499.0,
         "currency": "RSD",
         "store_url": "https://www.intersport.rs/patike-za-trcanje/muske-patike-za-tracanje-hoka-u-cielo-x1-3-0.html",
         "in_stock": true
@@ -1075,7 +1075,7 @@
     }
   },
   "https://www.amazon.de/dp/B0F82S1DNL": {
-    "price": 137.98,
+    "price": 136.58,
     "currency": "EUR",
     "name": "adidas Performance Adizero Evo Sl Laufschuh Herren",
     "in_stock": true
