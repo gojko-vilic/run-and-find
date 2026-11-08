@@ -1129,7 +1129,7 @@
     }
   },
   "https://www.amazon.de/dp/B0F82S1DNL": {
-    "price": 139.64,
+    "price": 168.98,
     "currency": "EUR",
     "name": "adidas Performance Adizero Evo Sl Laufschuh Herren",
     "in_stock": true
@@ -1195,7 +1195,7 @@
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0DN3TBCGX": {
-    "price": 150.53,
+    "price": 150.54,
     "currency": "EUR",
     "name": "HOKA Herren Laufschuhe",
     "in_stock": true
@@ -1222,7 +1222,7 @@
     "price": 257.89,
     "currency": "EUR",
     "name": "Hoka Herren Mach X 3Laufschuh",
-    "in_stock": true
+    "in_stock": false
   },
   "https://trebapatike.rs/sr/mizuno-wave-horizon-9": {
     "name": "Mizuno WAVE HORIZON 9",
