@@ -87,7 +87,9 @@ class BaseScraper:
                 offer = data.get("offers", {})
                 if isinstance(offer, list):
                     offer = offer[0]
-                price = float(offer.get("price") or 0)
+                # An AggregateOffer quotes a range, its Offers nested inside;
+                # the low end is what a customer pays.
+                price = float(offer.get("price") or offer.get("lowPrice") or 0)
                 currency = offer.get("priceCurrency", "")
                 availability = offer.get("availability", "")
                 in_stock = not availability or availability.endswith("InStock")
@@ -97,6 +99,15 @@ class BaseScraper:
                         "price": price,
                         "currency": currency,
                         "in_stock": in_stock,
+                    }
+                # A sold-out product has no price to quote; that is a stock
+                # state to record, not a page we failed to read.
+                if availability.endswith("OutOfStock"):
+                    return {
+                        "name": name,
+                        "price": None,
+                        "currency": currency,
+                        "in_stock": False,
                     }
             except (json.JSONDecodeError, KeyError, ValueError, TypeError):
                 continue

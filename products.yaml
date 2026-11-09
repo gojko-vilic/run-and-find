@@ -10,12 +10,21 @@
 # store prints it (Sportvision), US on Amazon.com, EU everywhere else. Brands
 # print different EU numbers for the same foot, hence the per-brand rows
 # (from each brand's own chart; Sportvision's cm column confirms them).
+# Clothing (jackets) is tracked the same way in the letter sizes under
+# `clothing`, jeans by the exact waist/length pair under `jeans`, per model
+# (matched on the start of the product name, like the EU rows per brand);
+# Fashion&Friends pages are read for the sizes still in stock.
 sizes:
   cm: ['28.5', '29']
   us: ['10.5', '11']
+  clothing: ['M', 'L']
+  jeans:
+    "Levi's 512": ['32/34']
+    "Levi's 502": ['31/32']
   eu:
     default: ['44.5', '45']
-    adidas: ['44 2/3', '45 1/3']
+    # Amazon labels adidas's 44 2/3 / 45 1/3 slot plainly "45" on some listings
+    adidas: ['44 2/3', '45 1/3', '45']
     hoka: ['44 2/3', '45 1/3']
     puma: ['44', '44.5']
     mizuno: ['44', '44.5']
@@ -90,12 +99,18 @@ products:
   # Red/green colourway; parent B0F4M87W8F has no buy box.
   - url: https://www.amazon.de/dp/B0DYKSFTTX
     name: 'Nike Alphafly 3 (Amazon.de, 44.5)'
-  - url: https://www.amazon.de/dp/B0DYL97H4C
+  # The 45 was B0DYL97H4C; Amazon dropped that child from the listing in
+  # Nov 2026 and this is the one it now names for 45 (no offer yet).
+  - url: https://www.amazon.de/dp/B0F4LT3X1P
     name: 'Nike Alphafly 3 (Amazon.de, 45)'
 
   - url: https://trebapatike.rs/sr/nike-vaporfly-4
     name: 'Nike Vaporfly 4'
     gender: [men, unisex]
+  # Nov 2026: the Barely Green listing lost its 44.5 and 45 children (only
+  # 39–41 and 45.5 left) and amazon.de has no other Vaporfly 4 listing, so
+  # these sit as out of stock; the checker names the ASIN to switch to the
+  # day the listing offers 44.5 or 45 again.
   - url: https://www.amazon.de/dp/B0GWZNDHLG
     name: 'Nike Vaporfly 4 (Amazon.de, 44.5)'
   - url: https://www.amazon.de/dp/B0GWZLWDF9
@@ -113,10 +128,13 @@ products:
   - url: https://trebapatike.rs/sr/nike-zoom-fly-6
     name: 'Nike Zoom Fly 6'
     gender: [men, unisex]
-  # Men's FN8454 listing (B0F2GLFQDD was the women's FN8455).
-  - url: https://www.amazon.de/dp/B0FMFGSV61
+  # Men's FN8454 listing (B0F2GLFQDD was the women's FN8455). The 44.5 and
+  # 45 were B0FMFGSV61 / B0FMFJNG95; Amazon dropped those children in Nov
+  # 2026 and these are the ones it now names for those sizes (marketplace
+  # sellers at 320–355 EUR when checked).
+  - url: https://www.amazon.de/dp/B0F4LTD5S5
     name: 'Nike Zoom Fly 6 (Amazon.de, 44.5)'
-  - url: https://www.amazon.de/dp/B0FMFJNG95
+  - url: https://www.amazon.de/dp/B0F4M8Z53Z
     name: 'Nike Zoom Fly 6 (Amazon.de, 45)'
 
   # ── New Balance ───────────────────────────────────────────────────────────
@@ -189,12 +207,110 @@ products:
   - url: https://www.amazon.com/dp/B0F9Z49CQ2
     name: 'Mizuno Wave Horizon 9 (Amazon.com, US 11)'
 
-  # ── Suunto ────────────────────────────────────────────────────────────────
+  # ── Wellensteyn ───────────────────────────────────────────────────────────
 
-  # Beosport is Suunto's Serbian distributor; no other .rs store lists it.
-  - url: https://rs.beosport.com/suunto-race-2-all-black-mf-uredjaj-ss051200000
-    name: 'Suunto Race 2 All Black'
-  # All Black colour ASIN of the Race 2 listing; amazon.com B0FJYB53ZB does not
-  # ship to Austria.
-  - url: https://www.amazon.de/dp/B0FFC35CSC
-    name: 'Suunto Race 2 All Black (Amazon.de)'
+  # Fashion&Friends is the only Serbian web shop carrying these exact models
+  # (checked Nov 2026). Pista, Leone Fashion, Pantera, Totem and Ananas stock
+  # other Wellensteyn models; Remiks lists WEMOLM-719-SW (out of stock) but
+  # sits behind a Cloudflare browser check the scraper cannot pass; XYZ and
+  # the official Wellensteyn stores (Knez Mihailova 41, BIG Outlet Inđija)
+  # sell in person only. Tracked in M and L.
+  - url: https://www.fashionandfriends.com/rs/wellensteyn-puffer-muska-jakna-wemolm-856-do/
+    name: 'Wellensteyn MOL Men darkarmy/orange (WEMOLM-856-DO)'
+    gender: [men, unisex]
+  - url: https://www.fashionandfriends.com/rs/wellensteyn-crna-muska-jakna-webbms-870-sw/
+    name: 'Wellensteyn Blackbird Men Short black (WEBBMS-870-SW)'
+    gender: [men, unisex]
+  - url: https://www.fashionandfriends.com/rs/wellensteyn-crna-muska-jakna-wemolm-719-sw/
+    name: 'Wellensteyn MOL Men MoSoDuHiTec black (WEMOLM-719-SW)'
+    gender: [men, unisex]
+  - url: https://www.fashionandfriends.com/rs/wellensteyn-prosivena-muska-jakna-wemolm-462-sw/
+    name: 'Wellensteyn MOL Men CoolPowAirTec black (WEMOLM-462-SW)'
+    gender: [men, unisex]
+
+  # ── Levi's ────────────────────────────────────────────────────────────────
+
+  # Fashion&Friends (importer Fashion Company) is the only Serbian web shop
+  # the scraper can read for this wash (checked Nov 2026). levi.com/RS lists
+  # it but Akamai refuses non-browser clients, Remiks sells other 512 washes
+  # behind a Cloudflare browser check; Ananas, Sport Vision, N Sport and
+  # Shoppster do not carry it. Tracked in W32 L34 only (F&F label 32-034).
+  # Every 512 Slim Taper (LV28833) colour Fashion&Friends has in stock:
+  - url: https://www.fashionandfriends.com/rs/levis-512-slim-taper-muske-farmerke-lv28833-1560/
+    name: "Levi's 512 Slim Taper blue (28833-1560)"
+    gender: [men, unisex]
+  - url: https://www.fashionandfriends.com/rs/levis-512-slim-taper-muske-farmerke-lv28833-1561/
+    name: "Levi's 512 Slim Taper grey (28833-1561)"
+    gender: [men, unisex]
+  - url: https://www.fashionandfriends.com/rs/levis-512-muske-farmerke-lv28833-1262/
+    name: "Levi's 512 Slim Taper grey (28833-1262)"
+    gender: [men, unisex]
+  - url: https://www.fashionandfriends.com/rs/levis-512-muske-farmerke-lv28833-1573/
+    name: "Levi's 512 Slim Taper denim, cotton/lyocell (28833-1573)"
+    gender: [men, unisex]
+  # Older colours whose pages are still up but sold out in every size —
+  # tracked so a restock in 32/34 is reported.
+  - url: https://www.fashionandfriends.com/rs/levis-512-muske-farmerke-lv28833-1280/
+    name: "Levi's 512 Slim Taper dark grey (28833-1280)"
+    gender: [men, unisex]
+  - url: https://www.fashionandfriends.com/rs/levis-512-muske-farmerke-lv28833-1290/
+    name: "Levi's 512 Slim Taper dark blue (28833-1290)"
+    gender: [men, unisex]
+  - url: https://www.fashionandfriends.com/rs/levis-512-muske-farmerke-lv28833-1299/
+    name: "Levi's 512 Slim Taper (28833-1299)"
+    gender: [men, unisex]
+  - url: https://www.fashionandfriends.com/rs/levis-512-muske-farmerke-lv28833-1302/
+    name: "Levi's 512 Slim Taper (28833-1302)"
+    gender: [men, unisex]
+  - url: https://www.fashionandfriends.com/rs/levis-512-muske-farmerke-lv28833-1304/
+    name: "Levi's 512 Slim Taper dark blue (28833-1304)"
+    gender: [men, unisex]
+  - url: https://www.fashionandfriends.com/rs/levis-512-muske-farmerke-lv28833-1306/
+    name: "Levi's 512 Slim Taper navy (28833-1306)"
+    gender: [men, unisex]
+
+  # 502 Taper (LV29507), tracked in W31 L32 only (F&F label 31-032): every
+  # colour Fashion&Friends has a page for. LV59684-0171 is the 502 taper in
+  # waists 40–44 only, so it is left out. Checked Nov 2026.
+  - url: https://www.fashionandfriends.com/rs/levis-502-muske-farmerke-lv29507-1417/
+    name: "Levi's 502 Taper light blue (29507-1417)"
+    gender: [men, unisex]
+  - url: https://www.fashionandfriends.com/rs/levis-502-muske-farmerke-lv29507-1880/
+    name: "Levi's 502 Taper light blue (29507-1880)"
+    gender: [men, unisex]
+  - url: https://www.fashionandfriends.com/rs/levis-502-muske-farmerke-lv29507-1420/
+    name: "Levi's 502 Taper grey (29507-1420)"
+    gender: [men, unisex]
+  - url: https://www.fashionandfriends.com/rs/levis-502-muske-farmerke-lv29507-0280/
+    name: "Levi's 502 Taper navy (29507-0280)"
+    gender: [men, unisex]
+  - url: https://www.fashionandfriends.com/rs/levis-502-taper-muske-farmerke-lv29507-1878/
+    name: "Levi's 502 Taper olive (29507-1878)"
+    gender: [men, unisex]
+  - url: https://www.fashionandfriends.com/rs/levis-502-muske-farmerke-lv29507-1884/
+    name: "Levi's 502 Taper grey, cotton/lyocell (29507-1884)"
+    gender: [men, unisex]
+  - url: https://www.fashionandfriends.com/rs/levis-502-muske-farmerke-lv29507-1926/
+    name: "Levi's 502 Taper navy Authentic Soft (29507-1926)"
+    gender: [men, unisex]
+  - url: https://www.fashionandfriends.com/rs/levis-502-taper-muske-farmerke-lv29507-1888/
+    name: "Levi's 502 Taper blue (29507-1888)"
+    gender: [men, unisex]
+  # In stock, but not in 31-032 right now — reported when that size is back.
+  - url: https://www.fashionandfriends.com/rs/levis-502-muske-farmerke-lv29507-1711/
+    name: "Levi's 502 Taper blue, cotton/elastane (29507-1711)"
+    gender: [men, unisex]
+  # Older colours whose pages are still up but sold out in every size —
+  # tracked so a restock in 31/32 is reported.
+  - url: https://www.fashionandfriends.com/rs/levis-502-muske-farmerke-lv29507-1428/
+    name: "Levi's 502 Taper dark blue Due For Cool (29507-1428)"
+    gender: [men, unisex]
+  - url: https://www.fashionandfriends.com/rs/levis-502-muske-farmerke-lv29507-1458/
+    name: "Levi's 502 Taper navy Master Of None (29507-1458)"
+    gender: [men, unisex]
+  - url: https://www.fashionandfriends.com/rs/levis-502-muske-farmerke-lv29507-0555/
+    name: "Levi's 502 Taper classic blue (29507-0555)"
+    gender: [men, unisex]
+  - url: https://www.fashionandfriends.com/rs/levis-502-muske-farmerke-lv29507-1649/
+    name: "Levi's 502 Taper beige (29507-1649)"
+    gender: [men, unisex]

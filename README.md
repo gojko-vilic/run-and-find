@@ -16,7 +16,7 @@ Runs entirely on **GitHub Actions** — no server, no domain, no cost.
 
 | Region  | Sites                                          |
 | ------- | ---------------------------------------------- |
-| Serbia  | Gigatron, Tehnomanija, Shoppster               |
+| Serbia  | Gigatron, Tehnomanija, Shoppster, Fashion&Friends |
 | Austria | MediaMarkt.at, Geizhals.at                     |
 | Amazon  | amazon.com, amazon.de, amazon.co.uk, amazon.at |
 
@@ -56,7 +56,15 @@ but those counts as out of stock, so no price drop there is reported, and the
 wanted size reappearing is what triggers "back in stock". Store pages are read
 for their size lists (Sportvision, Run'n'more, Intersport); an Amazon shoe url
 must itself be the child ASIN of a wanted size — the checker names the right
-ASINs when it is not. Products without a `gender` (a watch) are not filtered.
+ASINs when it is not. When Amazon drops that child from the listing and offers
+no wanted size at all, the entry is kept as out of stock and reported once.
+Products without a `gender` (a watch) are not filtered.
+
+Clothing works the same way with the letter sizes under `clothing` (M, L) and
+jeans with the exact waist/length pair under `jeans`, per model (`"Levi's 512":
+['32/34']`, matched on the start of the product name): a Fashion&Friends page
+is read for the sizes still in stock, and a jacket left only in other sizes
+counts as out of stock.
 
 ### 4. Run manually to test
 

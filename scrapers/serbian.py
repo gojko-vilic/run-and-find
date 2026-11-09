@@ -12,9 +12,11 @@ DOMAINS = [
     "tike.rs",  # Tike.rs shoe store
     "runandmore.rs",  # Run and More — running specialist (403 on bots, try with stealth headers)
     "runnmore.com",  # Run'n More — Serbian running specialist (Belgrade)
+    "fashionandfriends.com",  # Fashion&Friends — Wellensteyn's Serbian retailer (Magento)
 ]
 
-# CSS selector → default currency for each supported domain
+# CSS selectors (most specific first, the first with a match wins) → default
+# currency for each supported domain
 _SITE_SELECTORS: dict[str, tuple[str, str]] = {
     "sport-vision.rs": (".price, .product-price, [class*='price']", "RSD"),
     "intersport.rs": (".price, .product-price, [class*='price']", "RSD"),
@@ -25,7 +27,10 @@ _SITE_SELECTORS: dict[str, tuple[str, str]] = {
     "buzzsneakers.rs": (".price, .product-price, [class*='price']", "RSD"),
     "tike.rs": (".price, .product-price, [class*='price']", "RSD"),
     "runandmore.rs": (".price, .product-price, [class*='price']", "RSD"),
-    "runnmore.com": (".price, .product-price, [class*='price']", "RSD"),
+    # The price block wraps the active price and hidden regular/old ones, so
+    # anything matching the wrapper reads three prices run together.
+    "runnmore.com": (".nb-price-active .nb-price-value, .price, .product-price, [class*='price']", "RSD"),
+    "fashionandfriends.com": (".product-info-price .price", "RSD"),
 }
 
 
@@ -63,16 +68,19 @@ class SerbianScraper(BaseScraper):
             return result
 
         host = url.split("/")[2].removeprefix("www.")
-        for domain, (selector, currency) in _SITE_SELECTORS.items():
+        for domain, (selectors, currency) in _SITE_SELECTORS.items():
             if domain not in host:
                 continue
-            tag = soup.select_one(selector)
-            if tag:
-                return {
-                    "name": heading.get_text(strip=True) if heading else "",
-                    "price": self.parse_price(tag.get_text()),
-                    "currency": currency,
-                    "gender": gender,
-                }
+            # One comma-separated selector would return whichever matches
+            # first in the document; we want the first selector that matches.
+            for selector in selectors.split(","):
+                tag = soup.select_one(selector.strip())
+                if tag:
+                    return {
+                        "name": heading.get_text(strip=True) if heading else "",
+                        "price": self.parse_price(tag.get_text()),
+                        "currency": currency,
+                        "gender": gender,
+                    }
 
         raise ScrapingError(f"Could not extract price from {url}")

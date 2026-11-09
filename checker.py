@@ -1,5 +1,6 @@
 import json
 import os
+import re
 import sys
 from pathlib import Path
 
@@ -54,6 +55,11 @@ def store_sizes(url: str) -> list[dict] | None:
     return _size_cache[url]
 
 
+def _asin(url: str) -> str | None:
+    m = re.search(r"/dp/([A-Z0-9]{10})", url)
+    return m.group(1) if m else None
+
+
 def load_prices() -> dict:
     if PRICES_FILE.exists():
         return json.loads(PRICES_FILE.read_text(encoding="utf-8"))
@@ -88,11 +94,31 @@ def _process_single(
     # drops we cannot use, so it is a configuration error, not a quiet skip.
     # The sizes we do want are named so the url can be fixed.
     if size_filter and result.get("size") and not size_filter.fits(result["size"], label):
-        wanted = [
-            s["asin"]
-            for s in result.get("sizes", [])
-            if size_filter.fits(s, label) and s.get("asin")
-        ]
+        sizes = result.get("sizes", [])
+        wanted = [s["asin"] for s in sizes if size_filter.fits(s, label) and s.get("asin")]
+
+        # Amazon dropped the child we track from the listing (the page fell
+        # back to its default size) and offers no size we want in its place:
+        # nothing to buy and nothing to switch to. That is stock, not
+        # configuration — recorded as out of stock and said once; the hint
+        # below returns the day a wanted size appears on the listing.
+        if not wanted and not any(s.get("asin") == _asin(url) for s in sizes):
+            stored = prices.get(url, {})
+            if stored.get("in_stock", True):
+                msg = (
+                    f"⚠️ {label}: Amazon no longer lists {size_filter.describe(label)} "
+                    f"here — tracked as out of stock"
+                )
+                errors.append(msg)
+                print(msg, file=sys.stderr)
+            prices[url] = {
+                "price": stored.get("price"),
+                "currency": result["currency"] or stored.get("currency", ""),
+                "name": result.get("name") or label,
+                "in_stock": False,
+            }
+            return
+
         hint = f" — try /dp/{' or /dp/'.join(wanted)}" if wanted else ""
         msg = (
             f"⚠️ {label}: url is size {result['size'].get('eu') or result['size'].get('us')}, "

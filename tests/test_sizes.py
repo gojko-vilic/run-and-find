@@ -7,6 +7,8 @@ from scrapers.sizes import SizeFilter, available_sizes, norm, parse_amazon_size
 CONFIG = {
     "cm": ["28.5", "29"],
     "us": ["10.5", "11"],
+    "clothing": ["M", "L"],
+    "jeans": {"levi's 512": ["32/34"], "levi's 502": ["31/32"]},
     "eu": {
         "default": ["44.5", "45"],
         "adidas": ["44 2/3", "45 1/3"],
@@ -44,13 +46,31 @@ class SizeFilterTest(unittest.TestCase):
         self.assertTrue(self.f.fits({"us": "11"}, "HOKA X"))
         self.assertFalse(self.f.fits({"us": "10"}, "HOKA X"))
 
+    def test_clothing(self):
+        self.assertTrue(self.f.fits({"clothing": "M"}, "Wellensteyn MOL Men"))
+        self.assertTrue(self.f.fits({"clothing": "l"}, "Wellensteyn MOL Men"))
+        self.assertFalse(self.f.fits({"clothing": "XL"}, "Wellensteyn MOL Men"))
+
+    def test_jeans_need_both_waist_and_length(self):
+        self.assertTrue(self.f.fits({"waist": "32", "length": "34"}, "Levi's 512"))
+        self.assertFalse(self.f.fits({"waist": "32", "length": "32"}, "Levi's 512"))
+        self.assertFalse(self.f.fits({"waist": "34", "length": "34"}, "Levi's 512"))
+        self.assertFalse(self.f.fits({"waist": "32"}, "Levi's 512"))
+
+    def test_jeans_size_is_per_model(self):
+        self.assertTrue(self.f.fits({"waist": "31", "length": "32"}, "Levi's 502 Taper"))
+        self.assertFalse(self.f.fits({"waist": "31", "length": "32"}, "Levi's 512"))
+        self.assertFalse(self.f.fits({"waist": "32", "length": "34"}, "Levi's 502 Taper"))
+        self.assertFalse(self.f.fits({"waist": "32", "length": "34"}, "Wrangler X"))
+
     def test_width_never_fits(self):
         self.assertFalse(self.f.fits({"eu": "44.5", "width": "wide"}, "Nike X"))
 
     def test_any_and_describe(self):
         self.assertTrue(self.f.any_fits([{"eu": "42"}, {"eu": "45"}], "Nike X"))
         self.assertFalse(self.f.any_fits([{"eu": "42"}], "Nike X"))
-        self.assertEqual(self.f.describe("HOKA X"), "EU 44 2/3/45 1/3, US 10.5/11, 28.5/29 cm")
+        self.assertEqual(self.f.describe("HOKA X"), "EU 44 2/3/45 1/3, US 10.5/11, 28.5/29 cm, M/L")
+        self.assertEqual(self.f.describe("Levi's 502 x"), "EU 44.5/45, US 10.5/11, 28.5/29 cm, M/L, W31/L32")
 
 
 SPORTVISION = """
@@ -79,6 +99,36 @@ INTERSPORT = """
 <ul class="size-list"><li><input class="fnc-product-cart-size" data-size="42"><div>42</div></li>
 <li><input class="fnc-product-cart-size" data-size="451/3"><div>45 ⅓</div></li></ul>"""
 
+# Magento swatch config: sizes are the "size" attribute's options, each pointing
+# at the child product carrying that size; stockArray has each child's quantity.
+FASHIONANDFRIENDS = """
+<script type="text/x-magento-init">
+{"[data-role=swatch-options]": {"Magento_Swatches/js/swatch-renderer": {"jsonConfig": {
+  "attributes": {
+    "242": {"id": "242", "code": "size", "label": "Veli\u010dina", "options": [
+      {"id": "5506", "label": "S", "products": ["101"]},
+      {"id": "5507", "label": "M", "products": ["102"]},
+      {"id": "5508", "label": "L", "products": ["103"]},
+      {"id": "5509", "label": "XL", "products": []}]},
+    "93": {"id": "93", "code": "color", "label": "Boja", "options": [
+      {"id": "6002", "label": "Maslinasta", "products": ["101", "102", "103"]}]}},
+  "stockArray": {"101": 1, "102": 28, "103": 0}
+}}}}
+</script>"""
+
+# Jeans on the same shop: the size label is waist-length, the length zero-padded.
+FASHIONANDFRIENDS_JEANS = """
+<script type="text/x-magento-init">
+{"[data-role=swatch-options]": {"Magento_Swatches/js/swatch-renderer": {"jsonConfig": {
+  "attributes": {
+    "242": {"id": "242", "code": "size", "label": "Veli\u010dina", "options": [
+      {"id": "1", "label": "32-030", "products": ["201"]},
+      {"id": "2", "label": "33-032", "products": ["202"]},
+      {"id": "3", "label": "34-034", "products": ["203"]}]}},
+  "stockArray": {"201": 5, "202": 14, "203": 8}
+}}}}
+</script>"""
+
 
 class StoreParserTest(unittest.TestCase):
     def test_sportvision(self):
@@ -104,6 +154,27 @@ class StoreParserTest(unittest.TestCase):
             "https://www.intersport.rs/x.html", BeautifulSoup(INTERSPORT, "lxml")
         )
         self.assertEqual(sizes, [{"eu": "42"}, {"eu": "45 1/3"}])
+
+    def test_fashionandfriends_sizes_with_stock(self):
+        sizes = available_sizes(
+            "https://www.fashionandfriends.com/rs/wellensteyn-x/",
+            BeautifulSoup(FASHIONANDFRIENDS, "lxml"),
+        )
+        self.assertEqual(sizes, [{"clothing": "S"}, {"clothing": "M"}])
+
+    def test_fashionandfriends_jeans_waist_and_length(self):
+        sizes = available_sizes(
+            "https://www.fashionandfriends.com/rs/levis-x/",
+            BeautifulSoup(FASHIONANDFRIENDS_JEANS, "lxml"),
+        )
+        self.assertEqual(
+            sizes,
+            [
+                {"waist": "32", "length": "30"},
+                {"waist": "33", "length": "32"},
+                {"waist": "34", "length": "34"},
+            ],
+        )
 
     def test_unknown_store_is_none(self):
         self.assertIsNone(available_sizes("https://rs.beosport.com/x", BeautifulSoup("", "lxml")))
