@@ -442,7 +442,7 @@
         "in_stock": true
       },
       "Intersport|HV8150-301": {
-        "price": 18799.0,
+        "price": 11750.0,
         "currency": "RSD",
         "store_url": "https://www.intersport.rs/patike-za-trcanje/muske-patike-za-trcanje-nike-vomero-plus-2.html",
         "in_stock": false
@@ -502,9 +502,15 @@
         "in_stock": true
       },
       "Extra Sports|IR7550-030": {
-        "price": 17099.0,
+        "price": 18999.0,
         "currency": "RSD",
         "store_url": "https://www.extrasports.com/SRB_rs/patike/383075-nike-patike-vomero-plus",
+        "in_stock": true
+      },
+      "Intersport|IQ6942-001": {
+        "price": 23499.0,
+        "currency": "RSD",
+        "store_url": "https://www.intersport.rs/patike-za-trcanje/muske-patike-nike-vomero-plus-cm.html",
         "in_stock": true
       }
     }
@@ -591,7 +597,7 @@
         "in_stock": true
       },
       "Extra Sports|FD8311-800": {
-        "price": 26999.0,
+        "price": 29999.0,
         "currency": "RSD",
         "store_url": "https://www.extrasports.com/SRB_rs/patike/381450-nike-patike-air-zoom-alphafly-next-3",
         "in_stock": true
@@ -811,7 +817,7 @@
         "in_stock": true
       },
       "Đak Sport|IB1873-008": {
-        "price": 14299.0,
+        "price": 12599.0,
         "currency": "RSD",
         "store_url": "https://www.djaksport.com/nike-patike-air-zoom-pegasus-42-za-muskarce-ib1873-008",
         "in_stock": true
@@ -912,7 +918,7 @@
         "in_stock": true
       },
       "Đak Sport|IW1246-099": {
-        "price": 18999.0,
+        "price": 16449.0,
         "currency": "RSD",
         "store_url": "https://www.djaksport.com/nike-patike-zoom-fly-6-prm-za-muskarce-iw1246-099",
         "in_stock": true
@@ -970,7 +976,7 @@
         "in_stock": true
       },
       "Sportvision|1162030-PTYG": {
-        "price": 14999.0,
+        "price": 13499.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70069667-hoka-clifton-10",
         "in_stock": false
@@ -1135,19 +1141,19 @@
     }
   },
   "https://www.amazon.de/dp/B0F82S1DNL": {
-    "price": 168.84,
+    "price": 169.23,
     "currency": "EUR",
     "name": "adidas Performance Adizero Evo Sl Laufschuh Herren",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0GD2VF4YN": {
-    "price": 329.02,
+    "price": 329.78,
     "currency": "EUR",
     "name": "PUMA Deviate Nitro 4 Herren-Laufschuhe",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0GD2KPSM6": {
-    "price": 329.02,
+    "price": 329.78,
     "currency": "EUR",
     "name": "PUMA Deviate Nitro 4 Herren-Laufschuhe",
     "in_stock": true
@@ -1177,7 +1183,7 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0F4LZPZH2": {
-    "price": 224.48,
+    "price": 225.0,
     "currency": "EUR",
     "name": "New Balance Herren FuelCell Supercomp Elite V5Laufschuh",
     "in_stock": true
@@ -1186,16 +1192,16 @@
     "price": 224.48,
     "currency": "EUR",
     "name": "New Balance Herren FuelCell Supercomp Elite V5Laufschuh",
-    "in_stock": true
+    "in_stock": false
   },
   "https://www.amazon.de/dp/B0DN3Q5B49": {
-    "price": 150.41,
+    "price": 150.77,
     "currency": "EUR",
     "name": "HOKA Herren Laufschuhe",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0DN3TBCGX": {
-    "price": 150.41,
+    "price": 150.76,
     "currency": "EUR",
     "name": "HOKA Herren Laufschuhe",
     "in_stock": true
@@ -1246,7 +1252,7 @@
         "in_stock": false
       },
       "Đak Sport|J1GC262602": {
-        "price": 15999.0,
+        "price": 15609.0,
         "currency": "RSD",
         "store_url": "https://www.djaksport.com/mizuno-patike-wave-horizon-9-za-muskarce-j1gc262602",
         "in_stock": true
@@ -1254,7 +1260,7 @@
     }
   },
   "https://www.amazon.de/dp/B0GJNX2J7J": {
-    "price": 201.97,
+    "price": 202.44,
     "currency": "EUR",
     "name": "Mizuno Herren Laufschuh Wave Horizon 9 - J1GC2626",
     "in_stock": true
@@ -1278,13 +1284,13 @@
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0GJNG4SRL": {
-    "price": 165.24,
+    "price": 165.62,
     "currency": "EUR",
     "name": "Mizuno Herren Laufschuh Wave Horizon 9 - J1GC2626",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0DNNTQSLR": {
-    "price": 157.0,
+    "price": 158.75,
     "currency": "EUR",
     "name": "adidas ADIZERO EVO SL M",
     "in_stock": true
@@ -1344,19 +1350,19 @@
     "in_stock": true
   },
   "https://www.fashionandfriends.com/rs/levis-512-slim-taper-muske-farmerke-lv28833-1561/": {
-    "price": 14490.0,
+    "price": 11592.0,
     "currency": "RSD",
     "name": "Muške farmerke | Levis online kolekcija",
     "in_stock": true
   },
   "https://www.fashionandfriends.com/rs/levis-512-muske-farmerke-lv28833-1262/": {
-    "price": 12990.0,
+    "price": 10392.0,
     "currency": "RSD",
     "name": "Muške farmerke | Levis 512 slim-taper jeans",
     "in_stock": true
   },
   "https://www.fashionandfriends.com/rs/levis-512-muske-farmerke-lv28833-1573/": {
-    "price": 15490.0,
+    "price": 12392.0,
     "currency": "RSD",
     "name": "Muške farmerke | Levis online kolekcija",
     "in_stock": true
@@ -1398,49 +1404,49 @@
     "in_stock": false
   },
   "https://www.fashionandfriends.com/rs/levis-502-muske-farmerke-lv29507-1417/": {
-    "price": 12990.0,
+    "price": 10392.0,
     "currency": "RSD",
     "name": "Muške farmerke | Levis 502 taper jeans",
     "in_stock": true
   },
   "https://www.fashionandfriends.com/rs/levis-502-muske-farmerke-lv29507-1880/": {
-    "price": 12990.0,
+    "price": 10392.0,
     "currency": "RSD",
     "name": "Muške farmerke | Levis | 502",
     "in_stock": true
   },
   "https://www.fashionandfriends.com/rs/levis-502-muske-farmerke-lv29507-1420/": {
-    "price": 12990.0,
+    "price": 10392.0,
     "currency": "RSD",
     "name": "Muške farmerke | Levis 502 taper jeans",
     "in_stock": true
   },
   "https://www.fashionandfriends.com/rs/levis-502-muske-farmerke-lv29507-0280/": {
-    "price": 12990.0,
+    "price": 10392.0,
     "currency": "RSD",
     "name": "Levis muške farmerke | Fashion&Friends",
     "in_stock": true
   },
   "https://www.fashionandfriends.com/rs/levis-502-taper-muske-farmerke-lv29507-1878/": {
-    "price": 14490.0,
+    "price": 11592.0,
     "currency": "RSD",
     "name": "Muške farmerke | Levis 502 Taper",
     "in_stock": true
   },
   "https://www.fashionandfriends.com/rs/levis-502-muske-farmerke-lv29507-1884/": {
-    "price": 15490.0,
+    "price": 12392.0,
     "currency": "RSD",
     "name": "Muške farmerke | Levis online kolekcija",
     "in_stock": true
   },
   "https://www.fashionandfriends.com/rs/levis-502-muske-farmerke-lv29507-1926/": {
-    "price": 15490.0,
+    "price": 12392.0,
     "currency": "RSD",
     "name": "Muške farmerke | Levis 502",
     "in_stock": true
   },
   "https://www.fashionandfriends.com/rs/levis-502-taper-muske-farmerke-lv29507-1888/": {
-    "price": 18990.0,
+    "price": 15192.0,
     "currency": "RSD",
     "name": "Muške farmerke | Levis 502 Taper",
     "in_stock": true
