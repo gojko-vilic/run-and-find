@@ -246,7 +246,7 @@
         "in_stock": true
       },
       "ET Sport|KI6927": {
-        "price": 13267.0,
+        "price": 11940.0,
         "currency": "RSD",
         "store_url": "https://www.etsport.rs/patike-za-trcanje/33630-patike-adidas-adizero-evo-sl-woven-m",
         "in_stock": true
@@ -849,7 +849,7 @@
         "price": 17599.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70051262-nike-zoom-fly-6",
-        "in_stock": true
+        "in_stock": false
       },
       "Sportvision|IW1246-099": {
         "price": 16199.0,
@@ -891,7 +891,7 @@
         "price": 17599.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69772306-nike-patike-zoom-fly-6",
-        "in_stock": true
+        "in_stock": false
       },
       "Run'n'more|IU5066-068": {
         "price": 18799.0,
@@ -1149,7 +1149,7 @@
   "https://www.amazon.de/dp/B0F82S1DNL": {
     "price": 137.63,
     "currency": "EUR",
-    "name": "adidas Performance Adizero Evo Sl Laufschuh Herren",
+    "name": "adidas Performance Adizero EVO SL Lightstrikepro Laufschuh Herren",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0GD2VF4YN": {
@@ -1201,7 +1201,7 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0DN3Q5B49": {
-    "price": 148.36,
+    "price": 148.37,
     "currency": "EUR",
     "name": "HOKA Herren Laufschuhe",
     "in_stock": true
@@ -1296,7 +1296,7 @@
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0DNNTQSLR": {
-    "price": 155.43,
+    "price": 154.47,
     "currency": "EUR",
     "name": "adidas ADIZERO EVO SL M",
     "in_stock": true
