@@ -42,7 +42,7 @@
     }
   },
   "https://www.runnmore.com/patike/69788780-adidas-patike-adizero-adios-pro-4": {
-    "price": 19999.2,
+    "price": 24999.0,
     "currency": "RSD",
     "name": "adidas Patike Adizero Adios Pro 4",
     "in_stock": false
@@ -63,7 +63,7 @@
         "in_stock": false
       },
       "Run'n'more|1013A162-400": {
-        "price": 25599.0,
+        "price": 31999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69809398-asics-patike-metaspeed-sky-tokyo",
         "in_stock": true
@@ -163,7 +163,7 @@
         "in_stock": false
       },
       "Run'n'more|1013A177-101": {
-        "price": 21599.0,
+        "price": 26999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69868350-asics-patike-superblast-3",
         "in_stock": false
@@ -294,7 +294,7 @@
         "in_stock": true
       },
       "Run'n'more|KI4542": {
-        "price": 14079.0,
+        "price": 17599.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69817342-adidas-patike-adizero-evo-sl",
         "in_stock": true
@@ -549,7 +549,7 @@
         "in_stock": true
       },
       "Run'n'more|FD8311-402": {
-        "price": 26999.0,
+        "price": 29999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69817727-nike-patike-air-zoom-alphafly-3",
         "in_stock": true
@@ -692,7 +692,7 @@
         "in_stock": true
       },
       "Run'n'more|IM8203-400": {
-        "price": 21599.0,
+        "price": 23999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69819147-nike-patike-vaporfly-4",
         "in_stock": true
@@ -727,7 +727,7 @@
         "in_stock": true
       },
       "Run'n'more|IW2349-001": {
-        "price": 15599.0,
+        "price": 19499.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69818728-nike-patike-air-zoom-pegasus-42",
         "in_stock": true
@@ -745,7 +745,7 @@
         "in_stock": true
       },
       "Run'n'more|IV6292-451": {
-        "price": 13499.0,
+        "price": 14999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69812630-nike-patike-pegasus-42",
         "in_stock": true
@@ -757,7 +757,7 @@
         "in_stock": true
       },
       "Run'n'more|IB1873-008": {
-        "price": 14399.0,
+        "price": 17999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69814205-nike-patike-pegasus-42",
         "in_stock": true
@@ -894,7 +894,7 @@
         "in_stock": false
       },
       "Run'n'more|IU5066-068": {
-        "price": 18799.0,
+        "price": 23499.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69819262-nike-patike-zoom-fly-6",
         "in_stock": true
@@ -906,7 +906,7 @@
         "in_stock": true
       },
       "Run'n'more|IQ0666-500": {
-        "price": 17599.0,
+        "price": 21999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69867585-nike-patike-zoom-fly-6-rsg",
         "in_stock": true
@@ -1133,7 +1133,7 @@
         "in_stock": true
       },
       "Run'n'more|1171927-CRBN": {
-        "price": 26399.0,
+        "price": 32999.0,
         "currency": "RSD",
         "store_url": "https://www.runnmore.com/patike/69867727-hoka-patike-cielo-x13-0",
         "in_stock": true
@@ -1195,13 +1195,13 @@
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0F4LNT5PY": {
-    "price": 222.02,
+    "price": 221.42,
     "currency": "EUR",
     "name": "New Balance Herren FuelCell Supercomp Elite V5Laufschuh",
-    "in_stock": false
+    "in_stock": true
   },
   "https://www.amazon.de/dp/B0DN3Q5B49": {
-    "price": 148.37,
+    "price": 148.36,
     "currency": "EUR",
     "name": "HOKA Herren Laufschuhe",
     "in_stock": true
@@ -1296,7 +1296,7 @@
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0DNNTQSLR": {
-    "price": 154.47,
+    "price": 156.15,
     "currency": "EUR",
     "name": "adidas ADIZERO EVO SL M",
     "in_stock": true
