@@ -454,7 +454,7 @@
         "in_stock": false
       },
       "Buzz|IR7550-030": {
-        "price": 18999.0,
+        "price": 15199.0,
         "currency": "RSD",
         "store_url": "https://www.buzzsneakers.rs/patike/363265-nike-patike-vomero-plus",
         "in_stock": true
@@ -1147,19 +1147,19 @@
     }
   },
   "https://www.amazon.de/dp/B0F82S1DNL": {
-    "price": 137.63,
+    "price": 137.02,
     "currency": "EUR",
     "name": "adidas Performance Adizero EVO SL Lightstrikepro Laufschuh Herren",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0GD2VF4YN": {
-    "price": 324.53,
+    "price": 323.1,
     "currency": "EUR",
     "name": "PUMA Deviate Nitro 4 Herren-Laufschuhe",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0GD2KPSM6": {
-    "price": 324.53,
+    "price": 323.1,
     "currency": "EUR",
     "name": "PUMA Deviate Nitro 4 Herren-Laufschuhe",
     "in_stock": true
@@ -1189,25 +1189,25 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0F4LZPZH2": {
-    "price": 221.42,
+    "price": 220.44,
     "currency": "EUR",
     "name": "New Balance Herren FuelCell Supercomp Elite V5Laufschuh",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0F4LNT5PY": {
-    "price": 221.42,
+    "price": 220.44,
     "currency": "EUR",
     "name": "New Balance Herren FuelCell Supercomp Elite V5Laufschuh",
-    "in_stock": false
+    "in_stock": true
   },
   "https://www.amazon.de/dp/B0DN3Q5B49": {
-    "price": 148.36,
+    "price": 147.7,
     "currency": "EUR",
     "name": "HOKA Herren Laufschuhe",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0DN3TBCGX": {
-    "price": 138.7,
+    "price": 138.09,
     "currency": "EUR",
     "name": "HOKA Herren Laufschuhe",
     "in_stock": true
@@ -1231,7 +1231,7 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0F9QY49NM": {
-    "price": 200.99,
+    "price": 200.1,
     "currency": "EUR",
     "name": "Hoka Herren Mach X 3Laufschuh",
     "in_stock": true
@@ -1266,7 +1266,7 @@
     }
   },
   "https://www.amazon.de/dp/B0GJNX2J7J": {
-    "price": 199.22,
+    "price": 198.34,
     "currency": "EUR",
     "name": "Mizuno Herren Laufschuh Wave Horizon 9 - J1GC2626",
     "in_stock": true
@@ -1290,13 +1290,13 @@
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0GJNG4SRL": {
-    "price": 166.33,
+    "price": 165.6,
     "currency": "EUR",
     "name": "Mizuno Herren Laufschuh Wave Horizon 9 - J1GC2626",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0DNNTQSLR": {
-    "price": 156.22,
+    "price": 140.57,
     "currency": "EUR",
     "name": "adidas ADIZERO EVO SL M",
     "in_stock": true
