@@ -330,7 +330,7 @@
         "in_stock": true
       },
       "Đak Sport|KI4542": {
-        "price": 15699.0,
+        "price": 13369.0,
         "currency": "RSD",
         "store_url": "https://www.djaksport.com/adidas-patike-adizero-evo-sl-woven-m-za-muskarce-ki4542",
         "in_stock": true
@@ -817,7 +817,7 @@
         "in_stock": true
       },
       "Đak Sport|IB1873-500": {
-        "price": 11999.0,
+        "price": 10439.0,
         "currency": "RSD",
         "store_url": "https://www.djaksport.com/nike-patike-air-zoom-pegasus-42-za-muskarce-ib1873-500",
         "in_stock": true
@@ -1147,19 +1147,19 @@
     }
   },
   "https://www.amazon.de/dp/B0F82S1DNL": {
-    "price": 137.02,
+    "price": 169.44,
     "currency": "EUR",
     "name": "adidas Performance Adizero EVO SL Lightstrikepro Laufschuh Herren",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0GD2VF4YN": {
-    "price": 323.1,
+    "price": 322.51,
     "currency": "EUR",
     "name": "PUMA Deviate Nitro 4 Herren-Laufschuhe",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0GD2KPSM6": {
-    "price": 323.1,
+    "price": 322.51,
     "currency": "EUR",
     "name": "PUMA Deviate Nitro 4 Herren-Laufschuhe",
     "in_stock": true
@@ -1189,25 +1189,25 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0F4LZPZH2": {
-    "price": 220.44,
+    "price": 220.04,
     "currency": "EUR",
     "name": "New Balance Herren FuelCell Supercomp Elite V5Laufschuh",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0F4LNT5PY": {
-    "price": 220.44,
+    "price": 220.04,
     "currency": "EUR",
     "name": "New Balance Herren FuelCell Supercomp Elite V5Laufschuh",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0DN3Q5B49": {
-    "price": 147.7,
+    "price": 147.43,
     "currency": "EUR",
     "name": "HOKA Herren Laufschuhe",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0DN3TBCGX": {
-    "price": 138.09,
+    "price": 137.84,
     "currency": "EUR",
     "name": "HOKA Herren Laufschuhe",
     "in_stock": true
@@ -1231,7 +1231,7 @@
     "in_stock": false
   },
   "https://www.amazon.de/dp/B0F9QY49NM": {
-    "price": 200.1,
+    "price": 199.74,
     "currency": "EUR",
     "name": "Hoka Herren Mach X 3Laufschuh",
     "in_stock": true
@@ -1266,7 +1266,7 @@
     }
   },
   "https://www.amazon.de/dp/B0GJNX2J7J": {
-    "price": 198.34,
+    "price": 197.98,
     "currency": "EUR",
     "name": "Mizuno Herren Laufschuh Wave Horizon 9 - J1GC2626",
     "in_stock": true
@@ -1290,13 +1290,13 @@
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0GJNG4SRL": {
-    "price": 165.6,
+    "price": 165.3,
     "currency": "EUR",
     "name": "Mizuno Herren Laufschuh Wave Horizon 9 - J1GC2626",
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0DNNTQSLR": {
-    "price": 140.57,
+    "price": 140.31,
     "currency": "EUR",
     "name": "adidas ADIZERO EVO SL M",
     "in_stock": true
