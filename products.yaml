@@ -96,12 +96,12 @@ products:
   - url: https://trebapatike.rs/sr/nike-alphafly-3
     name: 'Nike Alphafly 3'
     gender: [men, unisex]
-  # Red/green colourway; parent B0F4M87W8F has no buy box.
-  - url: https://www.amazon.de/dp/B0DYKSFTTX
+  # Nov 2026: Amazon dropped the red/green children (B0DYKSFTTX, B0DYL97H4C,
+  # B0F4LT3X1P); those urls now fall back to size 41 of the Sail/Black/
+  # Crimson Tint colourway, whose 44.5 and 45 children these are (no offer yet).
+  - url: https://www.amazon.de/dp/B0DP5DB2X2
     name: 'Nike Alphafly 3 (Amazon.de, 44.5)'
-  # The 45 was B0DYL97H4C; Amazon dropped that child from the listing in
-  # Nov 2026 and this is the one it now names for 45 (no offer yet).
-  - url: https://www.amazon.de/dp/B0F4LT3X1P
+  - url: https://www.amazon.de/dp/B0DP5C8RDR
     name: 'Nike Alphafly 3 (Amazon.de, 45)'
 
   - url: https://trebapatike.rs/sr/nike-vaporfly-4
