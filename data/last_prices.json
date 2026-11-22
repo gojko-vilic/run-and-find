@@ -116,7 +116,7 @@
         "in_stock": true
       },
       "Sportvision|1013A170-101": {
-        "price": 28999.0,
+        "price": 20299.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70149994-asics-megablast",
         "in_stock": true
@@ -169,7 +169,7 @@
         "in_stock": false
       },
       "Sportvision|1013A177-101": {
-        "price": 26999.0,
+        "price": 18899.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70151444-asics-superblast-3",
         "in_stock": false
@@ -514,7 +514,7 @@
         "in_stock": true
       },
       "Sportvision|HV8150-300": {
-        "price": 23499.0,
+        "price": 16449.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70059920-nike-vomero-plus",
         "in_stock": true
@@ -543,7 +543,7 @@
         "in_stock": true
       },
       "Sportvision|FD8311-402": {
-        "price": 29999.0,
+        "price": 23999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70097205-nike-air-zoom-alphafly-3",
         "in_stock": true
@@ -662,7 +662,7 @@
         "in_stock": true
       },
       "Sportvision|IM8068-999": {
-        "price": 23999.0,
+        "price": 16799.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70067460-nike-vaporfly-4",
         "in_stock": true
@@ -721,7 +721,7 @@
         "in_stock": true
       },
       "Sportvision|IW2349-001": {
-        "price": 19499.0,
+        "price": 13649.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70098923-nike-air-zoom-pegasus-42",
         "in_stock": true
@@ -739,7 +739,7 @@
         "in_stock": true
       },
       "Sportvision|IV6292-451": {
-        "price": 14999.0,
+        "price": 11999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70091722-nike-pegasus-42",
         "in_stock": true
@@ -852,7 +852,7 @@
         "in_stock": false
       },
       "Sportvision|IW1246-099": {
-        "price": 17999.0,
+        "price": 14399.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70087102-nike-zoom-fly-6",
         "in_stock": true
@@ -912,7 +912,7 @@
         "in_stock": true
       },
       "Sportvision|IQ0666-500": {
-        "price": 21999.0,
+        "price": 15399.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70149590-nike-zoom-fly-6-rsg",
         "in_stock": true
@@ -953,7 +953,7 @@
         "in_stock": false
       },
       "Sportvision|MRCELLR5": {
-        "price": 19999.0,
+        "price": 17999.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70057968-new-balance-fuelcell",
         "in_stock": false
@@ -1080,7 +1080,7 @@
         "in_stock": false
       },
       "Sportvision|1168720-NZS": {
-        "price": 17999.0,
+        "price": 14399.0,
         "currency": "RSD",
         "store_url": "https://www.sportvision.rs/patike/70074139-hoka-mach-x-3",
         "in_stock": false
@@ -1296,7 +1296,7 @@
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0DNNTQSLR": {
-    "price": 148.9,
+    "price": 155.19,
     "currency": "EUR",
     "name": "adidas ADIZERO EVO SL M",
     "in_stock": true
