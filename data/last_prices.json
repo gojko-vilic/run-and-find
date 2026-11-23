@@ -454,7 +454,7 @@
         "in_stock": false
       },
       "Buzz|IR7550-030": {
-        "price": 18999.0,
+        "price": 15199.0,
         "currency": "RSD",
         "store_url": "https://www.buzzsneakers.rs/patike/363265-nike-patike-vomero-plus",
         "in_stock": true
@@ -1192,7 +1192,7 @@
     "price": 219.98,
     "currency": "EUR",
     "name": "New Balance Herren FuelCell Supercomp Elite V5Laufschuh",
-    "in_stock": true
+    "in_stock": false
   },
   "https://www.amazon.de/dp/B0F4LNT5PY": {
     "price": 219.98,
@@ -1296,7 +1296,7 @@
     "in_stock": true
   },
   "https://www.amazon.de/dp/B0DNNTQSLR": {
-    "price": 155.19,
+    "price": 150.53,
     "currency": "EUR",
     "name": "adidas ADIZERO EVO SL M",
     "in_stock": true
