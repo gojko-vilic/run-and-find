@@ -30,7 +30,18 @@ _SITE_SELECTORS: dict[str, tuple[str, str]] = {
     # The price block wraps the active price and hidden regular/old ones, so
     # anything matching the wrapper reads three prices run together.
     "runnmore.com": (".nb-price-active .nb-price-value, .price, .product-price, [class*='price']", "RSD"),
-    "fashionandfriends.com": (".product-info-price .price", "RSD"),
+    # A discount renders the crossed-out regular price first, also as .price.
+    "fashionandfriends.com": (
+        ".product-info-price .special-price .price, .product-info-price .price",
+        "RSD",
+    ),
+}
+
+# Where a store says in so many words that nothing can be bought. Such a page
+# carries no price at all, so without this line it reads as one we failed to
+# scrape. Only the store's own statement counts — a missing price alone does not.
+_SOLD_OUT_SELECTORS: dict[str, str] = {
+    "fashionandfriends.com": ".product-info-main .stock.unavailable",
 }
 
 
@@ -82,5 +93,14 @@ class SerbianScraper(BaseScraper):
                         "currency": currency,
                         "gender": gender,
                     }
+            sold_out = _SOLD_OUT_SELECTORS.get(domain)
+            if sold_out and soup.select_one(sold_out):
+                return {
+                    "name": heading.get_text(strip=True) if heading else "",
+                    "price": None,
+                    "currency": currency,
+                    "gender": gender,
+                    "in_stock": False,
+                }
 
         raise ScrapingError(f"Could not extract price from {url}")
