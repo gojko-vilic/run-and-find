@@ -87,6 +87,8 @@ class BaseScraper:
                 offer = data.get("offers", {})
                 if isinstance(offer, list):
                     offer = offer[0]
+                if not offer:
+                    offer = BaseScraper._variant_offer(data.get("hasVariant"))
                 # An AggregateOffer quotes a range, its Offers nested inside;
                 # the low end is what a customer pays.
                 price = float(offer.get("price") or offer.get("lowPrice") or 0)
@@ -112,6 +114,26 @@ class BaseScraper:
             except (json.JSONDecodeError, KeyError, ValueError, TypeError):
                 continue
         return None
+
+    @staticmethod
+    def _variant_offer(variants) -> dict:
+        """The offer a ProductGroup stands for: its cheapest variant in stock.
+
+        A group quotes nothing itself; each size is a Product with its own
+        Offer. Sold-out variants count only when nothing is in stock, so the
+        group then reads as sold out at the price it last had.
+        """
+        offers = []
+        for variant in variants or []:
+            offer = variant.get("offers") if isinstance(variant, dict) else None
+            if isinstance(offer, list):
+                offer = offer[0] if offer else None
+            if isinstance(offer, dict) and offer.get("price"):
+                offers.append(offer)
+        in_stock = [
+            o for o in offers if (o.get("availability") or "InStock").endswith("InStock")
+        ]
+        return min(in_stock or offers, key=lambda o: float(o["price"]), default={})
 
     @staticmethod
     def _from_microdata(soup: BeautifulSoup) -> dict | None:
